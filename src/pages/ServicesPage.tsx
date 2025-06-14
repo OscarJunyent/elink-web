@@ -1,5 +1,5 @@
 
-import { Briefcase, Workflow, BrainCog, MonitorSmartphone, GraduationCap } from "lucide-react";
+import { Briefcase, Workflow, BrainCog, MonitorSmartphone, GraduationCap, ChartPie } from "lucide-react";
 import { Link } from "react-router-dom";
 
 type Service = {
@@ -18,6 +18,11 @@ const SERVICES: Service[] = [
     title: "Automatització de processos",
     desc: "Integració d’eines, RPA i millora operativa.",
     icon: Workflow,
+  },
+  {
+    title: "Anàlisi de dades i visualització",
+    desc: "De les dades al coneixement. T’ajudem a estructurar, analitzar i visualitzar les dades del teu negoci per prendre millors decisions.",
+    icon: ChartPie,
   },
   {
     title: "Intel·ligència artificial aplicada",

@@ -57,23 +57,6 @@ const Hero = ({ t }: { t: any }) => {
         </a>
       </motion.div>
 
-      {/* Images Row */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8 z-10">
-        {heroImages.map(({ src, alt }, idx) => (
-          <img
-            key={src}
-            src={src}
-            alt={alt}
-            loading="lazy"
-            className="w-[180px] h-[110px] object-cover rounded-xl shadow-md border border-gray bg-white"
-            style={{
-              animation: `fade-in 0.8s cubic-bezier(0.19,1,0.22,1) ${0.1 + idx * 0.07
-                }s both`
-            }}
-          />
-        ))}
-      </div>
-
       {/* Disk background blur shape (intact) */}
       <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[150vw] h-60 bg-gradient-to-tr from-primary/30 to-accent/10 rounded-b-full blur-2xl opacity-80 pointer-events-none" />
     </section>

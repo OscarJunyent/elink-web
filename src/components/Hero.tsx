@@ -1,25 +1,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const BACKGROUND_IMG =
   "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80";
-
-// Example images (royalty-free from Unsplash, as placeholders)
-const heroImages = [
-  {
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80",
-    alt: "Dona treballant amb portàtil",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
-    alt: "Portàtil gris obert sobre taula",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=600&q=80",
-    alt: "Dona utilitzant ordinador portàtil sobre llit",
-  },
-];
 
 const Hero = ({ t }: { t: any }) => {
   return (
@@ -55,6 +40,15 @@ const Hero = ({ t }: { t: any }) => {
         >
           {t.heroCTA}
         </a>
+        <div className="mt-4">
+          <Link
+            to="/about"
+            className="text-accent underline underline-offset-4 text-base font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-accent/50 transition"
+            aria-label="Sobre Elink.cat"
+          >
+            Sobre Elink.cat
+          </Link>
+        </div>
       </motion.div>
 
       {/* Disk background blur shape (intact) */}

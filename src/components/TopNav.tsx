@@ -1,18 +1,23 @@
 
 import { Link, useLocation } from "react-router-dom";
-const menu = [{
-  to: "/",
-  label: "Inici"
-}, {
-  to: "/about",
-  label: "Qui som"
-}, {
-  to: "/serveis",
-  label: "Serveis"
-}, {
-  to: "/formacio",
-  label: "Formació"
-}];
+const menu = [
+  {
+    to: "/",
+    label: "Inici"
+  },
+  {
+    to: "/serveis",
+    label: "Serveis"
+  },
+  {
+    to: "/formacio",
+    label: "Formació"
+  },
+  {
+    to: "/about",
+    label: "Qui som"
+  }
+];
 const TopNav = () => {
   const location = useLocation();
   return <nav className="w-full flex items-center justify-center py-2 px-3 bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-40 shadow-circular">
@@ -51,3 +56,4 @@ const TopNav = () => {
     </nav>;
 };
 export default TopNav;
+

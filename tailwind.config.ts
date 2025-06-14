@@ -12,7 +12,7 @@ export default {
 	prefix: "",
 	theme: {
 		fontFamily: {
-			'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+			'sans': ['Montserrat', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
 		},
 		container: {
 			center: true,
@@ -71,4 +71,3 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-

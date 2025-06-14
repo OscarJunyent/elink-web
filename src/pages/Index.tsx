@@ -1,52 +1,68 @@
 
-// Pàgina principal corporativa Elink.cat – Estructura responsive, modular, multi-idioma ready
+// Pàgina principal corporativa Elink.cat – Redisseny complet
 
 import Hero from "@/components/Hero";
-import About from "@/components/About";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
+import FeaturedQuote from "@/components/FeaturedQuote";
+import FinalCTA from "@/components/FinalCTA";
+import About from "@/components/About";
 import Cases from "@/components/Cases";
 import Training from "@/components/Training";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-// Texts en català, preparats per a traducció futura
+// Textos específics per la nova home
 const t = {
-  heroTitle: "Transformem la teva empresa amb tecnologia útil i intel·ligent",
-  heroSubtitle: "Consultoria i solucions digitals per empreses catalanes que volen fer un salt efectiu cap a la digitalització i l’eficiència.",
-  heroCTA: "Descobreix com podem ajudar-te",
+  heroTitle: "Tecnologia útil per fer créixer el teu negoci",
+  heroSubtitle: "Consultoria, IA i automatització per a mitjanes empreses catalanes.",
+  heroCTA: "Descobreix com treballem",
 
-  aboutTitle: "Qui som",
-  aboutMission: "A Elink.cat t’ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
-
+  // Bloc serveis resumits
   services: {
-    title: "Els nostres serveis",
+    title: "Què podem fer per la teva empresa",
     consultoria: "Consultoria tecnològica",
-    consultoriaDesc: "Analitzem la realitat de la teva empresa i proposem la millor estratègia digital.",
+    consultoriaDesc: "Analitzem, identifiquem oportunitats i t’acompanyem en la transformació digital.",
     automatitzacio: "Automatització i integracions",
-    automatitzacioDesc: "Dissenyem i implantem automatitzacions per reduir errors i estalviar temps.",
+    automatitzacioDesc: "Implantem eines i processos que estalvien temps i diners.",
     ia: "IA aplicada al negoci",
-    iaDesc: "Fem servir la intel·ligència artificial per millorar processos i decisions.",
-    solucions: "Desenvolupament de solucions digitals",
-    solucionsDesc: "Desenvolupem a mida tot allò que la teva empresa necessita, connectant sistemes i persones.",
+    iaDesc: "Utilitzem la intel·ligència artificial per optimitzar processos i prendre millors decisions.",
+    solucions: "Solucions digitals a mida",
+    solucionsDesc: "Desenvolupem eines adaptades a la teva realitat i objectius.",
   },
 
+  // Com treballem (metodologia)
   methodTitle: "Com treballem",
   method: {
-    Diagnosi: "Diagnosi",
-    Proposta: "Proposta",
-    Implementació: "Implementació",
-    Seguiment: "Seguiment",
+    Diagnosi: "Diagnosi personalitzada",
+    Proposta: "Proposta estratègica",
+    Implementació: "Implementació a mida",
+    Seguiment: "Seguiment i suport continu",
   },
-  methodSubtitle: "Seguim una metodologia clara i transparent, pensada per entendre, proposar el millor camí, implementar i acompanyar-te en la millora contínua.",
+  methodSubtitle: "Acompanyem la teva empresa en totes les fases del canvi, de l'anàlisi inicial fins a la implantació i millora contínua.",
 
+  // Frase destacada
+  featuredQuote: {
+    frase: "",
+    autor: "",
+  },
+
+  // Final call to action
+  finalCTA: {
+    title: "Vols portar la tecnologia al següent nivell?",
+    subtitle: "Contacta amb Elink.cat i farem créixer el teu negoci.",
+    button: "Contacta amb nosaltres",
+    href: "#contacte"
+  },
+
+  // Altres títols per compatibilitat
+  aboutTitle: "Qui som",
+  aboutMission: "A Elink.cat t’ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
   casesTitle: "Clients i casos d’èxit",
   casesPlaceholder: "Ben aviat compartirem experiències i resultats d’empreses que ja confien en nosaltres. Contacta’ns per saber més!",
-
   trainingTitle: "Formació i divulgació",
   trainingDesc: "Oferim tallers pràctics i recursos oberts per apropar la tecnologia a les empreses catalanes.",
   trainingCTA: "Consulta les properes formacions",
-
   contactTitle: "Contacta amb nosaltres",
   nom: "Nom i cognoms",
   email: "Correu electrònic",
@@ -55,21 +71,20 @@ const t = {
   enviant: "Enviant...",
   contactCalendar: "Si ho prefereixes, pots reservar una reunió directa:",
   contactReserva: "Reserva una cita",
-
-  languagesTitle: "Llengües"
 };
 
 const Index = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen overflow-x-hidden">
     <Hero t={t} />
-    <About t={t} />
     <Services t={t} />
     <Method t={t} />
-    <Cases t={t} />
-    <Training t={t} />
+    <FeaturedQuote t={t} />
+    <FinalCTA t={t.finalCTA} />
+    {/* Bloc de contacte complet amb footer ve després */}
     <Contact t={t} />
     <Footer t={t} />
   </div>
 );
 
 export default Index;
+

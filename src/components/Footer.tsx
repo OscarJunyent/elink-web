@@ -1,4 +1,5 @@
-import { Linkedin, Github, Mail, Rss } from "lucide-react";
+
+import { Linkedin, Mail } from "lucide-react";
 const Footer = ({
   t
 }: {
@@ -12,17 +13,10 @@ const Footer = ({
         <a href="https://www.linkedin.com/company/elinkcat" title="LinkedIn" target="_blank" rel="noopener noreferrer" className="hover-scale">
           <Linkedin size={22} />
         </a>
-        <a href="https://elinkcat.substack.com" title="Substack" target="_blank" rel="noopener noreferrer" className="hover-scale">
-          <Rss size={22} />
-        </a>
-        <a href="https://github.com/elinkcat" title="GitHub" target="_blank" rel="noopener noreferrer" className="hover-scale">
-          <Github size={22} />
-        </a>
         <a href="mailto:info@elink.cat" title="Mail" className="hover-scale">
           <Mail size={22} />
         </a>
       </div>
-      
     </div>
   </footer>;
 export default Footer;

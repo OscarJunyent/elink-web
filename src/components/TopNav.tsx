@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 const menu = [{
   to: "/",
@@ -27,7 +28,6 @@ const TopNav = () => {
           width: "100%",
           height: "auto",
           maxWidth: "125px",
-          // increased by 25%
           minWidth: "40px"
         }} src="https://elink.cat/wp-content/uploads/2024/01/elinkcat-default-light-bg.png" className="w-full max-w-[250px] min-w-[40px] h-auto transition-all" />
         </Link>
@@ -40,7 +40,7 @@ const TopNav = () => {
         const active = location.pathname === item.to;
         return <li key={item.to}>
               <Link to={item.to} className={`text-base md:text-lg px-3 py-1 rounded-full font-medium transition-all duration-150
-                  ${active ? "bg-[#ff881a] text-white shadow" : "text-[#222c38] hover:bg-[#fde5d3] hover:text-[#ff881a]"}`} style={{
+                  ${active ? "bg-[#c92637] text-white shadow" : "text-[#222c38] hover:bg-[#f7d7db] hover:text-[#c92637]"}`} style={{
             fontFamily: 'Montserrat, Inter, sans-serif'
           }}>
                 {item.label}

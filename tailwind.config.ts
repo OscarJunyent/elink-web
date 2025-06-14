@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,7 +23,7 @@ export default {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#ff881a',
+					DEFAULT: '#c92637',   // Changed from #ff881a to #c92637
 					foreground: '#fff'
 				},
 				accent: {

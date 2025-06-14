@@ -17,7 +17,7 @@ const TopNav = () => {
       <div className="flex items-center flex-shrink-0 mr-4">
         <Link to="/" className="flex items-center group">
           <img
-            src="https://elink.cat/wp-content/uploads/2022/12/elinkcat-logotipo-22x.png"
+            src="/elinkcat-logo.png"
             alt="Elink.cat logo"
             className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-md transition-all group-hover:scale-105"
             style={{ background: "#fff" }}
@@ -55,3 +55,4 @@ const TopNav = () => {
 };
 
 export default TopNav;
+

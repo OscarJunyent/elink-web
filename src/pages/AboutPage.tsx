@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 
 const founders = [
   {
-    name: "Jordi Puig",
+    name: "Òscar Junyent",
     role: "Co-fundador · CTO",
-    bio: "Amb més de 20 anys liderant equips tecnològics en referents com Vueling i Lastminute.com. Apassionat per la innovació pràctica i la transformació digital amb sentit.",
-    image: "https://ui-avatars.com/api/?name=Jordi+Puig&background=ececec&color=222c38&size=128",
+    bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
+    image: "https://ui-avatars.com/api/?name=%C3%92scar+Junyent&background=ececec&color=222c38&size=128",
   },
   {
-    name: "Anna Costa",
-    role: "Co-fundadora · CTO",
-    bio: "Experta en solucions digitals a escala internacional. Ha impulsat projectes tecnològics a Exoticca i startups innovadores a Barcelona.",
-    image: "https://ui-avatars.com/api/?name=Anna+Costa&background=ececec&color=222c38&size=128",
+    name: "Wojtek Szczupak",
+    role: "Co-fundador · CTO",
+    bio: "Especialista en desenvolupament de solucions digitals i integració de processos tecnològics. Compromès amb la qualitat i l'impacte real.",
+    image: "https://ui-avatars.com/api/?name=Wojtek+Szczupak&background=ececec&color=222c38&size=128",
   },
 ];
 
@@ -83,3 +83,4 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+

@@ -34,16 +34,16 @@ const ContactPage = () => (
         <div className="w-full bg-white/90 border border-gray rounded-lg shadow-circular p-5 md:p-7">
           <ContactForm />
         </div>
-        {/* Espai Calendly placeholder */}
+        {/* Espai Calendly actualitzat */}
         <div className="w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
           <p className="font-medium mb-2">O si ho prefereixes, pots reservar una cita directa:</p>
           <a
-            href="#"
+            href="https://calendly.com/oscar-junyent-elinkcat"
             className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors"
-            style={{ pointerEvents: "none", opacity: 0.5 }}
-            tabIndex={-1}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            (Calendly - Properament)
+            Reservar cita a Calendly
           </a>
         </div>
         {/* Xarxes socials, adreça i email */}

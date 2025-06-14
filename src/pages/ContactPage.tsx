@@ -1,27 +1,20 @@
 import ContactForm from "@/components/ContactForm";
 import { Linkedin, Github, Mail, Rss } from "lucide-react";
 import Footer from "@/components/Footer";
-
-const socials = [
-  {
-    url: "https://www.linkedin.com/company/elinkcat",
-    label: "LinkedIn",
-    icon: Linkedin,
-  },
-  {
-    url: "https://elinkcat.substack.com",
-    label: "Substack",
-    icon: Rss,
-  },
-  {
-    url: "https://github.com/elinkcat",
-    label: "GitHub",
-    icon: Github,
-  },
-];
-
-const ContactPage = () => (
-  <div className="font-sans bg-background text-dark w-full min-h-screen flex flex-col">
+const socials = [{
+  url: "https://www.linkedin.com/company/elinkcat",
+  label: "LinkedIn",
+  icon: Linkedin
+}, {
+  url: "https://elinkcat.substack.com",
+  label: "Substack",
+  icon: Rss
+}, {
+  url: "https://github.com/elinkcat",
+  label: "GitHub",
+  icon: Github
+}];
+const ContactPage = () => <div className="font-sans bg-background text-dark w-full min-h-screen flex flex-col">
     <div className="flex-1 w-full flex flex-col items-center justify-center px-4 pt-8 pb-4">
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}
@@ -36,12 +29,7 @@ const ContactPage = () => (
         {/* Espai Calendly actualitzat */}
         <div className="w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
           <p className="font-medium mb-2">O si ho prefereixes, pots reservar una cita directa:</p>
-          <a
-            href="https://calendly.com/oscar-junyent-elinkcat"
-            className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://calendly.com/oscar-junyent-elinkcat" className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
             Reservar cita a Calendly
           </a>
         </div>
@@ -49,19 +37,10 @@ const ContactPage = () => (
         <div className="w-full flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-t border-gray pt-5">
           {/* Xarxes */}
           <div className="flex gap-3 items-center">
-            {socials.map((s) => (
-              <a
-                key={s.url}
-                href={s.url}
-                title={s.label}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary hover:scale-110 transition-all"
-              >
+            {socials.map(s => <a key={s.url} href={s.url} title={s.label} target="_blank" rel="noopener noreferrer" className="hover:text-primary hover:scale-110 transition-all">
                 <s.icon size={22} />
                 <span className="sr-only">{s.label}</span>
-              </a>
-            ))}
+              </a>)}
             <a href="mailto:info@elink.cat" title="Correu" className="hover:text-primary hover:scale-110 transition-all">
               <Mail size={22} />
               <span className="sr-only">Email</span>
@@ -69,13 +48,10 @@ const ContactPage = () => (
           </div>
           {/* Contacte info (placeholder) */}
           <div className="flex flex-col text-sm text-muted-foreground leading-tight">
-            <span>Adreça: Carrer Exemplar 1, 08000 Barcelona</span>
+            
             <span>
               Email:{" "}
-              <a
-                href="mailto:info@elink.cat"
-                className="underline hover:text-primary"
-              >
+              <a href="mailto:info@elink.cat" className="underline hover:text-primary">
                 info@elink.cat
               </a>
             </span>
@@ -85,7 +61,5 @@ const ContactPage = () => (
     </div>
     {/* Footer legal */}
     <Footer t={{}} />
-  </div>
-);
-
+  </div>;
 export default ContactPage;

@@ -13,7 +13,7 @@ const TopNav = () => {
 
   return (
     <nav className="w-full flex items-center justify-center py-2 px-3 bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-40 shadow-circular">
-      {/* Logo + Title */}
+      {/* Logo only, no title */}
       <div className="flex items-center flex-shrink-0 mr-4">
         <Link to="/" className="flex items-center group">
           <img
@@ -22,9 +22,6 @@ const TopNav = () => {
             className="w-10 h-10 md:w-12 md:h-12 rounded-full shadow-md transition-all group-hover:scale-105"
             style={{ background: "#fff" }}
           />
-          <span className="ml-2 text-lg md:text-xl font-bold text-[#222c38] tracking-tighter font-sans" style={{ fontFamily: 'Montserrat, Inter, sans-serif' }}>
-            Elink.cat
-          </span>
         </Link>
       </div>
       {/* Separator for mobile/desktop */}

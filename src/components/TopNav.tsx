@@ -26,10 +26,10 @@ const TopNav = () => {
               objectFit: "contain",
               width: "100%",
               height: "auto",
-              maxWidth: "100px", // fallback max-width for large screens
+              maxWidth: "125px", // increased by 25%
               minWidth: "40px"
             }}
-            className="w-full max-w-[100px] min-w-[40px] h-auto transition-all"
+            className="w-full max-w-[125px] min-w-[40px] h-auto transition-all"
             src="https://elink.cat/wp-content/uploads/2024/01/elinkcat-default-light-bg.png"
           />
         </Link>
@@ -53,3 +53,4 @@ const TopNav = () => {
     </nav>;
 };
 export default TopNav;
+

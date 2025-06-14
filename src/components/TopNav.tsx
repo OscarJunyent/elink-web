@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 const menu = [{
   to: "/",
@@ -17,21 +16,20 @@ const TopNav = () => {
   const location = useLocation();
   return <nav className="w-full flex items-center justify-center py-2 px-3 bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-40 shadow-circular">
       {/* Logo only, no title */}
-      <div className="flex items-center flex-shrink-0 mr-4" style={{ flexBasis: "15%", maxWidth: "15%" }}>
+      <div className="flex items-center flex-shrink-0 mr-4" style={{
+      flexBasis: "15%",
+      maxWidth: "15%"
+    }}>
         <Link to="/" className="flex items-center group w-full">
-          <img
-            alt="Elink.cat logo"
-            style={{
-              background: "#fff",
-              objectFit: "contain",
-              width: "100%",
-              height: "auto",
-              maxWidth: "125px", // increased by 25%
-              minWidth: "40px"
-            }}
-            className="w-full max-w-[125px] min-w-[40px] h-auto transition-all"
-            src="https://elink.cat/wp-content/uploads/2024/01/elinkcat-default-light-bg.png"
-          />
+          <img alt="Elink.cat logo" style={{
+          background: "#fff",
+          objectFit: "contain",
+          width: "100%",
+          height: "auto",
+          maxWidth: "125px",
+          // increased by 25%
+          minWidth: "40px"
+        }} src="https://elink.cat/wp-content/uploads/2024/01/elinkcat-default-light-bg.png" className="w-full max-w-[250px] min-w-[40px] h-auto transition-all" />
         </Link>
       </div>
       {/* Separator for mobile/desktop */}
@@ -53,4 +51,3 @@ const TopNav = () => {
     </nav>;
 };
 export default TopNav;
-

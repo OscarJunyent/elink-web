@@ -28,13 +28,27 @@ export default {
 					foreground: '#fff'
 				},
 				accent: {
-					DEFAULT: '#577595', // blau grisós corporatiu
+					DEFAULT: '#577595',
 					foreground: '#fff'
 				},
-				background: '#f6f9fb',
-				dark: '#222c38',
-				border: '#e4e8ee',
-				gray: '#ececec',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+				card: 'hsl(var(--card))',
+				'card-foreground': 'hsl(var(--card-foreground))',
+				popover: 'hsl(var(--popover))',
+				'popover-foreground': 'hsl(var(--popover-foreground))',
+				muted: 'hsl(var(--muted))',
+				'muted-foreground': 'hsl(var(--muted-foreground))',
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				destructive: 'hsl(var(--destructive))',
+				'destructive-foreground': 'hsl(var(--destructive-foreground))',
+				secondary: 'hsl(var(--secondary))',
+				'secondary-foreground': 'hsl(var(--secondary-foreground))',
+				'accent-foreground': 'hsl(var(--accent-foreground))',
+				'dark': '#222c38',
+				'gray': '#ececec',
 			},
 			borderRadius: {
 				lg: '1.5rem',
@@ -57,3 +71,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

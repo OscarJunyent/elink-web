@@ -1,6 +1,7 @@
 
 import { Briefcase, Workflow, BrainCog, MonitorSmartphone, GraduationCap, ChartPie } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 type Service = {
   title: string;
@@ -43,6 +44,13 @@ const SERVICES: Service[] = [
 
 const ServicesPage = () => (
   <div className="bg-background min-h-screen py-16 px-4 flex flex-col items-center w-full">
+    <Helmet>
+      <title>Serveis de consultoria tecnològica, IA i automatització | Elink.cat</title>
+      <meta name="description" content="Oferim serveis de consultoria, automatització, IA, desenvolupament d’eines digitals, anàlisi de dades i formació. Solucions tecnològiques per fer créixer la teva empresa." />
+      <meta property="og:title" content="Serveis de consultoria tecnològica | Elink.cat" />
+      <meta property="og:description" content="Descobreix com t’ajudem a transformar el teu negoci amb tecnologia útil." />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
     <div className="max-w-3xl text-center mb-12">
       <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-4">Serveis d’Elink.cat</h1>
       <p className="text-accent md:text-lg">
@@ -78,3 +86,4 @@ const ServicesPage = () => (
 );
 
 export default ServicesPage;
+

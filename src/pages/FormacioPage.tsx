@@ -1,6 +1,6 @@
-
 import { GraduationCap, Users, Bot, Send, FileText, Video, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 const TALLERS = [
   {
@@ -43,6 +43,9 @@ const RECURSOS = [
     placeholder: true,
   },
 ];
+
+// Traduccions bàsiques pel Footer perquè funcioni igual que a la home
+const t = {};
 
 const FormacioPage = () => (
   <div className="bg-background min-h-screen py-14 px-4 flex flex-col items-center w-full animate-fade-in">
@@ -128,6 +131,7 @@ const FormacioPage = () => (
     <Link to="/" className="text-accent mt-8 underline story-link text-base">
       Torna a l'inici
     </Link>
+    <Footer t={t} />
   </div>
 );
 

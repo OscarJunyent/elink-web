@@ -10,6 +10,7 @@ import Cases from "@/components/Cases";
 import Training from "@/components/Training";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 // Textos específics per la nova home
 const t = {
@@ -39,6 +40,30 @@ const t = {
     Seguiment: "Seguiment i suport continu",
   },
   methodSubtitle: "Acompanyem la teva empresa en totes les fases del canvi, de l'anàlisi inicial fins a la implantació i millora contínua.",
+
+  // TESTIMONIALS DATA  
+  testimonials: [
+    {
+      frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
+      autor: "Miquel Armengol - Footballhost",
+    },
+    {
+      frase: "Gràcies a la seva consultoria, hem pogut automatitzar processos clau i reduir errors.",
+      autor: "Laura Viladrich - IMP Euroconsultors",
+    },
+    {
+      frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",
+      autor: "David Manyé - Fundació Estimia",
+    },
+    {
+      frase: "Un equip molt professional i disponible, que parla el nostre mateix idioma.",
+      autor: "Clara Novell - Tinnova",
+    },
+    {
+      frase: "L’enfocament pràctic d’Elink ens ha ajudat a assolir els nostres objectius de digitalització.",
+      autor: "Joan Planella - Repack",
+    },
+  ],
 
   // Frase destacada
   featuredQuote: {
@@ -77,7 +102,8 @@ const Index = () => (
     <Hero t={t} />
     <Services t={t} />
     <Method t={t} />
-    <FeaturedQuote t={t} />
+    {/* Replace single quote with testimonials carousel */}
+    <TestimonialsCarousel testimonials={t.testimonials} />
     <FinalCTA t={t.finalCTA} />
     {/* Bloc de contacte complet amb footer ve després */}
     <Contact t={t} />

@@ -1,4 +1,3 @@
-
 import ContactForm from "@/components/ContactForm";
 import { Linkedin, Github, Mail, Rss } from "lucide-react";
 import Footer from "@/components/Footer";
@@ -71,7 +70,15 @@ const ContactPage = () => (
           {/* Contacte info (placeholder) */}
           <div className="flex flex-col text-sm text-muted-foreground leading-tight">
             <span>Adreça: Carrer Exemplar 1, 08000 Barcelona</span>
-            <span>Email: info@elink.cat</span>
+            <span>
+              Email:{" "}
+              <a
+                href="mailto:info@elink.cat"
+                className="underline hover:text-primary"
+              >
+                info@elink.cat
+              </a>
+            </span>
           </div>
         </div>
       </div>

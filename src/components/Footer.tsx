@@ -10,7 +10,7 @@ const Footer = ({
         © {new Date().getFullYear()} Elink.cat · Consultoria tecnològica
       </div>
       <div className="flex items-center gap-4">
-        <a href="https://www.linkedin.com/company/elinkcat" title="LinkedIn" target="_blank" rel="noopener noreferrer" className="hover-scale">
+        <a href="https://www.linkedin.com/company/elinkcat-software/" title="LinkedIn" target="_blank" rel="noopener noreferrer" className="hover-scale">
           <Linkedin size={22} />
         </a>
         <a href="mailto:info@elink.cat" title="Mail" className="hover-scale">

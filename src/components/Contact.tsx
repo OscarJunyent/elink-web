@@ -2,69 +2,91 @@
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Calendar } from "lucide-react";
-const Contact = ({
-  t
-}: {
-  t: any;
-}) => {
-  const {
-    toast
-  } = useToast();
+import { sendContactEmail } from "@/utils/sendContactEmail";
+
+const Contact = ({ t }: { t: any }) => {
+  const { toast } = useToast();
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
   const [missatge, setMissatge] = useState("");
   const [enviant, setEnviant] = useState(false);
 
-  // Dummy send handler
-  const enviaFormulari = (e: React.FormEvent) => {
+  const enviaFormulari = async (e: React.FormEvent) => {
     e.preventDefault();
     setEnviant(true);
-    setTimeout(() => {
-      setEnviant(false);
-      setNom("");
-      setEmail("");
-      setMissatge("");
+
+    try {
+      const result = await sendContactEmail({ nom, email, missatge });
+      if (result.success) {
+        setNom("");
+        setEmail("");
+        setMissatge("");
+        toast({
+          title: "Missatge enviat!",
+          description: "Ens posarem en contacte aviat. Gràcies!",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: result.error || "No s'ha pogut enviar el missatge.",
+        });
+      }
+    } catch (err) {
       toast({
-        title: "Missatge enviat!",
-        description: "Ens posarem en contacte aviat. Gràcies!"
+        title: "Error inesperat",
+        description: "Si us plau, prova-ho més tard.",
       });
-    }, 1200);
+    } finally {
+      setEnviant(false);
+    }
   };
+
   return (
     <section className="container py-10" id="contacte">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-dark">{t.contactTitle}</h2>
-      <form onSubmit={enviaFormulari} className="flex flex-col gap-4 max-w-lg mx-auto">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-dark">
+        {t.contactTitle}
+      </h2>
+      <form
+        onSubmit={enviaFormulari}
+        className="flex flex-col gap-4 max-w-lg mx-auto"
+      >
         <div>
-          <label htmlFor="nom" className="block mb-1 font-medium">{t.nom}</label>
+          <label htmlFor="nom" className="block mb-1 font-medium">
+            {t.nom}
+          </label>
           <input
             id="nom"
             className="border border-gray-300 rounded-md px-3 py-2 w-full"
             type="text"
             value={nom}
-            onChange={e => setNom(e.target.value)}
+            onChange={(e) => setNom(e.target.value)}
             required
             disabled={enviant}
           />
         </div>
         <div>
-          <label htmlFor="email" className="block mb-1 font-medium">{t.email}</label>
+          <label htmlFor="email" className="block mb-1 font-medium">
+            {t.email}
+          </label>
           <input
             id="email"
             className="border border-gray-300 rounded-md px-3 py-2 w-full"
             type="email"
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             required
             disabled={enviant}
           />
         </div>
         <div>
-          <label htmlFor="missatge" className="block mb-1 font-medium">{t.missatge}</label>
+          <label htmlFor="missatge" className="block mb-1 font-medium">
+            {t.missatge}
+          </label>
           <textarea
             id="missatge"
             className="border border-gray-300 rounded-md px-3 py-2 w-full"
             value={missatge}
-            onChange={e => setMissatge(e.target.value)}
+            onChange={(e) => setMissatge(e.target.value)}
             rows={4}
             required
             disabled={enviant}
@@ -96,4 +118,5 @@ const Contact = ({
     </section>
   );
 };
+
 export default Contact;

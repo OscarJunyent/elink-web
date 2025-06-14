@@ -16,6 +16,11 @@ const menu = [
   {
     to: "/about",
     label: "Qui som"
+  },
+  // Afegim Contacte al final
+  {
+    to: "/contacte",
+    label: "Contacte"
   }
 ];
 const TopNav = () => {
@@ -56,4 +61,3 @@ const TopNav = () => {
     </nav>;
 };
 export default TopNav;
-

@@ -1,9 +1,10 @@
+
 // Pàgina principal corporativa Elink.cat – Redisseny complet
 
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
-import FeaturedQuote from "@/components/FeaturedQuote";
+// Removed: import FeaturedQuote from "@/components/FeaturedQuote";
 import FinalCTA from "@/components/FinalCTA";
 import About from "@/components/About";
 import Cases from "@/components/Cases";
@@ -112,3 +113,4 @@ const Index = () => (
 );
 
 export default Index;
+

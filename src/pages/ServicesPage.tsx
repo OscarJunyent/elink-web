@@ -21,7 +21,7 @@ const SERVICES: Service[] = [
   },
   {
     title: "Anàlisi de dades i visualització",
-    desc: "De les dades al coneixement. T’ajudem a estructurar, analitzar i visualitzar les dades del teu negoci per prendre millors decisions.",
+    desc: "Estructura, Analisis i Visualitzacio de dades·",
     icon: ChartPie,
   },
   {

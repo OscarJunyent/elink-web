@@ -1,15 +1,16 @@
+
 import { Link } from "react-router-dom";
 
 const founders = [
   {
     name: "Òscar Junyent",
-    role: "Consultor AAI",
+    role: "Data scientist especialitzat en anàlisi de dades i optimització de processos",
     bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
     image: "https://ui-avatars.com/api/?name=%C3%92scar+Junyent&background=ececec&color=222c38&size=128",
   },
   {
     name: "Wojtek Szczupak",
-    role: "Consultor AAI",
+    role: "Data scientist especialitzat en anàlisi de dades i optimització de processos",
     bio: "Especialista en desenvolupament de solucions digitals i integració de processos tecnològics. Compromès amb la qualitat i l'impacte real.",
     image: "https://ui-avatars.com/api/?name=Wojtek+Szczupak&background=ececec&color=222c38&size=128",
   },
@@ -82,3 +83,4 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+

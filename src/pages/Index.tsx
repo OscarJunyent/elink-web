@@ -43,7 +43,7 @@ const t = {
 
   // Frase destacada
   featuredQuote: {
-    frase: "",
+    frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
     autor: "",
   },
 

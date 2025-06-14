@@ -1,7 +1,9 @@
 
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { PlayCircle } from "lucide-react";
+
+const BACKGROUND_IMG =
+  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80";
 
 // Example images (royalty-free from Unsplash, as placeholders)
 const heroImages = [
@@ -19,23 +21,23 @@ const heroImages = [
   },
 ];
 
-// Main video (placeholder from Pexels, royalty-free, can be replaced)
-const videoSrc = "https://player.vimeo.com/external/379427110.sd.mp4?s=eeb68293fa5b443a07de7c705d7f423e8b4b1f57&profile_id=164&oauth2_token_id=57447761";
-const videoPoster = "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=600&q=80";
-
 const Hero = ({ t }: { t: any }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [playing, setPlaying] = useState(false);
-
-  const handlePlay = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setPlaying(true);
-    }
-  };
-
   return (
     <section className="w-full min-h-[70vh] flex flex-col items-center justify-center text-center bg-background px-4 py-12 md:py-24 relative overflow-hidden">
+      {/* Main elegant tech/development background */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 z-0 pointer-events-none"
+      >
+        <img
+          src={BACKGROUND_IMG}
+          alt=""
+          className="w-full h-full object-cover object-center opacity-70 blur-[2px] scale-105"
+          draggable={false}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/40" />
+      </div>
+
       <motion.div
         className="relative z-10"
         initial={{ opacity: 0, y: 32 }}
@@ -55,32 +57,6 @@ const Hero = ({ t }: { t: any }) => {
         </a>
       </motion.div>
 
-      {/* Main Video with Play Button */}
-      <div className="relative mt-10 w-full max-w-2xl aspect-video mx-auto rounded-lg overflow-hidden shadow-lg group">
-        <video
-          ref={videoRef}
-          className="object-cover w-full h-full rounded-lg"
-          src={videoSrc}
-          poster={videoPoster}
-          controls={playing}
-          tabIndex={-1}
-          muted
-          playsInline
-          onPause={() => setPlaying(false)}
-        />
-        {!playing && (
-          <button
-            className="absolute inset-0 flex items-center justify-center bg-black/40 hover:bg-black/60 transition-colors"
-            aria-label="Reprodueix el vídeo"
-            onClick={handlePlay}
-            type="button"
-            tabIndex={0}
-          >
-            <PlayCircle size={70} className="text-white drop-shadow-xl" />
-          </button>
-        )}
-      </div>
-
       {/* Images Row */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-8 z-10">
         {heroImages.map(({ src, alt }, idx) => (
@@ -90,7 +66,10 @@ const Hero = ({ t }: { t: any }) => {
             alt={alt}
             loading="lazy"
             className="w-[180px] h-[110px] object-cover rounded-xl shadow-md border border-gray bg-white"
-            style={{ animation: `fade-in 0.8s cubic-bezier(0.19,1,0.22,1) ${0.1 + idx * 0.07}s both` }}
+            style={{
+              animation: `fade-in 0.8s cubic-bezier(0.19,1,0.22,1) ${0.1 + idx * 0.07
+                }s both`
+            }}
           />
         ))}
       </div>

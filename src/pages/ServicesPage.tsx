@@ -1,6 +1,8 @@
+
 import { Briefcase, Workflow, BrainCog, MonitorSmartphone, GraduationCap, ChartPie } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import Footer from "@/components/Footer";
 
 type Service = {
   title: string;
@@ -40,6 +42,9 @@ const SERVICES: Service[] = [
     icon: GraduationCap,
   },
 ];
+
+// Traduccions bàsiques pel footer perquè funcioni igual que a la home
+const t = {};
 
 const ServicesPage = () => (
   <div className="bg-background min-h-screen py-16 px-4 flex flex-col items-center w-full">
@@ -81,7 +86,9 @@ const ServicesPage = () => (
     <Link to="/" className="text-accent mt-8 underline story-link text-base">
       Torna a l'inici
     </Link>
+    <Footer t={t} />
   </div>
 );
 
 export default ServicesPage;
+

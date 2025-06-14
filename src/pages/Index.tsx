@@ -1,4 +1,3 @@
-
 // Pàgina principal corporativa Elink.cat – Redisseny complet
 
 import Hero from "@/components/Hero";
@@ -44,7 +43,7 @@ const t = {
   // Frase destacada
   featuredQuote: {
     frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
-    autor: "",
+    autor: "Miquel Armengol - Footballhost",
   },
 
   // Final call to action
@@ -87,4 +86,3 @@ const Index = () => (
 );
 
 export default Index;
-

@@ -5,6 +5,7 @@ const menu = [
   { to: "/", label: "Inici" },
   { to: "/about", label: "Qui som" },
   { to: "/serveis", label: "Serveis" },
+  { to: "/formacio", label: "Formació" },
 ];
 
 const TopNav = () => {

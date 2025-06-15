@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const TALLERS = [
   {
     titol: "IA per a equips comercials",
-    desc: "Com utilitzar Intel·ligència Artificial per prospectar, comunicar i vendre millor.",
+    desc: "Com utilitzar Intel·ligència Artificial per comunicar i vendre millor.",
     icona: <Bot size={28} className="text-primary" />,
   },
   {

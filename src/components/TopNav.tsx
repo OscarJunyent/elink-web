@@ -35,14 +35,19 @@ const TopNav = () => {
       maxWidth: "15%"
     }}>
         <Link to="/" className="flex items-center group w-full">
-          <img alt="Elink.cat logo" style={{
-          background: "#fff",
-          objectFit: "contain",
-          width: "100%",
-          height: "auto",
-          maxWidth: "125px",
-          minWidth: "40px"
-        }} className="w-full max-w-[250px] min-w-[40px] h-auto transition-all" src="/lovable-uploads/7d0fc313-7625-44ce-ad4c-347bd6d9218c.png" />
+          <img
+            alt="Elink.cat logo"
+            style={{
+              background: "#fff",
+              objectFit: "contain",
+              width: "100%",
+              height: "auto",
+              maxWidth: "125px",
+              minWidth: "40px"
+            }}
+            className="w-full max-w-[250px] min-w-[40px] h-auto transition-all"
+            src="/lovable-uploads/19cf59bc-ceff-4cf1-b3d9-3f18003efd35.png"
+          />
         </Link>
       </div>
 

@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { sendContactEmail } from "@/utils/sendContactEmail";
+import { Calendar } from "lucide-react";
 
 const schema = z.object({
   nom: z.string().min(2, "Nom obligatori"),
@@ -29,7 +30,11 @@ const ContactForm = () => {
 
   const onSubmit = async (data: FormType) => {
     // Call backend to send email via Supabase Edge Function
-    const result = await sendContactEmail(data);
+    const result = await sendContactEmail({
+      nom: data.nom,
+      email: data.email,
+      missatge: data.missatge
+    });
 
     if (result.success) {
       toast({
@@ -101,8 +106,14 @@ const ContactForm = () => {
       <Button type="submit" disabled={isSubmitting} className="mt-2">
         {isSubmitting ? "Enviant..." : "Enviar missatge"}
       </Button>
+      {/* Reservar cita below the button, with calendar icon */}
+      <div className="flex items-center gap-2 mt-3 text-accent font-medium justify-center text-base">
+        <Calendar className="w-5 h-5" />
+        <span>Reservar cita</span>
+      </div>
     </form>
   );
 };
 
 export default ContactForm;
+

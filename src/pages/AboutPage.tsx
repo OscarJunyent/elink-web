@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { Linkedin } from "lucide-react";
 
 const founders = [
   {
@@ -8,12 +9,14 @@ const founders = [
     role: "Consultor AAI",
     bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
     image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
+    linkedin: "https://www.linkedin.com/in/ojunyent/",
   },
   {
     name: "Wojtek Szczupak",
     role: "Consultor AAI",
     bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
     image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
+    linkedin: "https://www.linkedin.com/in/wojciech-szczupak/",
   },
 ];
 
@@ -50,7 +53,7 @@ const AboutPage = () => (
     <section className="w-full max-w-4xl bg-white/90 rounded-2xl shadow-circular mb-10 p-8 md:p-12 flex flex-col items-center">
       <h2 className="text-xl md:text-2xl font-bold text-dark mb-6">Equip fundador</h2>
       <div className="flex flex-col md:flex-row gap-8 justify-center items-center w-full">
-        {founders.map((f, idx) => (
+        {founders.map((f) => (
           <div
             key={f.name}
             className="flex flex-col items-center text-center flex-1 max-w-xs md:max-w-sm"
@@ -66,7 +69,17 @@ const AboutPage = () => (
               <h3 className="text-lg font-bold text-dark">{f.name}</h3>
               <p className="text-sm text-primary font-semibold">{f.role}</p>
               <p className="mt-2 text-accent text-base">{f.bio}</p>
-              {/* [Es pot afegir foto real & bio més llarga aquí] */}
+              <div className="mt-4 flex justify-center">
+                <a
+                  href={f.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform"
+                  aria-label={`LinkedIn de ${f.name}`}
+                >
+                  <Linkedin size={28} className="text-accent hover:text-primary" />
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -90,4 +103,3 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
-

@@ -29,7 +29,7 @@ const AboutPage = () => (
       <div>
         <h2 className="text-xl md:text-2xl font-bold text-dark mb-3">Missió i visió</h2>
         <p className="text-accent">
-          Ser el partner tecnològic de confiança per fer créixer empreses amb tecnologia útil, a mida i alineada amb els seus objectius reals.
+          Ser el partner tecnològic de confiança per fer créixer empreses amb tecnologia innovadora, útil, a mida i alineada amb els seus objectius reals
         </p>
       </div>
       <div>

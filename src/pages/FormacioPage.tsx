@@ -67,7 +67,7 @@ const FormacioPage = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-4">
         {TALLERS.map((t, i) => (
           <div key={t.titol} className="rounded-xl border border-gray/30 shadow-circular bg-gray/10 p-6 flex flex-col items-center text-center animate-fade-in" style={{ animationDelay: `${i * 70}ms` } as React.CSSProperties}>
-            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-accent mb-3 shadow-md">
+            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-black mb-3 shadow-md">
               {t.icona}
             </span>
             <h3 className="text-lg font-semibold text-dark mb-1">{t.titol}</h3>

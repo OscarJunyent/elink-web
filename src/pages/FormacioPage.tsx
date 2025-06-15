@@ -28,7 +28,7 @@ const RECURSOS = [{
   placeholder: true
 }, {
   nom: "Cada dimarts enviem la nostre newsletter. Subscriute aquí",
-  tipus: "Newsletter",
+  tipus: "Píndola de TecnologIA",
   icona: <Mail size={22} className="text-accent" />,
   href: "https://oscarjunyent.substack.com/",
   placeholder: false,

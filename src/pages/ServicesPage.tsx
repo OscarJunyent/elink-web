@@ -71,8 +71,8 @@ const ServicesPage = () => (
           <div className="bg-primary flex items-center justify-center rounded-full w-16 h-16 shadow-md shrink-0">
             <srv.icon size={32} className="text-primary-foreground" />
           </div>
-          <div>
-            <h2 className="text-xl font-bold text-dark">{srv.title}</h2>
+          <div className="w-full">
+            <h2 className="text-xl font-bold text-dark text-center">{srv.title}</h2>
             <p className="text-accent text-base mt-1">{srv.desc}</p>
           </div>
         </div>

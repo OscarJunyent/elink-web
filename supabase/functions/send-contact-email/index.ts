@@ -1,4 +1,3 @@
-
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
 
@@ -9,7 +8,7 @@ const corsHeaders = {
 };
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
-const YOUR_EMAIL = "YOUR_EMAIL_HERE"; // <-- Replace with the email where you want to receive contact messages
+const YOUR_EMAIL = "info@elink.cat"; // Destination email updated
 
 interface ContactRequest {
   nom: string;

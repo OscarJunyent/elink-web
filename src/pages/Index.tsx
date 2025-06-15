@@ -110,7 +110,11 @@ const Index = () => (
     <Method t={t} />
     {/* Replace single quote with testimonials carousel */}
     <TestimonialsCarousel testimonials={t.testimonials} />
-    {/* Reservar cita (Calendly) section moved here, after testimonials carousel, before FinalCTA */}
+    {/* Removed: Reservar cita section here */}
+    <FinalCTA t={t.finalCTA} />
+    {/* Bloc de contacte complet amb footer ve després */}
+    <Contact t={t} />
+    {/* Calendly - reservar cita, now moved here */}
     <div className="w-full flex justify-center px-4 pb-6">
       <div className="max-w-xl w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
         <p className="font-medium mb-2">O si ho prefereixes, pots reservar una cita directa:</p>
@@ -125,9 +129,6 @@ const Index = () => (
         </a>
       </div>
     </div>
-    <FinalCTA t={t.finalCTA} />
-    {/* Bloc de contacte complet amb footer ve després */}
-    <Contact t={t} />
     <Footer t={t} />
   </div>
 );

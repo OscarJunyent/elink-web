@@ -1,3 +1,4 @@
+
 import { GraduationCap, Users, Bot, Send, FileText, Video, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
@@ -153,7 +154,7 @@ const FormacioPage = () => (
         </p>
         <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
           <Link
-            to="/#contacte"
+            to="/contacte"
             className="px-8 py-3 rounded-full bg-white text-primary font-bold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
           >
             Contacta amb nosaltres
@@ -169,9 +170,7 @@ const FormacioPage = () => (
         </div>
       </div>
     </section>
-    <Link to="/" className="text-accent mt-8 underline story-link text-base">
-      Torna a l'inici
-    </Link>
+    {/* Removed: Torna a l'inici link */}
     <Footer t={t} />
   </div>
 );

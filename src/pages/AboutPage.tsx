@@ -7,7 +7,7 @@ const founders = [
     name: "Òscar Junyent",
     role: "Consultor AAI",
     bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
-    image: "https://ui-avatars.com/api/?name=%C3%92scar+Junyent&background=ececec&color=222c38&size=128",
+    image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
   },
   {
     name: "Wojtek Szczupak",

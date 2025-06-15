@@ -93,7 +93,7 @@ const FormacioPage = () => (
             </span>
             <span className="font-semibold text-base text-accent mb-1">{r.tipus}</span>
             {r.placeholder ? (
-              <span className="text-gray-400 italic mb-1">Properament</span>
+              <span className="text-gray-400 italic mb-1">Píndola de TecnologIA</span>
             ) : (
               <a href={r.href} className="text-primary underline">{r.nom}</a>
             )}

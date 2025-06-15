@@ -36,7 +36,11 @@ const AboutPage = () => (
       <div>
         <h2 className="text-xl md:text-2xl font-bold text-dark mb-3">Valors</h2>
         <ul className="flex flex-col gap-2 md:gap-1 items-start md:items-center mx-auto md:flex-row md:justify-center">
+          <li className="bg-primary/10 rounded-lg px-4 py-2 text-dark font-semibold mr-2 mb-2 md:mb-0">Innovació</li>
+          <li className="bg-primary/10 rounded-lg px-4 py-2 text-dark font-semibold mr-2 mb-2 md:mb-0">Qualitat</li>
           <li className="bg-primary/10 rounded-lg px-4 py-2 text-dark font-semibold mr-2 mb-2 md:mb-0">Proximitat</li>
+        </ul>
+        <ul className="flex flex-col gap-2 md:gap-1 items-start md:items-center mx-auto md:flex-row md:justify-center mt-2">
           <li className="bg-primary/10 rounded-lg px-4 py-2 text-dark font-semibold mr-2 mb-2 md:mb-0">Impacte real</li>
           <li className="bg-primary/10 rounded-lg px-4 py-2 text-dark font-semibold">Innovació responsable</li>
         </ul>

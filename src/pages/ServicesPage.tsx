@@ -1,4 +1,3 @@
-
 import { Briefcase, Workflow, BrainCog, MonitorSmartphone, GraduationCap, ChartPie } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
@@ -83,12 +82,8 @@ const ServicesPage = () => (
         Demana informació
       </Link>
     </div>
-    <Link to="/" className="text-accent mt-8 underline story-link text-base">
-      Torna a l'inici
-    </Link>
     <Footer t={t} />
   </div>
 );
 
 export default ServicesPage;
-

@@ -1,4 +1,3 @@
-
 import { ClipboardCheck, Lightbulb, Rocket, Repeat } from "lucide-react";
 
 // Steps definition
@@ -20,8 +19,12 @@ const Method = ({ t }: { t: any }) => (
           <span className="w-14 h-14 bg-primary flex items-center justify-center rounded-full mb-3 shadow-md text-white">
             <step.icon size={28}/>
           </span>
-          <h4 className="font-semibold text-accent text-base mb-1 text-center">{t.method[step.label]}</h4>
-          <p className="text-accent text-xs text-center min-h-10">{t.methodExplanations && t.methodExplanations[step.label]}</p>
+          <h4 className="font-semibold text-accent text-lg md:text-xl mb-1 text-center">
+            {t.method[step.label]}
+          </h4>
+          <p className="text-accent text-sm md:text-base text-center min-h-10">
+            {t.methodExplanations && t.methodExplanations[step.label]}
+          </p>
           <div className="w-2 h-2 rounded-full bg-accent mt-2 md:hidden"/>
         </div>
       ))}
@@ -31,4 +34,3 @@ const Method = ({ t }: { t: any }) => (
 );
 
 export default Method;
-

@@ -88,7 +88,7 @@ const AboutPage = () => (
     <section className="w-full max-w-2xl text-center mt-6 mb-10 flex flex-col items-center">
       <h2 className="text-xl md:text-2xl font-bold text-dark mb-4">Vols treballar amb nosaltres?</h2>
       <Link
-        to="/#contacte"
+        to="/contacte"
         className="inline-block px-7 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover-scale transition-all duration-200"
       >
         Contacta el nostre equip

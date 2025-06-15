@@ -20,8 +20,8 @@ const AboutPage = () => (
   <div className="bg-background min-h-screen flex flex-col items-center w-full px-4 py-12 animate-fade-in">
     <div className="max-w-3xl w-full flex flex-col items-center text-center mb-10">
       <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">Qui som</h1>
-      <p className="text-accent md:text-lg mb-5">
-        Som Elink.cat, consultora tecnològica enfocada a la transformació digital de mitjanes empreses catalanes.
+      <p className="text-accent md:text-lg mb-5 text-center">
+        Som <span className="font-semibold">elink.cat</span>, consultora tecnològica enfocada a la transformació digital de mitjanes empreses catalanes.
       </p>
     </div>
 

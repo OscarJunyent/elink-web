@@ -19,9 +19,10 @@ const RECURSOS = [{
   tipus: "Blog",
   icona: <FileText size={22} className="text-accent" />,
   href: "#",
-  placeholder: true
+  placeholder: false,
+  isBlog: true // Custom key to identify blog item
 }, {
-  nom: "Masterclass: Automatització per a principiants",
+  titol: "Masterclass: Automatització per a principiants",
   tipus: "Vídeo",
   icona: <Video size={22} className="text-accent" />,
   href: "#",
@@ -75,20 +76,44 @@ const FormacioPage = () => <div className="bg-background min-h-screen py-14 px-4
     <section className="container max-w-4xl w-full bg-white rounded-2xl shadow-circular p-8 mb-8">
       <h2 className="text-2xl md:text-3xl font-bold mb-7 text-dark text-center">Recursos i continguts</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
-        {RECURSOS.map((r, i) => <div key={r.nom} className="rounded-xl border border-gray/20 shadow bg-gray/5 px-5 py-7 flex flex-col items-center text-center animate-fade-in" style={{
-        animationDelay: `${i * 70}ms`
-      } as React.CSSProperties}>
+        {RECURSOS.map((r, i) => (
+          <div
+            key={r.nom || r.titol}
+            className="rounded-xl border border-gray/20 shadow bg-gray/5 px-5 py-7 flex flex-col items-center text-center animate-fade-in"
+            style={{
+              animationDelay: `${i * 70}ms`
+            } as React.CSSProperties}
+          >
             <span className="mb-2">
               {r.icona}
             </span>
             <span className="font-semibold text-base text-accent mb-1">{r.tipus}</span>
-            {r.placeholder ? <span className="text-gray-400 italic mb-1">sad</span> : r.newsletter ? <span className="text-dark/90 font-medium mt-1">
+            {r.isBlog ? (
+              <span className="text-dark/90 font-medium mt-1">
+                Podeu llegir articles d'opinio sonre IA al nostre{" "}
+                <a
+                  href="https://blog.elink.cat"
+                  className="text-primary underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  blog
+                </a>
+              </span>
+            ) : r.placeholder ? (
+              <span className="text-gray-400 italic mb-1">sad</span>
+            ) : r.newsletter ? (
+              <span className="text-dark/90 font-medium mt-1">
                 Cada dimarts enviem la nostre newsletter. Subscriute{" "}
                 <a href="https://oscarjunyent.substack.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline">
                   aquí
                 </a>
-              </span> : <span className="text-dark/90 font-medium mt-1">{r.nom}</span>}
-          </div>)}
+              </span>
+            ) : (
+              <span className="text-dark/90 font-medium mt-1">{r.nom}</span>
+            )}
+          </div>
+        ))}
       </div>
       <div className="text-center mt-8">
         <span className="inline-block bg-accent/10 text-accent px-4 py-2 rounded-full font-medium text-md">

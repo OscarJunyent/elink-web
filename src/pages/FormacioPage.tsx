@@ -1,7 +1,8 @@
-
 import { GraduationCap, Users, Bot, Send, FileText, Video, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
+
 const TALLERS = [
   {
     titol: "IA per a equips comercials",
@@ -51,6 +52,19 @@ const RECURSOS = [
 const t = {};
 const FormacioPage = () => (
   <div className="bg-background min-h-screen py-14 px-4 flex flex-col items-center w-full animate-fade-in">
+    <Helmet>
+      <title>Formació en IA i automatització per equips | Elink.cat</title>
+      <meta
+        name="description"
+        content="Tallers pràctics i divulgació per equips que volen entendre i aplicar la tecnologia. Descobreix les nostres formacions i recursos."
+      />
+      <meta property="og:title" content="Formació i recursos | Elink.cat" />
+      <meta
+        property="og:description"
+        content="Capacitem equips per entendre i aplicar la tecnologia."
+      />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
     <section className="max-w-3xl text-center mb-10 animate-fade-in">
       <h1 className="flex justify-center items-center gap-4 text-4xl md:text-5xl font-extrabold text-dark mb-3">
         <GraduationCap className="text-primary" size={38} /> Formació i divulgació

@@ -16,7 +16,7 @@ const TALLERS = [{
 }];
 const RECURSOS = [{
   nom: "Guia pràctica: Primer contacte amb ChatGPT",
-  tipus: "Article",
+  tipus: "Blog",
   icona: <FileText size={22} className="text-accent" />,
   href: "#",
   placeholder: true

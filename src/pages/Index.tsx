@@ -49,7 +49,7 @@ const t = {
     },
     {
       frase: "Gràcies a la seva consultoria, hem pogut automatitzar processos clau i reduir errors.",
-      autor: "Laura Viladrich - IMP Euroconsultors",
+      autor: "Miquel Armengol - Footballhost",
     },
     {
       frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",

@@ -25,7 +25,18 @@ const ContactPage = () => <div className="font-sans bg-background text-dark w-fu
         </div>
       </div>
     </div>
+    {/* Repetició del bloc "Reservar cita" a peu de pàgina */}
+    <div className="w-full flex justify-center px-4 pb-6">
+      <div className="max-w-xl w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
+        <p className="font-medium mb-2">O si ho prefereixes, pots reservar una cita directa:</p>
+        <a href="https://calendly.com/oscar-junyent-elinkcat" className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors gap-2" target="_blank" rel="noopener noreferrer">
+          <Calendar className="w-5 h-5" />
+          Reservar cita
+        </a>
+      </div>
+    </div>
     {/* Footer legal */}
     <Footer t={{}} />
   </div>;
 export default ContactPage;
+

@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { Linkedin } from "lucide-react";
@@ -95,8 +94,6 @@ const AboutPage = () => (
         Contacta el nostre equip
       </Link>
     </section>
-
-    <Link to="/" className="text-accent mt-6 underline story-link text-base">Torna a l'inici</Link>
 
     <Footer t={{}} />
   </div>

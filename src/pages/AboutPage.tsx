@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 const founders = [
   {
@@ -79,8 +80,9 @@ const AboutPage = () => (
     </section>
 
     <Link to="/" className="text-accent mt-6 underline story-link text-base">Torna a l'inici</Link>
+
+    <Footer t={{}} />
   </div>
 );
 
 export default AboutPage;
-

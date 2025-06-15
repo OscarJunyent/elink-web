@@ -11,6 +11,10 @@ const menu = [
   { to: "/about", label: "Qui som" },
   { to: "/contacte", label: "Contacte" },
 ];
+const blogMenu = {
+  href: "https://blog.elink.cat",
+  label: "Blog",
+};
 
 const TopNav = () => {
   const location = useLocation();
@@ -82,6 +86,19 @@ const TopNav = () => {
                     </li>
                   );
                 })}
+                {/* Blog last item as external link */}
+                <li key="blog">
+                  <a
+                    href={blogMenu.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={handleLinkClick}
+                    className={`block w-full text-lg px-4 py-3 rounded font-medium transition-all duration-150 text-[#222c38] hover:bg-[#f7d7db] hover:text-[#c92637]`}
+                    style={{ fontFamily: "Montserrat, Inter, sans-serif" }}
+                  >
+                    {blogMenu.label}
+                  </a>
+                </li>
               </ul>
             </nav>
           </SheetContent>
@@ -110,9 +127,22 @@ const TopNav = () => {
             </li>
           );
         })}
+        {/* Blog last item as external link */}
+        <li key="blog">
+          <a
+            href={blogMenu.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-base md:text-lg px-3 py-1 rounded-full font-medium transition-all duration-150 text-[#222c38] hover:bg-[#f7d7db] hover:text-[#c92637]"
+            style={{ fontFamily: "Montserrat, Inter, sans-serif" }}
+          >
+            {blogMenu.label}
+          </a>
+        </li>
       </ul>
     </nav>
   );
 };
 
 export default TopNav;
+

@@ -53,7 +53,7 @@ const t = {
     },
     {
       frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",
-      autor: "David Manyé - Fundació Estimia",
+      autor: "Marc Nieto - CEO MPServices",
     },
     {
       frase: "Un equip molt professional i disponible, que parla el nostre mateix idioma.",

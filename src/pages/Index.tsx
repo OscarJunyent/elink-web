@@ -1,6 +1,3 @@
-
-// Pàgina principal corporativa elink.cat – Redisseny complet
-
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
@@ -12,6 +9,7 @@ import Training from "@/components/Training";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
+import { Calendar } from "lucide-react";
 
 // Textos específics per la nova home
 const t = {
@@ -111,6 +109,21 @@ const Index = () => (
     <Method t={t} />
     {/* Replace single quote with testimonials carousel */}
     <TestimonialsCarousel testimonials={t.testimonials} />
+    {/* NOVA SECCIÓ: Reservar cita (Calendly), just després de testimonials */}
+    <div className="w-full flex justify-center px-4 pb-6">
+      <div className="max-w-xl w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
+        <p className="font-medium mb-2">O si ho prefereixes, pots reservar una cita directa:</p>
+        <a 
+          href="https://calendly.com/oscar-junyent-elinkcat" 
+          className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors gap-2"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <Calendar className="w-5 h-5" />
+          Reservar cita
+        </a>
+      </div>
+    </div>
     <FinalCTA t={t.finalCTA} />
     {/* Bloc de contacte complet amb footer ve després */}
     <Contact t={t} />
@@ -119,4 +132,3 @@ const Index = () => (
 );
 
 export default Index;
-

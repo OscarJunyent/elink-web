@@ -23,7 +23,7 @@ const Contact = ({ t }: { t: any }) => {
         setMissatge("");
         toast({
           title: "Missatge enviat!",
-          description: "Ens posarem en contacte aviat. Gràcies!",
+          description: "Ens posarem en contacte aviat. Gràcies per confiar en elink.cat.",
         });
       } else {
         toast({

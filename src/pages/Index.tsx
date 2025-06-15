@@ -1,4 +1,5 @@
-// Pàgina principal corporativa Elink.cat – Redisseny complet
+
+// Pàgina principal corporativa elink.cat – Redisseny complet
 
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -50,7 +51,7 @@ const t = {
   // TESTIMONIALS DATA  
   testimonials: [
     {
-      frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
+      frase: "Amb elink.cat hem guanyat temps, visibilitat i capacitat de decisió.",
       autor: "Rafael Jimenez - CEO, Sealmetrics",
     },
     {
@@ -66,28 +67,28 @@ const t = {
       autor: "Clara Novell - Tinnova",
     },
     {
-      frase: "L’enfocament pràctic d’Elink ens ha ajudat a assolir els nostres objectius de digitalització.",
+      frase: "L’enfocament pràctic d’elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
       autor: "Joan Planella - Repack",
     },
   ],
 
   // Frase destacada
   featuredQuote: {
-    frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
+    frase: "Amb elink.cat hem guanyat temps, visibilitat i capacitat de decisió.",
     autor: "Miquel Armengol - Footballhost",
   },
 
   // Final call to action
   finalCTA: {
     title: "Vols portar la tecnologia al següent nivell?",
-    subtitle: "Contacta amb Elink.cat i farem créixer el teu negoci.",
+    subtitle: "Contacta amb elink.cat i farem créixer el teu negoci.",
     button: "Contacta amb nosaltres",
     href: "#contacte"
   },
 
   // Altres títols per compatibilitat
   aboutTitle: "Qui som",
-  aboutMission: "A Elink.cat t’ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
+  aboutMission: "A elink.cat t’ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
   casesTitle: "Clients i casos d’èxit",
   casesPlaceholder: "Ben aviat compartirem experiències i resultats d’empreses que ja confien en nosaltres. Contacta’ns per saber més!",
   trainingTitle: "Formació i divulgació",
@@ -118,3 +119,4 @@ const Index = () => (
 );
 
 export default Index;
+

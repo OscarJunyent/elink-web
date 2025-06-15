@@ -35,7 +35,7 @@ const ContactForm = () => {
       toast({
         title: "Missatge enviat!",
         description:
-          "Ens posarem en contacte aviat. Gràcies per confiar en Elink.cat.",
+          "Ens posarem en contacte aviat. Gràcies per confiar en elink.cat.",
       });
       reset();
     } else {

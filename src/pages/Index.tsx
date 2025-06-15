@@ -1,4 +1,3 @@
-
 // Pàgina principal corporativa Elink.cat – Redisseny complet
 
 import Hero from "@/components/Hero";
@@ -46,7 +45,7 @@ const t = {
   testimonials: [
     {
       frase: "Amb Elink hem guanyat temps, visibilitat i capacitat de decisió.",
-      autor: "Miquel Armengol - Footballhost",
+      autor: "Rafael Jimenez - CEO, Sealmetrics",
     },
     {
       frase: "Gràcies a la seva consultoria, hem pogut automatitzar processos clau i reduir errors.",
@@ -113,4 +112,3 @@ const Index = () => (
 );
 
 export default Index;
-

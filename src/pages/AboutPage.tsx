@@ -12,7 +12,7 @@ const founders = [
   {
     name: "Wojtek Szczupak",
     role: "Consultor AAI",
-    bio: "Especialista en desenvolupament de solucions digitals i integració de processos tecnològics. Compromès amb la qualitat i l'impacte real.",
+    bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
     image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
   },
 ];
@@ -90,3 +90,4 @@ const AboutPage = () => (
 );
 
 export default AboutPage;
+

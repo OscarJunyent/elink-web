@@ -46,7 +46,7 @@ const TopNav = () => {
               minWidth: "40px"
             }}
             className="w-full max-w-[250px] min-w-[40px] h-auto transition-all"
-            src="/lovable-uploads/19cf59bc-ceff-4cf1-b3d9-3f18003efd35.png"
+            src="/lovable-uploads/0746ee12-55c7-4ced-b3e5-da2c8a0f1495.png"
           />
         </Link>
       </div>

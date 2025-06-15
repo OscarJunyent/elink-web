@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { Linkedin } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const founders = [
   {
@@ -21,6 +22,13 @@ const founders = [
 
 const AboutPage = () => (
   <div className="bg-background min-h-screen flex flex-col items-center w-full px-4 py-12 animate-fade-in">
+    <Helmet>
+      <title>Qui som | Elink.cat – Experts en transformació digital</title>
+      <meta name="description" content="Som una consultora catalana propera i experta, formada per CTOs amb 20 anys d'experiència. Ajudem empreses a créixer amb tecnologia." />
+      <meta property="og:title" content="L’equip d’Elink.cat" />
+      <meta property="og:description" content="El teu partner tecnològic de confiança." />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
     <div className="max-w-3xl w-full flex flex-col items-center text-center mb-10">
       <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">Qui som</h1>
       <p className="text-accent md:text-lg mb-5 text-center">

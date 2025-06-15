@@ -39,6 +39,12 @@ const t = {
     Implementació: "Implementació a mida",
     Seguiment: "Seguiment i suport continu",
   },
+  methodExplanations: {
+    Diagnosi: "Analitzem la teva empresa per detectar necessitats i oportunitats de millora tecnològica.",
+    Proposta: "Presentem una estratègia adaptada als teus objectius i recursos.",
+    Implementació: "Executem el pla seleccionant i integrant les solucions idònies.",
+    Seguiment: "Avaluem resultats, ajustem i t’acompanyem per garantir l’èxit.",
+  },
   methodSubtitle: "Acompanyem la teva empresa en totes les fases del canvi, de l'anàlisi inicial fins a la implantació i millora contínua.",
 
   // TESTIMONIALS DATA  

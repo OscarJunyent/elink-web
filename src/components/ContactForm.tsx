@@ -1,4 +1,3 @@
-
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -106,14 +105,8 @@ const ContactForm = () => {
       <Button type="submit" disabled={isSubmitting} className="mt-2">
         {isSubmitting ? "Enviant..." : "Enviar missatge"}
       </Button>
-      {/* Reservar cita below the button, with calendar icon */}
-      <div className="flex items-center gap-2 mt-3 text-accent font-medium justify-center text-base">
-        <Calendar className="w-5 h-5" />
-        <span>Reservar cita</span>
-      </div>
     </form>
   );
 };
 
 export default ContactForm;
-

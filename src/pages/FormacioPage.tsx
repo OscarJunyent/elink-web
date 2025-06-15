@@ -36,11 +36,12 @@ const RECURSOS = [
     placeholder: true,
   },
   {
-    nom: "Newsletter Elink.cat",
+    nom: "Cada dimarts enviem la nostre newsletter. Subscriute aquí",
     tipus: "Newsletter",
     icona: <Mail size={22} className="text-accent" />,
-    href: "#",
-    placeholder: true,
+    href: "https://oscarjunyent.substack.com/",
+    placeholder: false,
+    newsletter: true, // Custom key to identify newsletter item
   },
 ];
 
@@ -94,10 +95,21 @@ const FormacioPage = () => (
             <span className="font-semibold text-base text-accent mb-1">{r.tipus}</span>
             {r.placeholder ? (
               <span className="text-gray-400 italic mb-1">Píndola de TecnologIA</span>
+            ) : r.newsletter ? (
+              <span className="text-dark/90 font-medium mt-1">
+                Cada dimarts enviem la nostre newsletter. Subscriute{" "}
+                <a
+                  href="https://oscarjunyent.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline"
+                >
+                  aquí
+                </a>
+              </span>
             ) : (
-              <a href={r.href} className="text-primary underline">{r.nom}</a>
+              <span className="text-dark/90 font-medium mt-1">{r.nom}</span>
             )}
-            <span className="text-dark/90 font-medium mt-1">{r.nom}</span>
           </div>
         ))}
       </div>

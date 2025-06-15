@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -34,7 +35,7 @@ const TopNav = () => {
       flexBasis: "15%",
       maxWidth: "15%"
     }}>
-        <Link to="/" className="flex items-center group w-full">
+        <a href="https://elink.cat/" target="_blank" rel="noopener noreferrer" className="flex items-center group w-full">
           <img
             alt="Elink.cat logo"
             style={{
@@ -42,13 +43,13 @@ const TopNav = () => {
               objectFit: "contain",
               width: "100%",
               height: "auto",
-              maxWidth: "125px",
-              minWidth: "40px"
+              maxWidth: "143.75px", // 125px * 1.15 = 143.75px
+              minWidth: "46px" // 40px * 1.15 = 46px
             }}
-            className="w-full max-w-[250px] min-w-[40px] h-auto transition-all"
+            className="w-full max-w-[287.5px] min-w-[46px] h-auto transition-all" // doubled max-w & min-w for retina screens as before
             src="/lovable-uploads/0746ee12-55c7-4ced-b3e5-da2c8a0f1495.png"
           />
-        </Link>
+        </a>
       </div>
 
       {/* Botó menú hamburger (mòbil) */}
@@ -110,3 +111,4 @@ const TopNav = () => {
     </nav>;
 };
 export default TopNav;
+

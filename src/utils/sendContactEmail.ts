@@ -16,7 +16,9 @@ export async function sendContactEmail({
   missatge: string;
 }) {
   try {
-    const response = await fetch("/functions/v1/send-contact-email", {
+    // URL pública de la Supabase Edge Function
+    const url = "https://vwaigmzevohdywsvdgly.functions.supabase.co/send-contact-email";
+    const response = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

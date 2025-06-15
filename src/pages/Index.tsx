@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
@@ -82,7 +81,7 @@ const t = {
     title: "Vols portar la tecnologia al següent nivell?",
     subtitle: "Contacta amb elink.cat i farem créixer el teu negoci.",
     button: "Contacta amb nosaltres",
-    href: "#contacte"
+    href: "/contacte"
   },
 
   // Altres títols per compatibilitat

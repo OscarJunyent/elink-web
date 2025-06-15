@@ -15,20 +15,36 @@ export async function sendContactEmail({
   email: string;
   missatge: string;
 }) {
-  // This assumes your edge function is called 'send-contact-email'
-  const response = await fetch("/functions/v1/send-contact-email", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ nom, email, missatge }),
-  });
-  const data = await response.json();
-  if (!response.ok) {
+  try {
+    const response = await fetch("/functions/v1/send-contact-email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ nom, email, missatge }),
+    });
+
+    const contentType = response.headers.get("content-type");
+    let data;
+    if (contentType && contentType.includes("application/json")) {
+      data = await response.json();
+    } else {
+      data = await response.text();
+    }
+
+    if (!response.ok) {
+      console.error("Error from backend:", data);
+      return {
+        success: false,
+        error: data?.error || (typeof data === 'string' ? data : "Error enviant el missatge."),
+      };
+    }
+    return { success: true };
+  } catch (err: any) {
+    console.error("Network or code error:", err);
     return {
       success: false,
-      error: data?.error || "Error enviant el missatge.",
+      error: err?.message || "No s'ha pogut connectar amb el backend.",
     };
   }
-  return { success: true };
 }

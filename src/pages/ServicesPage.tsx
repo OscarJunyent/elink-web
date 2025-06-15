@@ -78,7 +78,7 @@ const ServicesPage = () => (
       ))}
     </div>
     <div className="mt-16">
-      <Link to="/#contacte" className="inline-block px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover-scale transition-all duration-200">
+      <Link to="/contacte" className="inline-block px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover-scale transition-all duration-200">
         Demana informació
       </Link>
     </div>

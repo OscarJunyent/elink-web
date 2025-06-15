@@ -1,4 +1,3 @@
-
 import { GraduationCap, Users, Bot, Send, FileText, Video, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
@@ -160,7 +159,7 @@ const FormacioPage = () => (
             Contacta amb nosaltres
           </Link>
           <a
-            href="https://calendly.com/elinkcat/30min"
+            href="https://calendly.com/oscar-junyent-elinkcat"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-3 rounded-full bg-primary-foreground text-primary font-semibold text-lg shadow-circular border-2 border-white hover:scale-105 transition-transform duration-200"

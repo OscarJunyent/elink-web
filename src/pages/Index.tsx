@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
@@ -6,7 +7,7 @@ import FinalCTA from "@/components/FinalCTA";
 import About from "@/components/About";
 import Cases from "@/components/Cases";
 import Training from "@/components/Training";
-import Contact from "@/components/Contact";
+// Removed: import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { Calendar } from "lucide-react";
@@ -111,8 +112,7 @@ const Index = () => (
     <TestimonialsCarousel testimonials={t.testimonials} />
     {/* Removed: Reservar cita section here */}
     <FinalCTA t={t.finalCTA} />
-    {/* Bloc de contacte complet amb footer ve després */}
-    <Contact t={t} />
+    {/* REMOVED: Bloc de contacte complet amb footer ve després */}
     {/* Calendly - reservar cita, now moved here */}
     <div className="w-full flex justify-center px-4 pb-6">
       <div className="max-w-xl w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
@@ -133,3 +133,4 @@ const Index = () => (
 );
 
 export default Index;
+

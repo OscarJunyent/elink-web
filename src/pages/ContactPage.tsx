@@ -2,9 +2,23 @@
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import { Calendar } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const ContactPage = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen flex flex-col">
+    <Helmet>
+      <title>Contacta amb Elink.cat | Solucions tecnològiques per a la teva empresa</title>
+      <meta
+        name="description"
+        content="Vols transformar el teu negoci amb tecnologia útil i eficient? Contacta amb l’equip d’Elink.cat i parlem del teu projecte."
+      />
+      <meta property="og:title" content="Contacta amb Elink.cat" />
+      <meta
+        property="og:description"
+        content="Explica’ns què necessites i t’ajudem."
+      />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
     <div className="flex-1 w-full flex flex-col items-center justify-center px-4 pt-8 pb-4">
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}

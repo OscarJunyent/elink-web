@@ -140,7 +140,7 @@ const ManifestPage = () => {
         </section>
       </main>
 
-      <Footer />
+      <Footer t={{}} />
     </>
   );
 };

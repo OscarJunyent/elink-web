@@ -1,5 +1,5 @@
 
-import { Briefcase, Workflow, BrainCog, MonitorSmartphone } from "lucide-react";
+import { Briefcase, Workflow, BrainCog, MonitorSmartphone, Link2 } from "lucide-react";
 
 type Service = {
   title: string;
@@ -20,6 +20,11 @@ const Services = ({ t }: { t: any }) => {
       icon: Workflow,
     },
     {
+      title: t.services.integracions,
+      desc: t.services.integracionsDesc,
+      icon: Link2,
+    },
+    {
       title: t.services.ia,
       desc: t.services.iaDesc,
       icon: BrainCog,
@@ -33,7 +38,7 @@ const Services = ({ t }: { t: any }) => {
   return (
     <section className="container py-14" id="serveis">
       <h2 className="text-2xl md:text-3xl font-bold mb-8 text-dark">{t.services.title}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {SERVICES.map((srv, idx) => (
           <div key={srv.title}
             className="flex flex-col items-center rounded-2xl bg-white shadow-circular p-8 hover:shadow-xl transition-shadow duration-300 animate-fade-in"

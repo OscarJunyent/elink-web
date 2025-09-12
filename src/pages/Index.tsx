@@ -1,4 +1,3 @@
-
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import Method from "@/components/Method";
@@ -10,25 +9,42 @@ import Training from "@/components/Training";
 // Removed: import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
-import { Calendar } from "lucide-react";
+import { Calendar, Users, Lightbulb, Target, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // Textos específics per la nova home
 const t = {
-  heroTitle: "Tecnologia útil per fer créixer el teu negoci",
-  heroSubtitle: "Consultoria, IA i automatització per a mitjanes empreses catalanes.",
+  heroTitle: "Consultoria tecnològica i IA per a pimes catalanes",
+  heroSubtitle: "Transformem empreses petites i mitjanes amb tecnologia útil, automatització intel·ligent i solucions a mida.",
   heroCTA: "Descobreix com treballem",
 
   // Bloc serveis resumits
   services: {
-    title: "Què podem fer per la teva empresa",
+    title: "Què fem",
     consultoria: "Consultoria tecnològica",
-    consultoriaDesc: "Analitzem, identifiquem oportunitats i t’acompanyem en la transformació digital.",
-    automatitzacio: "Automatització i integracions",
-    automatitzacioDesc: "Implantem eines i processos que estalvien temps i diners.",
-    ia: "IA aplicada al negoci",
-    iaDesc: "Utilitzem la intel·ligència artificial per optimitzar processos i prendre millors decisions.",
+    consultoriaDesc: "Analitzem, identifiquem oportunitats i t'acompanyem en la transformació digital adaptada a la teva realitat.",
+    automatitzacio: "Automatització",
+    automatitzacioDesc: "Implementem processos automàtics que estalvien temps, redueixen errors i optimitzen recursos.",
+    integracions: "Integracions",
+    integracionsDesc: "Connectem les teves eines i sistemes per crear un ecosistema tecnològic cohesionat i eficient.",
+    ia: "IA aplicada",
+    iaDesc: "Utilitzem intel·ligència artificial per optimitzar decisions, millorar processos i crear valor real.",
     solucions: "Solucions digitals a mida",
-    solucionsDesc: "Desenvolupem eines adaptades a la teva realitat i objectius.",
+    solucionsDesc: "Desenvolupem aplicacions i eines personalitzades que s'adapten perfectament als teus objectius empresarials.",
+  },
+
+  // Valors corporatius
+  values: {
+    title: "Els nostres valors",
+    subtitle: "Treballem amb principis clars que guien cada projecte",
+    proximitat: "Proximitat",
+    proximitatDesc: "Som el teu partner tecnològic proper, parlem el teu idioma i entenem la teva realitat empresarial.",
+    claredat: "Claredat",
+    claredatDesc: "Expliquem la tecnologia de manera senzilla i transparent, sense tecnicismes innecessaris.",
+    eficacia: "Eficàcia",
+    eficaciaDesc: "Cada solució que proposem té un objectiu clar: aportar valor real i resultats mesurables.",
+    innovacio: "Innovació pràctica",
+    innovacioDesc: "Utilitzem tecnologies punteres però sempre amb un enfocament pràctic i orientat a resultats."
   },
 
   // Com treballem (metodologia)
@@ -43,7 +59,7 @@ const t = {
     Diagnosi: "Analitzem la teva empresa per detectar necessitats i oportunitats de millora tecnològica.",
     Proposta: "Presentem una estratègia adaptada als teus objectius i recursos.",
     Implementació: "Executem el pla seleccionant i integrant les solucions idònies.",
-    Seguiment: "Avaluem resultats, ajustem i t’acompanyem per garantir l’èxit.",
+    Seguiment: "Avaluem resultats, ajustem i t'acompanyem per garantir l'èxit.",
   },
   methodSubtitle: "Acompanyem la teva empresa en totes les fases del canvi, de l'anàlisi inicial fins a la implantació i millora contínua.",
 
@@ -66,7 +82,7 @@ const t = {
       autor: "Clara Novell - Tinnova",
     },
     {
-      frase: "L’enfocament pràctic d’elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
+      frase: "L'enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
       autor: "Joan Planella - Repack",
     },
   ],
@@ -85,32 +101,128 @@ const t = {
     href: "/contacte"
   },
 
+  // Manifest CTA
+  manifestCTA: {
+    title: "Coneix la nostra filosofia",
+    subtitle: "Descobreix com entenem la tecnologia i per què treballem així",
+    button: "Descobreix el nostre manifest",
+    href: "/manifest"
+  },
+
   // Altres títols per compatibilitat
   aboutTitle: "Qui som",
-  aboutMission: "A elink.cat t’ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
-  casesTitle: "Clients i casos d’èxit",
-  casesPlaceholder: "Ben aviat compartirem experiències i resultats d’empreses que ja confien en nosaltres. Contacta’ns per saber més!",
+  aboutMission: "A elink.cat t'ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
+  casesTitle: "Clients i casos d'èxit",
+  casesPlaceholder: "Ben aviat compartirem experiències i resultats d'empreses que ja confien en nosaltres. Contacta'ns per saber més!",
   trainingTitle: "Formació i divulgació",
   trainingDesc: "Oferim tallers pràctics i recursos oberts per apropar la tecnologia a les empreses catalanes.",
   trainingCTA: "Consulta les properes formacions",
   contactTitle: "Contacta amb nosaltres",
   nom: "Nom i cognoms",
   email: "Correu electrònic",
-  missatge: "Explica’ns què necessites",
+  missatge: "Explica'ns què necessites",
   submit: "Enviar missatge",
   enviant: "Enviant...",
   contactCalendar: "Si ho prefereixes, pots reservar una reunió directa:",
   contactReserva: "Reserva una cita",
 };
 
+// Component per als valors
+const ValuesSection = ({ values }: { values: any }) => {
+  const valorsData = [
+    {
+      title: values.proximitat,
+      description: values.proximitatDesc,
+      icon: Users,
+      gradient: "from-primary/10 to-accent/10"
+    },
+    {
+      title: values.claredat,
+      description: values.claredatDesc,
+      icon: Lightbulb,
+      gradient: "from-accent/10 to-primary/10"
+    },
+    {
+      title: values.eficacia,
+      description: values.eficaciaDesc,
+      icon: Target,
+      gradient: "from-primary/10 to-accent/10"
+    },
+    {
+      title: values.innovacio,
+      description: values.innovacioDesc,
+      icon: Heart,
+      gradient: "from-accent/10 to-primary/10"
+    }
+  ];
+
+  return (
+    <section className="container py-16">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">{values.title}</h2>
+        <p className="text-lg text-accent max-w-2xl mx-auto">{values.subtitle}</p>
+      </div>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {valorsData.map((valor, index) => (
+          <div
+            key={index}
+            className={`p-8 rounded-2xl shadow-circular bg-gradient-to-br ${valor.gradient} animate-fade-in`}
+            style={{ animationDelay: `${index * 150}ms` }}
+          >
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+                <valor.icon className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-3 text-dark">
+                  {valor.title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {valor.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+// Component per al CTA del manifest
+const ManifestCTA = ({ manifestCTA }: { manifestCTA: any }) => {
+  return (
+    <section className="container py-16">
+      <div className="max-w-4xl mx-auto text-center">
+        <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl p-12 shadow-circular">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-dark">
+            {manifestCTA.title}
+          </h2>
+          <p className="text-lg text-accent mb-8 max-w-2xl mx-auto">
+            {manifestCTA.subtitle}
+          </p>
+          <Link
+            to={manifestCTA.href}
+            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
+          >
+            {manifestCTA.button}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Index = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen overflow-x-hidden">
     <Hero t={t} />
     <Services t={t} />
+    <ValuesSection values={t.values} />
     <Method t={t} />
     {/* Replace single quote with testimonials carousel */}
     <TestimonialsCarousel testimonials={t.testimonials} />
-    {/* Removed: Reservar cita section here */}
+    <ManifestCTA manifestCTA={t.manifestCTA} />
     <FinalCTA t={t.finalCTA} />
     {/* REMOVED: Bloc de contacte complet amb footer ve després */}
     {/* Calendly - reservar cita, now moved here */}
@@ -133,4 +245,3 @@ const Index = () => (
 );
 
 export default Index;
-

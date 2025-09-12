@@ -16,6 +16,9 @@ const menu = [{
   to: "/about",
   label: "Qui som"
 }, {
+  to: "/manifest",
+  label: "Manifest"
+}, {
   to: "/contacte",
   label: "Contacte"
 }];

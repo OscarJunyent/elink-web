@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 // Textos específics per la nova home
 const t = {
-  heroTitle: "Consultoria tecnològica i IA per a pimes catalanes",
+  heroTitle: "Tecnologia útil per fer créixer el teu negoci",
   heroSubtitle: "Transformem empreses petites i mitjanes amb tecnologia útil, automatització intel·ligent i solucions a mida.",
   heroCTA: "Descobreix com treballem",
 

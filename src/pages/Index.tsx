@@ -11,6 +11,7 @@ import Footer from "@/components/Footer";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { Calendar, Users, Lightbulb, Target, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 // Textos específics per la nova home
 const t = {
@@ -216,6 +217,14 @@ const ManifestCTA = ({ manifestCTA }: { manifestCTA: any }) => {
 
 const Index = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen overflow-x-hidden">
+    <Helmet>
+      <title>Elinkcat – Consultoria tecnològica i IA per a pimes catalanes | Automatització i solucions digitals</title>
+      <meta name="description" content="Transformem pimes catalanes amb consultoria tecnològica, automatització intel·ligent i IA aplicada. Solucions digitals pràctiques per millorar eficiència i reduir costos." />
+      <meta property="og:title" content="Elinkcat – Consultoria tecnològica i IA per a pimes catalanes" />
+      <meta property="og:description" content="Tecnologia útil per fer créixer el teu negoci. Consultoria, automatització i IA per empreses catalanes." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/" />
+    </Helmet>
     <Hero t={t} />
     <Services t={t} />
     <ValuesSection values={t.values} />

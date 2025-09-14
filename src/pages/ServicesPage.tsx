@@ -75,11 +75,12 @@ const t = {};
 const ServicesPage = () => (
   <div className="bg-background min-h-screen py-16 px-4 flex flex-col items-center w-full">
     <Helmet>
-      <title>Serveis de consultoria tecnològica, IA i automatització | elinkcat</title>
-      <meta name="description" content="Oferim serveis de consultoria, automatització, IA, desenvolupament d'eines digitals, anàlisi de dades i formació. Solucions tecnològiques per fer créixer la teva empresa." />
-      <meta property="og:title" content="Serveis de consultoria tecnològica | elinkcat" />
-      <meta property="og:description" content="Descobreix com t'ajudem a transformar el teu negoci amb tecnologia útil." />
+      <title>Serveis consultoria tecnològica per pimes catalanes | IA, automatització i solucions digitals - Elinkcat</title>
+      <meta name="description" content="Consultoria tecnològica especialitzada per pimes catalanes. Automatització de processos, IA aplicada, integracions i solucions digitals a mida per millorar eficiència i reduir costos." />
+      <meta property="og:title" content="Serveis consultoria tecnològica per pimes catalanes | Elinkcat" />
+      <meta property="og:description" content="Automatització, IA i solucions digitals pràctiques per transformar pimes catalanes amb tecnologia útil." />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/serveis" />
     </Helmet>
     
     <div className="max-w-4xl text-center mb-16">

@@ -1,4 +1,3 @@
-
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import { Calendar } from "lucide-react";
@@ -7,24 +6,25 @@ import { Helmet } from "react-helmet-async";
 const ContactPage = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen flex flex-col">
     <Helmet>
-      <title>Contacta amb Elink.cat | Solucions tecnològiques per a la teva empresa</title>
+      <title>Contacte Elinkcat - Consultoria tecnològica i IA per pimes catalanes | Automatització</title>
       <meta
         name="description"
-        content="Vols transformar el teu negoci amb tecnologia útil i eficient? Contacta amb l’equip d’Elink.cat i parlem del teu projecte."
+        content="Contacta amb Elinkcat per consultoria tecnològica especialitzada en pimes catalanes. IA, automatització i solucions digitals pràctiques per fer créixer el teu negoci."
       />
-      <meta property="og:title" content="Contacta amb Elink.cat" />
+      <meta property="og:title" content="Contacte Elinkcat - Consultoria tecnològica per pimes" />
       <meta
         property="og:description"
-        content="Explica’ns què necessites i t’ajudem."
+        content="Descobreix com la consultoria tecnològica, IA i automatització poden transformar la teva pime catalana."
       />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/contacte" />
     </Helmet>
     <div className="flex-1 w-full flex flex-col items-center justify-center px-4 pt-8 pb-4">
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}
         <div className="w-full text-center space-y-2">
           <h1 className="text-2xl font-bold mb-0">Contacta amb nosaltres</h1>
-          <p className="text-lg text-muted-foreground">Explica’ns què necessites i t’ajudem a trobar la millor solució tecnològica.</p>
+          <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica.</p>
         </div>
         {/* Formulari de contacte */}
         <div className="w-full bg-white/90 border border-gray rounded-lg shadow-circular p-5 md:p-7">
@@ -53,4 +53,3 @@ const ContactPage = () => (
 );
 
 export default ContactPage;
-

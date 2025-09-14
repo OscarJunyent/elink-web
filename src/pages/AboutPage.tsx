@@ -23,11 +23,12 @@ const founders = [
 const AboutPage = () => (
   <div className="bg-background min-h-screen flex flex-col items-center w-full px-4 py-12 animate-fade-in">
     <Helmet>
-      <title>Qui som | Elink.cat – Experts en transformació digital</title>
-      <meta name="description" content="Som una consultora catalana propera i experta, formada per CTOs amb 20 anys d'experiència. Ajudem empreses a créixer amb tecnologia." />
-      <meta property="og:title" content="L’equip d’Elink.cat" />
-      <meta property="og:description" content="El teu partner tecnològic de confiança." />
+      <title>Qui som Elinkcat - Consultoria tecnològica i IA per pimes catalanes | Experts automatització</title>
+      <meta name="description" content="Equip expert en consultoria tecnològica per pimes catalanes. Especialistes en IA, automatització i solucions digitals pràctiques per millorar eficiència empresarial." />
+      <meta property="og:title" content="Qui som Elinkcat - Consultoria tecnològica per pimes catalanes" />
+      <meta property="og:description" content="Experts en IA i automatització que transformen pimes catalanes amb tecnologia pràctica i eficient." />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/about" />
     </Helmet>
     <div className="max-w-3xl w-full flex flex-col items-center text-center mb-10">
       <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">Qui som</h1>

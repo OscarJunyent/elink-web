@@ -12,6 +12,7 @@ import TopNav from "@/components/TopNav";
 import FormacioPage from "./pages/FormacioPage";
 import ContactPage from "./pages/ContactPage";
 import ManifestPage from "./pages/ManifestPage";
+import ResultatsPage from "./pages/ResultatsPage";
 import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/formacio" element={<FormacioPage />} />
             <Route path="/contacte" element={<ContactPage />} />
             <Route path="/manifest" element={<ManifestPage />} />
+            <Route path="/resultats" element={<ResultatsPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

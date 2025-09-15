@@ -34,4 +34,4 @@ const Method = ({ t }: { t: any }) => (
   </section>
 );
 
-export default Method;
+export default Method; 

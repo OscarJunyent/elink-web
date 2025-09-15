@@ -78,14 +78,6 @@ const t = {
       frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",
       autor: "Marc Nieto - CEO MPServices",
     },
-    {
-      frase: "Un equip molt professional i disponible, que parla el nostre mateix idioma.",
-      autor: "Clara Novell - Tinnova",
-    },
-    {
-      frase: "L'enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
-      autor: "Joan Planella - Repack",
-    },
   ],
 
   // Frase destacada

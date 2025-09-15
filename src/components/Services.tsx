@@ -1,10 +1,11 @@
 
 import { Briefcase, Workflow, BrainCog, MonitorSmartphone, Link2 } from "lucide-react";
+import type { ElementType, CSSProperties } from "react";
 
 type Service = {
   title: string;
   desc: string;
-  icon: React.ElementType;
+  icon: ElementType;
 };
 
 const Services = ({ t }: { t: any }) => {
@@ -42,8 +43,8 @@ const Services = ({ t }: { t: any }) => {
         {SERVICES.map((srv, idx) => (
           <div key={srv.title}
             className="flex flex-col items-center rounded-2xl bg-white shadow-circular p-8 hover:shadow-xl transition-shadow duration-300 animate-fade-in"
-            style={{ animationDelay: `${idx * 100}ms` } as React.CSSProperties}
-          >
+            style={{ animationDelay: `${idx * 100}ms` } as CSSProperties}
+          > 
             <span className="w-16 h-16 bg-accent flex items-center justify-center rounded-full mb-5 shadow-md">
               <srv.icon size={32} className="text-white" />
             </span>

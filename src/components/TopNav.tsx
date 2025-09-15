@@ -13,11 +13,11 @@ const menu = [{
   to: "/formacio",
   label: "Formació"
 }, {
-  to: "/about",
-  label: "Qui som"
-}, {
   to: "/manifest",
   label: "Manifest"
+}, {
+  to: "/resultats",
+  label: "Resultats"
 }, {
   to: "/contacte",
   label: "Contacte"

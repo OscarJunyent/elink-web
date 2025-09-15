@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp } from "lucide-react";
+import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp, Linkedin } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const ManifestPage = () => {
@@ -60,6 +60,23 @@ const ManifestPage = () => {
       icon: TrendingUp,
       color: "text-accent"
     }
+  ];
+
+  const founders = [
+    {
+      name: "Òscar Junyent",
+      role: "Consultor AAI",
+      bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
+      image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
+      linkedin: "https://www.linkedin.com/in/ojunyent/",
+    },
+    {
+      name: "Wojtek Szczupak",
+      role: "Consultor AAI",
+      bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
+      image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
+      linkedin: "https://www.linkedin.com/in/wojciech-szczupak/",
+    },
   ];
 
   return (
@@ -211,6 +228,47 @@ const ManifestPage = () => {
               <p className="text-lg text-accent">
                 Aquest és el nostre compromís amb cada empresa que confía en nosaltres
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Equip fundador */}
+        <section className="container py-16">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Equip fundador</h2>
+              <p className="text-lg text-accent">
+                Els professionals que fan possible aquesta visió
+              </p>
+            </div>
+            
+            <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+              {founders.map((founder) => (
+                <div
+                  key={founder.name}
+                  className="bg-white/80 rounded-2xl p-8 shadow-circular flex flex-col items-center text-center flex-1 max-w-xs md:max-w-sm"
+                >
+                  <div className="mb-4">
+                    <img
+                      src={founder.image}
+                      alt={`Foto de ${founder.name}`}
+                      className="rounded-full w-32 h-32 object-cover shadow-md"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-dark mb-1">{founder.name}</h3>
+                  <p className="text-sm text-primary font-semibold mb-3">{founder.role}</p>
+                  <p className="text-accent text-base mb-4 leading-relaxed">{founder.bio}</p>
+                  <a
+                    href={founder.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent text-white hover:scale-110 transition-transform"
+                    aria-label={`LinkedIn de ${founder.name}`}
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                </div>
+              ))}
             </div>
           </div>
         </section>

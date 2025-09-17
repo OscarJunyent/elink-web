@@ -29,7 +29,7 @@ const t = {
     integracions: "Integracions",
     integracionsDesc: "Connectem les teves eines i sistemes per crear un ecosistema tecnològic cohesionat i eficient.",
     ia: "IA aplicada",
-    iaDesc: "Utilitzem intel·ligència artificial per optimitzar decisions, millorar processos i crear valor real.",
+    iaDesc: "Utilitzem intel·ligència artificial per optimitzar decisions, millorar processos.",
     solucions: "Solucions digitals a mida",
     solucionsDesc: "Desenvolupem aplicacions i eines personalitzades que s'adapten perfectament als teus objectius empresarials.",
   },

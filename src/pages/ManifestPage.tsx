@@ -174,7 +174,7 @@ const ManifestPage = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Com treballem</h2>
             <p className="text-lg text-accent max-w-3xl mx-auto">
-              Acompanyem la teva empresa en totes les fases del canvi, de l'anàlisi inicial 
+              Acompanyem la teva empresa en totes les fases del canvi, des de l'anàlisi inicial 
               fins a la implantació i millora contínua
             </p>
           </div>
@@ -223,7 +223,7 @@ const ManifestPage = () => {
               
               <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
                 "La tecnologia més poderosa és aquella que desapareix, 
-                que es integra tan bé que simplement fa que tot funcioni millor"
+                que s'integra tan bé que simplement fa que tot funcioni millor"
               </blockquote>
               <p className="text-lg text-accent">
                 Aquest és el nostre compromís amb cada empresa que confía en nosaltres

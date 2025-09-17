@@ -32,4 +32,4 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -p 65002" dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u123456789/domains/elink.cat/public_html/
+          rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no -p 65002" dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/u391072230/domains/elink.cat/public_html/

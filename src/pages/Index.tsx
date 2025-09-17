@@ -25,7 +25,7 @@ const t = {
     consultoria: "Consultoria tecnològica",
     consultoriaDesc: "Analitzem, identifiquem oportunitats i t'acompanyem en la transformació digital adaptada a la teva realitat.",
     automatitzacio: "Automatització",
-    automatitzacioDesc: "Implementem processos automàtics que estalvien temps, redueixen errors i optimitzen recursos.",
+    automatitzacioDesc: "Implementem processos automàtics que estalvien temps, eliminen errors i optimitzen recursos.",
     integracions: "Integracions",
     integracionsDesc: "Connectem les teves eines i sistemes per crear un ecosistema tecnològic cohesionat i eficient.",
     ia: "IA aplicada",

@@ -103,7 +103,11 @@ const ServicesPage = () => (
               <div className="bg-primary flex items-center justify-center rounded-full w-20 h-20 shadow-lg mb-4 shrink-0">
                 <service.icon size={40} className="text-primary-foreground" />
               </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-dark mb-3">{service.title}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-dark mb-3 leading-tight">
+                {service.title.split(' ').map((word, wordIdx) => (
+                  <div key={wordIdx}>{word}</div>
+                ))}
+              </h2>
             </div>
 
             {/* Content */}

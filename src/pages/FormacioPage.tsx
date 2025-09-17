@@ -99,7 +99,7 @@ const FormacioPage = () => (
       </div>
       <div className="text-center mt-8">
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium text-md">
-          Tallers in-company i també per a col·lectius/associacions. Ens adaptem totalment!
+          Tallers a les vostres oficines i també per a col·lectius/associacions. Ens adaptem totalment!
         </span>
       </div>
     </section>

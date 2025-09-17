@@ -131,7 +131,7 @@ const FormacioPage = () => (
                 </a>
               </span>
             ) : r.placeholder ? (
-              <span className="text-gray-400 italic mb-1">Próximament</span>
+              <span className="text-gray-400 italic mb-1">Pròximament</span>
             ) : r.newsletter ? (
               <span className="text-dark/90 font-medium mt-1">
                 Cada dimarts enviem la nostre newsletter. Subscriute{" "}

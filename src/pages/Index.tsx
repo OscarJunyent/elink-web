@@ -229,8 +229,6 @@ const Index = () => (
     <Services t={t} />
     <ValuesSection values={t.values} />
     <Method t={t} />
-    {/* Replace single quote with testimonials carousel */}
-    <TestimonialsCarousel testimonials={t.testimonials} />
     <ManifestCTA manifestCTA={t.manifestCTA} />
     <FinalCTA t={t.finalCTA} />
     {/* REMOVED: Bloc de contacte complet amb footer ve després */}

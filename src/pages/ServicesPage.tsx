@@ -104,9 +104,15 @@ const ServicesPage = () => (
                 <service.icon size={40} className="text-primary-foreground" />
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-dark mb-3 leading-tight">
-                {service.title.split(' ').map((word, wordIdx) => (
-                  <div key={wordIdx}>{word}</div>
-                ))}
+                {service.title.split(' ').reduce((acc, word, wordIdx, words) => {
+                  if (word === 'a' && words[wordIdx + 1] === 'mida') {
+                    acc.push(<div key={wordIdx}>a mida</div>);
+                    words[wordIdx + 1] = null; // Skip next word
+                  } else if (word !== null) {
+                    acc.push(<div key={wordIdx}>{word}</div>);
+                  }
+                  return acc;
+                }, [])}
               </h2>
             </div>
 

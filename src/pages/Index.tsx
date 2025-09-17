@@ -21,7 +21,7 @@ const t = {
 
   // Bloc serveis resumits
   services: {
-    title: "Què fem",
+    title: "Què fem?",
     consultoria: "Consultoria tecnològica",
     consultoriaDesc: "Analitzem, identifiquem oportunitats i t'acompanyem en la transformació digital adaptada a la teva realitat.",
     automatitzacio: "Automatització",

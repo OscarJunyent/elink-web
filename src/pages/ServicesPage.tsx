@@ -108,6 +108,9 @@ const ServicesPage = () => (
                   if (word === 'a' && words[wordIdx + 1] === 'mida') {
                     acc.push(<div key={wordIdx}>a mida</div>);
                     words[wordIdx + 1] = null; // Skip next word
+                  } else if (word === 'al' && words[wordIdx + 1] === 'negoci') {
+                    acc.push(<div key={wordIdx}>al negoci</div>);
+                    words[wordIdx + 1] = null; // Skip next word
                   } else if (word !== null) {
                     acc.push(<div key={wordIdx}>{word}</div>);
                   }

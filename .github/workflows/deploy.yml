@@ -1,30 +1,9 @@
-name: Deploy React App
-
-on:
-  push:
-    branches:
-      - main  # O la branca que vulguis
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: 🧾 Clona el repositori
-        uses: actions/checkout@v3
-
-      - name: ⚙️ Instal·la dependències
-        run: npm install
-
-      - name: 🏗️ Compila el projecte
-        run: npm run build
-
-      - name: 🚀 Puja al servidor via SFTP
-        uses: pressidium/lftp-mirror-action@v1
-        with:
-          host: ${{ secrets.SFTP_HOST }}
-          port: ${{ secrets.SFTP_PORT }}
-          user: ${{ secrets.SFTP_USER }}
-          pass: ${{ secrets.SFTP_PASS }}
-          localDir: build   # o dist
-          remoteDir: public_html  # o la ruta del teu servidor
+- name: 🚀 Deploy amb rsync
+  uses: burnett01/rsync-deployments@v1.0.1
+  with:
+    switches: -avzr --delete
+    path: build/
+    remote_path: /ruta/al/servidor/
+    remote_host: ${{ secrets.SSH_HOST }}
+    remote_user: ${{ secrets.SSH_USER }}
+    remote_key: ${{ secrets.SSH_PRIVATE_KEY }}

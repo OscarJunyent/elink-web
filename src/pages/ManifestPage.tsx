@@ -226,7 +226,7 @@ const ManifestPage = () => {
                 que s'integra tan bé que simplement fa que tot funcioni millor"
               </blockquote>
               <p className="text-lg text-accent">
-                Aquest és el nostre compromís amb cada empresa que confía en nosaltres
+                Aquest és el nostre compromís amb cada empresa que confia en nosaltres
               </p>
             </div>
           </div>

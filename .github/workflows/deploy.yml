@@ -1,9 +1,38 @@
-- name: 🚀 Deploy amb rsync
-  uses: burnett01/rsync-deployments@v1.0.1
-  with:
-    switches: -avzr --delete
-    path: build/
-    remote_path: /ruta/al/servidor/
-    remote_host: ${{ secrets.SSH_HOST }}
-    remote_user: ${{ secrets.SSH_USER }}
-    remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+name: Deploy React App to elink.cat
+
+on:
+  push:
+    branches:
+      - main  # o la branca que vulguis
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Clona el repositori
+        uses: actions/checkout@v3
+
+      - name: 📦 Cache de npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: ⚙️ Instal·la dependències
+        run: npm install
+
+      - name: 🏗️ Compila el projecte
+        run: npm run build
+
+      - name: 🚀 Desplega amb rsync via SSH
+        uses: burnett01/rsync-deployments@v1.0.1
+        with:
+          switches: -avzr --delete
+          path: build/  # o dist/
+          remote_path: /home/u123456789/domains/elink.cat/public_html/
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}

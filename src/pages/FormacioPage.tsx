@@ -120,7 +120,7 @@ const FormacioPage = () => (
             <span className="font-semibold text-base text-accent mb-1">{r.tipus}</span>
             {r.isBlog ? (
               <span className="text-dark/90 font-medium mt-1">
-                Podeu llegir articles d'opinio sonre IA al nostre{" "}
+                Podeu llegir articles d'opinió sobre IA al nostre{" "}
                 <a
                   href="https://blog.elink.cat"
                   className="text-primary underline"

@@ -37,7 +37,7 @@ const Services = ({ t }: { t: any }) => {
   ];
   return (
     <section className="container py-14" id="serveis">
-      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-dark">{t.services.title}</h2>
+      <h2 className="text-2xl md:text-3xl font-bold mb-8 text-dark text-center">{t.services.title}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {SERVICES.map((srv, idx) => (
           <div key={srv.title}

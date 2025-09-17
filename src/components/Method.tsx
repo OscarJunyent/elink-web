@@ -11,7 +11,7 @@ const steps = [
 
 const Method = ({ t }: { t: any }) => (
   <section className="container py-10" id="metode">
-    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-dark">{t.methodTitle}</h2>
+    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-dark text-center">{t.methodTitle}</h2>
     <div className="flex flex-col md:flex-row justify-between items-start gap-7 md:gap-0">
       {steps.map((step, idx) => (
         <div key={step.label} className="flex flex-col items-center md:w-1/4 animate-fade-in"

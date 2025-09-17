@@ -49,7 +49,7 @@ const t = {
   },
 
   // Com treballem (metodologia)
-  methodTitle: "Com treballem",
+  methodTitle: "Com treballem?",
   method: {
     Diagnosi: "Diagnosi personalitzada",
     Proposta: "Proposta estratègica",

@@ -28,7 +28,7 @@ const ResultatsPage = () => {
   const casosExit = [
     {
       empresa: "Sealmetrics",
-      sector: "Serveis marítims",
+      sector: "Data Assurance Analytics",
       repte: "Processos manuals de facturació i seguiment de projectes que generaven errors i retards en la gestió de clients.",
       solucio: "Implementació d'un sistema integrat que automatitza la facturació, sincronitza dades de projectes i genera informes en temps real.",
       resultat: [
@@ -42,9 +42,9 @@ const ResultatsPage = () => {
     },
     {
       empresa: "MPServices", 
-      sector: "Consultoria empresarial",
-      repte: "Falta d'integració entre les diferents eines de gestió, dificultant la presa de decisions estratègiques.",
-      solucio: "Creació d'un dashboard centralitzat que connecta CRM, comptabilitat i projectes, amb automatització d'informes.",
+      sector: "Gestió Frau Electrònic",
+      repte: "Automatització scoring de Frau.",
+      solucio: "Sistema de Analisis per IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
       resultat: [
         "Visió unificada de tot el negoci",
         "Reducció del 50% en temps d'elaboració d'informes",

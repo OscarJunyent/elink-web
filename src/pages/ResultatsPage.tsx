@@ -18,10 +18,16 @@ const ResultatsPage = () => {
       empresa: "MPServices"
     },
     {
-      frase: "Amb un enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
-      autor: "Joan Planella",
-      carrec: "Director",
-      empresa: "Repack"
+      frase: "Lorem.",
+      autor: "Alex Rodriguez",
+      carrec: "IT Director",
+      empresa: "Volotea"
+    }
+    {
+      frase: "Lorem.",
+      autor: "Miquel Armengol",
+      carrec: "Propietari",
+      empresa: "Footballhost"
     }
   ];
 

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const ResultatsPage = () => {
   const testimonis = [
     {
-      frase: "Des de els inicis elink.cat ens ha acompanyat i assesorat en les decisions tecniques, aportant coneixement i valor i donant confianá a l0hora de pendre decisions dificils",
+      frase: "Des de els inicis elink.cat ens ha acompanyat i assesorat en les decisions tecniques, aportant coneixement i valor i donant confiança quan haviem de pendre decisions dificils",
       autor: "Rafael Jimenez",
       carrec: "CEO",
       empresa: "Adinton"
@@ -18,10 +18,16 @@ const ResultatsPage = () => {
       empresa: "MPServices"
     },
     {
-      frase: "Amb un enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
-      autor: "Joan Planella",
-      carrec: "Director",
-      empresa: "Repack"
+      frase: "Ens han assesorat en la planificació de la implementació de la IA en diferents departaments i iniciatives.",
+      autor: "Alex Rodriguez",
+      carrec: "IT Director",
+      empresa: "Volotea"
+    }
+    {
+      frase: "L'assesorament i la gestió de projectes d'elink.cat ens ha permes avançar a molta més velocitat i assolir reptes de l'empresa en un temps record.",
+      autor: "Miquel Armengol",
+      carrec: "IT Owner",
+      empresa: "Footballhost"
     }
   ];
 
@@ -100,7 +106,7 @@ const ResultatsPage = () => {
         <section className="container py-16 lg:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-              Resultats <span className="text-primary">reals</span>,<br> impacte <span className="text-accent">tangible</span>
+              Resultats <span className="text-primary">reals</span>, impacte <span className="text-accent">tangible</span>
             </h1>
             <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-3xl mx-auto">
               Cada projecte és una oportunitat per millorar. Aquí tens exemples reals de com 

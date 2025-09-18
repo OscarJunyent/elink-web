@@ -30,7 +30,7 @@ const Method = ({ t }: { t: any }) => (
         </div>
       ))}
     </div>
-    <p className="mt-8 text-center text-accent max-w-2xl mx-auto">{t.methodSubtitle}</p>
+    <p className="mt-8 text-center text-accent max-w-2xl mx-auto">{t.methodSubtitle}*</p>
   </section>
 );
 

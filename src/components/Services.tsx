@@ -47,7 +47,14 @@ const Services = ({ t }: { t: any }) => {
             <span className="w-16 h-16 bg-accent flex items-center justify-center rounded-full mb-5 shadow-md">
               <srv.icon size={32} className="text-white" />
             </span>
-            <h3 className="font-semibold text-lg text-dark mb-2 text-center min-h-[3rem] flex items-center justify-center">{srv.title}</h3>
+            <h3 className="font-semibold text-lg text-dark mb-2 text-center min-h-[3rem] flex items-center justify-center">
+              {srv.title.includes('digitals') && srv.title.includes('a mida') 
+                ? srv.title.replace('digitals a mida', 'digitals\na mida').split('\n').map((line, index) => (
+                    <span key={index} className="block">{line}</span>
+                  ))
+                : srv.title
+              }
+            </h3>
             <p className="text-accent text-sm text-center leading-relaxed">{srv.desc}</p>
           </div>
         ))}

@@ -22,7 +22,7 @@ const ResultatsPage = () => {
       autor: "Alex Rodriguez",
       carrec: "IT Director",
       empresa: "Volotea"
-    }
+    },
     {
       frase: "Lorem.",
       autor: "Miquel Armengol",

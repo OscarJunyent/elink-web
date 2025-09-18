@@ -99,7 +99,7 @@ const FormacioPage = () => (
       </div>
       <div className="text-center mt-8">
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium text-md">
-          Tallers a les vostres oficines i també per a col·lectius/associacions. Ens adaptem totalment!
+          Tallers a les vostres oficines i també per a col·lectius / associacions. Ens adaptem totalment!
         </span>
       </div>
     </section>
@@ -134,7 +134,7 @@ const FormacioPage = () => (
               <span className="text-gray-400 italic mb-1">Pròximament</span>
             ) : r.newsletter ? (
               <span className="text-dark/90 font-medium mt-1">
-                Cada dimarts enviem la nostre newsletter. Subscriute{" "}
+                Cada dimarts enviem la nostre newsletter. Subscriu-te{" "}
                 <a
                   href="https://oscarjunyent.substack.com/"
                   target="_blank"

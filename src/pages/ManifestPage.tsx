@@ -33,29 +33,29 @@ const ManifestPage = () => {
 
   const metodologia = [
     {
-      step: "01",
-      title: "Diagnosi personalitzada",
+      //step: "01",
+      title: "1. Diagnosi personalitzada",
       description: "Analitzem la teva empresa per detectar necessitats i oportunitats de millora tecnològica.",
       icon: Search,
       color: "text-primary"
     },
     {
-      step: "02", 
-      title: "Proposta estratègica",
+      //step: "02", 
+      title: "2. Proposta estratègica",
       description: "Presentem una estratègia adaptada als teus objectius i recursos.",
       icon: Presentation,
       color: "text-accent"
     },
     {
-      step: "03",
-      title: "Implementació a mida",
+      //step: "03",
+      title: "3. Implementació a mida",
       description: "Executem el pla seleccionant i integrant les solucions idònies.",
       icon: Cog,
       color: "text-primary"
     },
     {
-      step: "04",
-      title: "Seguiment i suport continu",
+      //step: "04",
+      title: "4. Seguiment i suport continu",
       description: "Avaluem resultats, ajustem i t'acompanyem per garantir l'èxit.",
       icon: TrendingUp,
       color: "text-accent"
@@ -65,14 +65,14 @@ const ManifestPage = () => {
   const founders = [
     {
       name: "Òscar Junyent",
-      role: "Consultor AAI",
+      role: "Consultor",
       bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
       image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
       linkedin: "https://www.linkedin.com/in/ojunyent/",
     },
     {
       name: "Wojtek Szczupak",
-      role: "Consultor AAI",
+      role: "Data Science",
       bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
       image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
       linkedin: "https://www.linkedin.com/in/wojciech-szczupak/",
@@ -82,10 +82,10 @@ const ManifestPage = () => {
   return (
     <>
       <Helmet>
-        <title>Manifest Elinkcat - Consultoria tecnològica per pimes catalanes | IA i automatització</title>
-        <meta name="description" content="Descobreix el manifest d'Elinkcat: consultoria tecnològica propera per pimes catalanes. Valors, metodologia i propòsit per transformar empreses amb IA i automatització." />
-        <meta property="og:title" content="Manifest Elinkcat - Consultoria tecnològica per pimes catalanes" />
-        <meta property="og:description" content="La nostra filosofia: tecnologia útil i pràctica per fer créixer pimes catalanes amb proximitat, claredat i eficiència." />
+        <title>Manifest Elinkcat - Consultoria tecnològica per empreses catalanes | IA i automatització</title>
+        <meta name="description" content="Descobreix el manifest d'Elinkcat: consultoria tecnològica propera per empreses catalanes. Valors, metodologia i propòsit per transformar empreses amb IA i automatització." />
+        <meta property="og:title" content="Manifest Elinkcat - Consultoria tecnològica per empreses catalanes" />
+        <meta property="og:description" content="La nostra filosofia: tecnologia útil i pràctica per fer créixer empreses catalanes amb proximitat, claredat i eficiència." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://elinkcat.com/manifest" />
       </Helmet>
@@ -98,7 +98,7 @@ const ManifestPage = () => {
               El nostre <span className="text-primary">Manifest</span>
             </h1>
             <p className="text-xl md:text-2xl text-accent mb-8 animate-fade-in">
-              Qui som i què fem per les pimes catalanes
+              Qui som i què fem per les empreses catalanes
             </p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-gray-700 leading-relaxed animate-fade-in">
@@ -129,7 +129,7 @@ const ManifestPage = () => {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Creiem que la tecnologia ha de ser un accelerador del creixement empresarial, 
                 no una complicació. Per això, cada solució que implementem està pensada per 
-                simplificar processos, reduir costos i augmentar la competitivitat de les pimes catalanes.
+                simplificar processos, reduir costos i augmentar la competitivitat de les empreses catalanes.
               </p>
             </div>
           </div>
@@ -222,8 +222,7 @@ const ManifestPage = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
-                "La tecnologia més poderosa és aquella que desapareix, 
-                que s'integra tan bé que simplement fa que tot funcioni millor"
+                "Quan la tecnologia és la correcta, no et distreu. Et fa avançar."
               </blockquote>
               <p className="text-lg text-accent">
                 Aquest és el nostre compromís amb cada empresa que confia en nosaltres

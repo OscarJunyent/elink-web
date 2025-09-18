@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 const ResultatsPage = () => {
   const testimonis = [
     {
-      frase: "Amb elink.cat hem guanyat temps, visibilitat i capacitat de decisió.",
+      frase: "Des de els inicis elink.cat ens ha acompanyat i assesorat en les decisions tecniques, aportant coneixement i valor i donant confianá a l0hora de pendre decisions dificils",
       autor: "Rafael Jimenez",
       carrec: "CEO",
-      empresa: "Sealmetrics"
+      empresa: "Adinton"
     },
     {
       frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",
@@ -18,16 +18,22 @@ const ResultatsPage = () => {
       empresa: "MPServices"
     },
     {
-      frase: "L'enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
-      autor: "Joan Planella",
-      carrec: "Director",
-      empresa: "Repack"
+      frase: "Ens han assesorat en la planificació de la implementació de la IA en diferents departaments i iniciatives.",
+      autor: "Alex Rodriguez",
+      carrec: "IT Director",
+      empresa: "Volotea"
+    }
+    {
+      frase: "L'assesorament i la gestió de projectes d'elink.cat ens ha permes avançar a molta més velocitat i assolir reptes de l'empresa en un temps record.",
+      autor: "Miquel Armengol",
+      carrec: "IT Owner",
+      empresa: "Footballhost"
     }
   ];
 
   const casosExit = [
     {
-      empresa: "Sealmetrics",
+      empresa: "Adinton",
       sector: "Data Assurance Analytics",
       repte: "Processos manuals de facturació i seguiment de projectes que generaven errors i retards en la gestió de clients.",
       solucio: "Implementació d'un sistema integrat que automatitza la facturació, sincronitza dades de projectes i genera informes en temps real.",
@@ -54,6 +60,34 @@ const ResultatsPage = () => {
       icon: TrendingUp,
       bgColor: "from-accent/5 to-primary/5"
     }
+    {
+      empresa: "Volotea", 
+      sector: "Aerolínea",
+      repte: "",
+      solucio: "Sistema de Analisis per IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
+      resultat: [
+        "Visió unificada de tot el negoci",
+        "Reducció del 50% en temps d'elaboració d'informes",
+        "Millor capacitat de predicció",
+        "Decisions més ràpides i informades"
+      ],
+      icon: TrendingUp,
+      bgColor: "from-accent/5 to-primary/5"
+    }
+    {
+      empresa: "Footballhost", 
+      sector: "Ecommerce Entreteniment",
+      repte: "Automatització scoring de Frau.",
+      solucio: "Sistema de Analisis per IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
+      resultat: [
+        "Visió unificada de tot el negoci",
+        "Reducció del 50% en temps d'elaboració d'informes",
+        "Millor capacitat de predicció",
+        "Decisions més ràpides i informades"
+    ],
+    icon: TrendingUp,
+    bgColor: "from-accent/5 to-primary/5"
+  }
   ];
 
   return (
@@ -72,7 +106,7 @@ const ResultatsPage = () => {
         <section className="container py-16 lg:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-              Resultats <span className="text-primary">reals</span>, impacte <span className="text-accent">tangible</span>
+              Resultats <span className="text-primary">reals</span>,<br> impacte <span className="text-accent">tangible</span>
             </h1>
             <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-3xl mx-auto">
               Cada projecte és una oportunitat per millorar. Aquí tens exemples reals de com 

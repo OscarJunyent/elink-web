@@ -31,16 +31,16 @@ const SERVICES: Service[] = [
       "Gestió automàtica d'inventaris",
       "Processament automàtic de comandes"
     ],
-    benefits: "Estalvi de 15-20 hores setmanals per empleat en tasques administratives.",
+    benefits: "Estalvi de 4-8 hores setmanals per empleat en tasques administratives.",
     icon: Workflow,
   },
   {
     title: "Integracions de sistemes",
     desc: "Connexió i sincronització de les diferents eines que ja utilitzes per crear un ecosistema tecnològic coherent.",
     examples: [
-      "Integració CRM amb ecommerce",
-      "Sincronització de dades entre plataformes",
-      "Connexió de sistemes de pagament"
+      "Integració de CRMs, ERPs, Backoffices ...",
+      "Sincronització i Gestió de dades entre plataformes",
+      "Implementacióde APIs per unificar la gestió de dades i informació"
     ],
     benefits: "Eliminació d'errors per duplicació de dades i visió unificada del negoci.",
     icon: Link2,
@@ -49,7 +49,7 @@ const SERVICES: Service[] = [
     title: "Solucions digitals a mida",
     desc: "Desenvolupament d'aplicacions web, intranets i eines específiques per les necessitats úniques del teu negoci.",
     examples: [
-      "Plataformes de gestió interna",
+      "Plataformes de gestió interna: backoffice, eines de reporting, gestió de dades",
       "Aplicacions web personalitzades",
       "Portals de clients i proveïdors"
     ],
@@ -62,7 +62,7 @@ const SERVICES: Service[] = [
     examples: [
       "Anàlisi predictiva de vendes",
       "Chatbots per atenció al client",
-      "Optimització de preus dinàmica"
+      "Optimització de procesos i dades"
     ],
     benefits: "Increment de la precisió en prediccions i millora de l'experiència del client.",
     icon: BrainCog,
@@ -75,10 +75,10 @@ const t = {};
 const ServicesPage = () => (
   <div className="bg-background min-h-screen py-16 px-4 flex flex-col items-center w-full">
     <Helmet>
-      <title>Serveis consultoria tecnològica per pimes catalanes | IA, automatització i solucions digitals - Elinkcat</title>
-      <meta name="description" content="Consultoria tecnològica especialitzada per pimes catalanes. Automatització de processos, IA aplicada, integracions i solucions digitals a mida per millorar eficiència i reduir costos." />
-      <meta property="og:title" content="Serveis consultoria tecnològica per pimes catalanes | Elinkcat" />
-      <meta property="og:description" content="Automatització, IA i solucions digitals pràctiques per transformar pimes catalanes amb tecnologia útil." />
+      <title>Serveis consultoria tecnològica per empreses catalanes | IA, automatització i solucions digitals - Elinkcat</title>
+      <meta name="description" content="Consultoria tecnològica especialitzada per empreses catalanes. Automatització de processos, IA aplicada, integracions i solucions digitals a mida per millorar eficiència i reduir costos." />
+      <meta property="og:title" content="Serveis consultoria tecnològica per empreses catalanes | Elinkcat" />
+      <meta property="og:description" content="Automatització, IA i solucions digitals pràctiques per transformar empreses catalanes amb tecnologia útil." />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/serveis" />
     </Helmet>

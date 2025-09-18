@@ -18,16 +18,10 @@ const ResultatsPage = () => {
       empresa: "MPServices"
     },
     {
-      frase: "Ens han assesorat en la planificació de la implementació de la IA en diferents departaments i iniciatives.",
-      autor: "Alex Rodriguez",
-      carrec: "IT Director",
-      empresa: "Volotea"
-    }
-    {
-      frase: "L'assesorament i la gestió de projectes d'elink.cat ens ha permes avançar a molta més velocitat i assolir reptes de l'empresa en un temps record.",
-      autor: "Miquel Armengol",
-      carrec: "IT Owner",
-      empresa: "Footballhost"
+      frase: "Amb un enfocament pràctic d'elink.cat ens ha ajudat a assolir els nostres objectius de digitalització.",
+      autor: "Joan Planella",
+      carrec: "Director",
+      empresa: "Repack"
     }
   ];
 

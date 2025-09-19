@@ -44,12 +44,12 @@ const ResultatsPage = () => {
     {
       empresa: "MPServices", 
       sector: "Gestió Frau Electrònic",
-      repte: "Automatització scoring de Frau.",
-      solucio: "Sistema de Analisis per IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
+      repte: "Processos manuals i repetitius que limitaven el creixement i provocaven errors en la gestió del negoci.",
+      solucio: "Sistema de anàlisis i automatització mitjançant IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
       resultat: [
-        "Visió unificada de tot el negoci",
-        "Reducció del 50% en temps d'elaboració d'informes",
-        "Millor capacitat de predicció",
+        "Estalvi de temps i reducció d’errors",
+        "Augment de la productivitat de l’equip",
+        "Millor control dels processos del negoci",
         "Decisions més ràpides i informades"
       ],
       icon: TrendingUp,
@@ -58,13 +58,12 @@ const ResultatsPage = () => {
     {
       empresa: "Volotea", 
       sector: "Aerolínea",
-      repte: "",
-      solucio: "Sistema de Analisis per IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
+      repte: "Voluntat per incorporar intel·ligència artificial al negoci sense disposar de una planificació clara ni coneixement tècnic intern.",
+      solucio: "Definir un pla d'implementació d`IA adaptat al context de l`empresa, amb identificació d`oportunitats, roadmap i suport tècnic.",
       resultat: [
-        "Visió unificada de tot el negoci",
-        "Reducció del 50% en temps d'elaboració d'informes",
-        "Millor capacitat de predicció",
-        "Decisions més ràpides i informades"
+        "Pla d’acció clar i aplicable",
+        "Millora de processos amb IA (anàlisi, predicció, automatització)",
+        "Coneixement intern generat i visió a llarg termini"
       ],
       icon: TrendingUp,
       bgColor: "from-accent/5 to-primary/5"

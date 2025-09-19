@@ -6,42 +6,37 @@ import Footer from "@/components/Footer";
 const ResultatsPage = () => {
   const testimonis = [
     {
-      frase: "Des de els inicis elink.cat ens ha acompanyat i assesorat en les decisions tecniques, aportant coneixement i valor i donant confiança quan haviem de pendre decisions dificils",
+      frase: "Amb Elinkcat he tingut molt més que una consultoria tècnica: he tingut un partner de confiança des del primer dia. M’han ajudat a prendre les decisions tecnològiques clau per fer créixer l’empresa amb criteri i solidesa",
       autor: "Rafael Jimenez",
       carrec: "CEO",
       empresa: "Adinton"
     },
     {
-      frase: "Han entès perfectament la nostra realitat i ens han proposat solucions útils de forma molt propera.",
+      frase: "“Elinkcat ens ha ajudat a definir i construir eines digitals que han automatitzat processos crítics del nostre negoci. Hem guanyat temps, eficiència i capacitat de control. És una tranquil·litat tenir-los al costat.",
       autor: "Marc Nieto", 
       carrec: "CEO",
       empresa: "MPServices"
     },
     {
-      frase: "Lorem.",
+      frase: "Estem desplegant un pla d’implementació d’intel·ligència artificial a la nostra empresa, i comptar amb el suport d’Elinkcat ha estat clau. Ens aporten claredat, coneixement i una visió pragmàtica que ens ajuda a avançar amb seguretat.",
       autor: "Alex Rodriguez",
       carrec: "IT Director",
       empresa: "Volotea"
     },
-    {
-      frase: "Lorem.",
-      autor: "Miquel Armengol",
-      carrec: "Propietari",
-      empresa: "Footballhost"
-    }
+
   ];
 
   const casosExit = [
     {
       empresa: "Adinton",
       sector: "Data Assurance Analytics",
-      repte: "Processos manuals de facturació i seguiment de projectes que generaven errors i retards en la gestió de clients.",
-      solucio: "Implementació d'un sistema integrat que automatitza la facturació, sincronitza dades de projectes i genera informes en temps real.",
+      repte: "Dubtes tècnics en les primeres fases del projecte i necessitat d’assessorament per definir una arquitectura tecnològica sòlida des del principi.",
+      solucio: "Acompanyament tècnic des del primer dia, amb assessorament en la presa de decisions clau, definició de l’arquitectura i validació de proveïdors i eines.",
       resultat: [
-        "Reducció del 70% en temps de facturació",
-        "Eliminació d'errors manuals",
-        "Millor visibilitat dels projectes en curs",
-        "Increment de la satisfacció del client"
+        "Base tecnològica escalable i alineada amb el negoci",
+        "Reducció de riscos en el desenvolupament",
+        "Decisions tècniques més àgils i segures"
+      
       ],
       icon: Clock,
       bgColor: "from-primary/5 to-accent/5"

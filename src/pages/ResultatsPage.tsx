@@ -52,9 +52,6 @@ const ResultatsPage = () => {
         "Estalvi de temps i reducció d’errors",
         "Augment de la productivitat de l’equip",
         "Millor control dels processos del negoci",
-        "Estalvi de temps i reducció d’errors",
-        "Augment de la productivitat de l’equip",
-        "Millor control dels processos del negoci",
         "Decisions més ràpides i informades"
       ],
       icon: TrendingUp,

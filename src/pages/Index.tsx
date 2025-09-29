@@ -210,10 +210,10 @@ const ManifestCTA = ({ manifestCTA }: { manifestCTA: any }) => {
 const Index = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen overflow-x-hidden">
     <Helmet>
-      <title>Elinkcat – Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya | Automatització i solucions digitals</title>
-      <meta name="description" content="Consultoria tecnològica per pimes de Barcelona i Catalunya. Automatització intel·ligent, IA aplicada i solucions digitals pràctiques per empreses catalanes que volen créixer." />
-      <meta property="og:title" content="Elinkcat – Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya" />
-      <meta property="og:description" content="Tecnologia útil per fer créixer empreses catalanes. Consultoria, automatització i IA per pimes de Barcelona i Catalunya." />
+      <title>Elinkcat – Consultoria tecnològica i IA per a empreses de Barcelona i Catalunya | Automatització i solucions digitals</title>
+      <meta name="description" content="Consultoria tecnològica per empreses de Barcelona i Catalunya. Automatització intel·ligent, IA aplicada i solucions digitals pràctiques per empreses catalanes que volen créixer." />
+      <meta property="og:title" content="Elinkcat – Consultoria tecnològica i IA per a empreses de Barcelona i Catalunya" />
+      <meta property="og:description" content="Tecnologia útil per fer créixer empreses catalanes. Consultoria, automatització i IA per empreses de Barcelona i Catalunya." />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/" />
     </Helmet>

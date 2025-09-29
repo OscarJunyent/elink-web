@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import TypewriterText from "./TypewriterText";
 
 const BACKGROUND_IMG =
   "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80";
@@ -26,7 +27,7 @@ const Hero = ({ t }: { t: any }) => {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <h1 className="text-4xl md:text-6xl font-extrabold text-dark mb-5 leading-tight max-w-3xl mx-auto">
-          {t.heroTitle}
+          <TypewriterText text={t.heroTitle} speed={80} />
         </h1>
         <p className="text-lg md:text-2xl text-accent mb-7 max-w-2xl mx-auto">{t.heroSubtitle}</p>
         <a

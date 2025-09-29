@@ -46,8 +46,6 @@ const ResultatsPage = () => {
       sector: "Gestió Frau Electrònic",
       repte: "Processos manuals i repetitius que limitaven el creixement i provocaven errors en la gestió del negoci.",
       solucio: "Sistema de anàlisis i automatització mitjançant IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
-      repte: "Processos manuals i repetitius que limitaven el creixement i provocaven errors en la gestió del negoci.",
-      solucio: "Sistema de anàlisis i automatització mitjançant IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
       resultat: [
         "Estalvi de temps i reducció d’errors",
         "Augment de la productivitat de l’equip",
@@ -60,8 +58,6 @@ const ResultatsPage = () => {
     {
       empresa: "Volotea", 
       sector: "Aerolínea",
-      repte: "Voluntat per incorporar intel·ligència artificial al negoci sense disposar de una planificació clara ni coneixement tècnic intern.",
-      solucio: "Definir un pla d'implementació d`IA adaptat al context de l`empresa, amb identificació d`oportunitats, roadmap i suport tècnic.",
       repte: "Voluntat per incorporar intel·ligència artificial al negoci sense disposar de una planificació clara ni coneixement tècnic intern.",
       solucio: "Definir un pla d'implementació d`IA adaptat al context de l`empresa, amb identificació d`oportunitats, roadmap i suport tècnic.",
       resultat: [

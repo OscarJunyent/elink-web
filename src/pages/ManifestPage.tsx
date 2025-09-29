@@ -187,12 +187,11 @@ const ManifestPage = () => {
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-start gap-6">
-                  <div className="flex flex-col items-center">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center border-2 border-primary/20 mb-3">
-                      <fase.icon className={`w-8 h-8 ${fase.color}`} />
-                    </div>
-                    <span className="text-sm font-bold text-gray-500">{fase.step}</span>
-                  </div>
+                   <div className="flex flex-col items-center">
+                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center border-2 border-primary/20 mb-3">
+                       <fase.icon className={`w-8 h-8 ${fase.color}`} />
+                     </div>
+                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-3 text-dark">
                       {fase.title}

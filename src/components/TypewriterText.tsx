@@ -4,12 +4,14 @@ interface TypewriterTextProps {
   text: string;
   speed?: number;
   className?: string;
+  pauseDuration?: number;
 }
 
 const TypewriterText: React.FC<TypewriterTextProps> = ({ 
   text, 
   speed = 100, 
-  className = "" 
+  className = "",
+  pauseDuration = 2000 
 }) => {
   const [displayedText, setDisplayedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,8 +24,16 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
       }, speed);
 
       return () => clearTimeout(timeout);
+    } else {
+      // When typing is complete, wait and then restart
+      const timeout = setTimeout(() => {
+        setDisplayedText('');
+        setCurrentIndex(0);
+      }, pauseDuration);
+
+      return () => clearTimeout(timeout);
     }
-  }, [currentIndex, text, speed]);
+  }, [currentIndex, text, speed, pauseDuration]);
 
   // Split text to highlight "útil" in red
   const renderTextWithHighlight = (text: string) => {

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, CheckCircle, ArrowRight, Building2, BrainCog, Settings } from "lucide-react";
 import Footer from "@/components/Footer";
+import TypewriterText from "@/components/TypewriterText";
 
 const ConsultoriaIABarcelonaPage = () => {
   const services = [
@@ -98,7 +99,7 @@ const ConsultoriaIABarcelonaPage = () => {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-                Consultoria d'IA a <span className="text-primary">Barcelona</span>
+                <TypewriterText text="Consultoria d'IA a Barcelona" speed={80} />
               </h1>
               <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-4xl mx-auto mb-8">
                 Transformem pimes de Barcelona i Catalunya amb intel·ligència artificial pràctica i escalable. 

@@ -2,6 +2,7 @@ import { Briefcase, Workflow, Link2, MonitorSmartphone, BrainCog } from "lucide-
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
+import TypewriterText from "@/components/TypewriterText";
 
 type Service = {
   title: string;
@@ -84,7 +85,9 @@ const ServicesPage = () => (
     </Helmet>
     
     <div className="max-w-4xl text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-6">Serveis de consultoria tecnològica per empreses catalanes</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-6">
+        <TypewriterText text="Serveis de consultoria tecnològica per empreses catalanes" speed={80} />
+      </h1>
       <p className="text-accent md:text-lg max-w-3xl mx-auto">
         Solucions tecnològiques concretes i pràctiques per impulsar la transformació digital de la teva pime a Barcelona i arreu de Catalunya.
       </p>

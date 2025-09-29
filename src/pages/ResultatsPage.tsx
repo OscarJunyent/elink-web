@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Quote, ArrowRight, CheckCircle, TrendingUp, Clock, DollarSign } from "lucide-react";
 import Footer from "@/components/Footer";
+import TypewriterText from "@/components/TypewriterText";
 
 const ResultatsPage = () => {
   const testimonis = [
@@ -86,7 +87,7 @@ const ResultatsPage = () => {
         <section className="container py-16 lg:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-              Resultats <span className="text-primary">reals</span>, impacte <span className="text-accent">tangible</span>
+              <TypewriterText text="Resultats reals, impacte tangible" speed={80} />
             </h1>
             <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-3xl mx-auto">
               Cada projecte és una oportunitat per millorar. Aquí tens exemples reals de com 

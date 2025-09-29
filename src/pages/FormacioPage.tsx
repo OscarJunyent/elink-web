@@ -2,6 +2,7 @@ import { GraduationCap, Users, Bot, Send, FileText, Video, Mail } from "lucide-r
 import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
+import TypewriterText from "@/components/TypewriterText";
 
 const TALLERS = [
   {
@@ -67,8 +68,8 @@ const FormacioPage = () => (
       <link rel="canonical" href="https://elinkcat.com/formacio" />
     </Helmet>
     <section className="max-w-3xl text-center mb-10 animate-fade-in">
-      <h1 className="flex justify-center items-center gap-4 text-4xl md:text-5xl font-extrabold text-dark mb-3">
-        <GraduationCap className="text-primary" size={38} /> Formació i divulgació
+      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">
+        <TypewriterText text="Formació i divulgació" speed={80} />
       </h1>
       <p className="text-lg md:text-2xl text-accent mt-3 mb-3 font-medium">
         Ajudem els equips a entendre i aprofitar la IA i l’automatització.

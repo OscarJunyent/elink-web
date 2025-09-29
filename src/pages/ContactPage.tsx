@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import { Calendar } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import TypewriterText from "@/components/TypewriterText";
 
 const ContactPage = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen flex flex-col">
@@ -23,7 +24,9 @@ const ContactPage = () => (
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}
         <div className="w-full text-center space-y-2">
-          <h1 className="text-2xl font-bold mb-0">Contacta amb nosaltres</h1>
+          <h1 className="text-2xl font-bold mb-0">
+            <TypewriterText text="Contacta amb nosaltres" speed={80} />
+          </h1>
           <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica. Treballem amb empreses de Barcelona i de tot Catalunya.</p>
         </div>
         {/* Formulari de contacte */}

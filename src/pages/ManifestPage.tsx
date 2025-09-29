@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp, Linkedin } from "lucide-react";
 import Footer from "@/components/Footer";
+import TypewriterText from "@/components/TypewriterText";
 
 const ManifestPage = () => {
   const valors = [
@@ -95,7 +96,7 @@ const ManifestPage = () => {
         <section className="container py-16 lg:py-24">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-              El nostre <span className="text-primary">Manifest</span>
+              <TypewriterText text="El nostre Manifest" speed={80} />
             </h1>
             <p className="text-xl md:text-2xl text-accent mb-8 animate-fade-in">
               Qui som i què fem per les empreses catalanes

@@ -47,17 +47,6 @@ const SERVICES: Service[] = [
     icon: Link2,
   },
   {
-    title: "Solucions digitals a mida",
-    desc: "Desenvolupament d'aplicacions web, intranets i eines específiques per les necessitats úniques del teu negoci.",
-    examples: [
-      "Plataformes de gestió interna: backoffice, eines de reporting, gestió de dades",
-      "Aplicacions web personalitzades",
-      "Portals de clients i proveïdors"
-    ],
-    benefits: "Avantatge competitiu amb eines úniques que s'adapten perfectament al model de negoci de pimes catalanes.",
-    icon: MonitorSmartphone,
-  },
-  {
     title: "Intel·ligència artificial aplicada al negoci",
     desc: "Implementació de solucions d'IA pràctiques per millorar la presa de decisions i optimitzar resultats.",
     examples: [
@@ -67,6 +56,17 @@ const SERVICES: Service[] = [
     ],
     benefits: "Increment de la precisió en prediccions i millora de l'experiència del client.",
     icon: BrainCog,
+  },
+  {
+    title: "Solucions digitals a mida",
+    desc: "Desenvolupament d'aplicacions web, intranets i eines específiques per les necessitats úniques del teu negoci.",
+    examples: [
+      "Plataformes de gestió interna: backoffice, eines de reporting, gestió de dades",
+      "Aplicacions web personalitzades",
+      "Portals de clients i proveïdors"
+    ],
+    benefits: "Avantatge competitiu amb eines úniques que s'adapten perfectament al model de negoci de pimes catalanes.",
+    icon: MonitorSmartphone,
   },
 ];
 

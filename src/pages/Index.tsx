@@ -222,25 +222,6 @@ const Index = () => (
     <ValuesSection values={t.values} />
     <Method t={t} />
     <ManifestCTA manifestCTA={t.manifestCTA} />
-    {/* New SEO CTA */}
-    <section className="container py-16">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-12 shadow-circular">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-dark">
-            Consultoria d'IA especialitzada per empreses de Barcelona
-          </h2>
-          <p className="text-lg text-accent mb-8 max-w-2xl mx-auto">
-            Descobreix com implementar intel·ligència artificial de forma pràctica i escalable a la teva empresa catalana
-          </p>
-          <Link
-            to="/consultoria-ia-barcelona"
-            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
-          >
-            Consultoria IA Barcelona
-          </Link>
-        </div>
-      </div>
-    </section>
     <FinalCTA t={t.finalCTA} />
     {/* REMOVED: Bloc de contacte complet amb footer ve després */}
     {/* Calendly - reservar cita, now moved here */}

@@ -20,11 +20,11 @@ const ContactPage = () => (
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/contacte" />
     </Helmet>
-    <div className="flex-1 w-full flex flex-col items-center justify-center px-4 pt-8 pb-4">
+    <div className="flex-1 w-full flex flex-col items-center justify-center px-4 pt-16 pb-4">
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}
-        <div className="w-full text-center space-y-2">
-          <h1 className="text-2xl font-bold mb-0">
+        <div className="w-full text-center space-y-4 mb-8">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-0">
             <TypewriterText text="Contacta amb nosaltres" speed={80} />
           </h1>
           <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica. Treballem amb empreses de Barcelona i de tot Catalunya.</p>

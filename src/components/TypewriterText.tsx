@@ -35,11 +35,11 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
     }
   }, [currentIndex, text, speed, pauseDuration]);
 
-  // Split text to highlight "útil" and "consultoria tecnològica" in red
+  // Split text to highlight "útil", "consultoria tecnològica", and "Barcelona" in red
   const renderTextWithHighlight = (text: string) => {
-    const parts = text.split(/(útil|consultoria tecnològica)/gi);
+    const parts = text.split(/(útil|consultoria tecnològica|Barcelona)/gi);
     return parts.map((part, index) => {
-      if (part.toLowerCase() === 'útil' || part.toLowerCase() === 'consultoria tecnològica') {
+      if (part.toLowerCase() === 'útil' || part.toLowerCase() === 'consultoria tecnològica' || part.toLowerCase() === 'barcelona') {
         return <span key={index} className="text-red-500">{part}</span>;
       }
       return part;

@@ -82,12 +82,12 @@ const ManifestPage = () => {
   return (
     <>
       <Helmet>
-        <title>Manifest Elinkcat - Consultoria tecnològica per empreses catalanes | IA i automatització</title>
-        <meta name="description" content="Descobreix el manifest d'Elinkcat: consultoria tecnològica propera per empreses catalanes. Valors, metodologia i propòsit per transformar empreses amb IA i automatització." />
-        <meta property="og:title" content="Manifest Elinkcat - Consultoria tecnològica per empreses catalanes" />
-        <meta property="og:description" content="La nostra filosofia: tecnologia útil i pràctica per fer créixer empreses catalanes amb proximitat, claredat i eficiència." />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://elinkcat.com/manifest" />
+      <title>Manifest Elinkcat - Consultoria IA Barcelona | Empresa tecnològica per pimes catalanes</title>
+      <meta name="description" content="Manifest d'Elinkcat: consultoria IA Barcelona propera per empreses catalanes. Valors, metodologia i propòsit per transformar pimes de Catalunya amb IA i automatització." />
+      <meta property="og:title" content="Manifest Elinkcat - Consultoria IA Barcelona per empreses catalanes" />
+      <meta property="og:description" content="La nostra filosofia: tecnologia útil i pràctica per fer créixer empreses de Barcelona i Catalunya amb proximitat, claredat i eficiència." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/manifest" />
       </Helmet>
 
       <main className="min-h-screen bg-background">
@@ -249,7 +249,7 @@ const ManifestPage = () => {
                   <div className="mb-4">
                     <img
                       src={founder.image}
-                      alt={`Foto de ${founder.name}`}
+                      alt={`${founder.name}, ${founder.role} - Consultoria IA Barcelona`}
                       className="rounded-full w-32 h-32 object-cover shadow-md"
                     />
                   </div>

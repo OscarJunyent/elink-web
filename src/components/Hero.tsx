@@ -11,12 +11,12 @@ const Hero = ({ t }: { t: any }) => {
     <section className="w-full min-h-[60vh] flex flex-col items-center justify-center text-center bg-background px-4 py-14 md:py-24 relative overflow-hidden">
       {/* Fons elegant */}
       <div aria-hidden="true" className="absolute inset-0 z-0 pointer-events-none">
-        <img
-          src={BACKGROUND_IMG}
-          alt=""
-          className="w-full h-full object-cover object-center opacity-75 blur-[2px] scale-105"
-          draggable={false}
-        />
+          <img
+            alt="Consultoria tecnològica per empreses catalanes - Elink.cat"
+            src={BACKGROUND_IMG}
+            className="w-full h-full object-cover object-center opacity-75 blur-[2px] scale-105"
+            draggable={false}
+          />
         <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/30" />
       </div>
 

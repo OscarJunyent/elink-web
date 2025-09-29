@@ -73,12 +73,12 @@ const ResultatsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Resultats reals i casos d'èxit - Elinkcat | Consultoria tecnològica per pimes catalanes</title>
-        <meta name="description" content="Descobreix casos d'èxit reals d'Elinkcat: com la consultoria tecnològica, IA i automatització han transformat pimes catalanes amb resultats mesurables." />
-        <meta property="og:title" content="Resultats reals i casos d'èxit - Elinkcat" />
-        <meta property="og:description" content="Testimonis i casos d'èxit de pimes catalanes que han millorat amb tecnologia útil, automatització i IA aplicada." />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://elinkcat.com/resultats" />
+      <title>Resultats reals i casos d'èxit - Consultoria IA Barcelona | Empreses tecnològiques Catalunya</title>
+      <meta name="description" content="Casos d'èxit d'Elinkcat a Barcelona i Catalunya: com la consultoria IA, automatització i solucions digitals han transformat pimes catalanes amb resultats mesurables." />
+      <meta property="og:title" content="Resultats reals i casos d'èxit - Consultoria IA Barcelona" />
+      <meta property="og:description" content="Testimonis i casos d'èxit de pimes de Barcelona i Catalunya que han millorat amb consultoria tecnològica, automatització i IA aplicada." />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/resultats" />
       </Helmet>
 
       <main className="min-h-screen bg-background">
@@ -90,7 +90,7 @@ const ResultatsPage = () => {
             </h1>
             <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-3xl mx-auto">
               Cada projecte és una oportunitat per millorar. Aquí tens exemples reals de com 
-              la tecnologia útil transforma empreses com la teva.
+              la tecnologia útil transforma empreses catalanes com la teva, amb especial focus a Barcelona i arreu de Catalunya.
             </p>
           </div>
         </section>

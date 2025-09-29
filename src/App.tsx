@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+import ConsultoriaIABarcelonaPage from "./pages/ConsultoriaIABarcelonaPage";
 import ServicesPage from "./pages/ServicesPage";
 import TopNav from "@/components/TopNav";
 import FormacioPage from "./pages/FormacioPage";
@@ -28,6 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
+            <Route path="/consultoria-ia-barcelona" element={<ConsultoriaIABarcelonaPage />} />
             <Route path="/serveis" element={<ServicesPage />} />
             <Route path="/formacio" element={<FormacioPage />} />
             <Route path="/contacte" element={<ContactPage />} />

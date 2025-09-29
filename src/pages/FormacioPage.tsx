@@ -53,17 +53,18 @@ const t = {};
 const FormacioPage = () => (
   <div className="bg-background min-h-screen py-14 px-4 flex flex-col items-center w-full animate-fade-in">
     <Helmet>
-      <title>Formació en IA i automatització per equips | Elink.cat</title>
+      <title>Formació en IA i automatització per equips de Barcelona i Catalunya | Elink.cat</title>
       <meta
         name="description"
-        content="Tallers pràctics i divulgació per equips que volen entendre i aplicar la tecnologia. Descobreix les nostres formacions i recursos."
+        content="Tallers d'IA i automatització per empreses de Barcelona i Catalunya. Formació pràctica en intel·ligència artificial per equips de pimes catalanes."
       />
-      <meta property="og:title" content="Formació i recursos | Elink.cat" />
+      <meta property="og:title" content="Formació en IA per empreses catalanes | Elink.cat" />
       <meta
         property="og:description"
-        content="Capacitem equips per entendre i aplicar la tecnologia."
+        content="Capacitem equips de pimes catalanes per entendre i aplicar la IA i automatització al seu negoci."
       />
       <meta name="robots" content="index, follow" />
+      <link rel="canonical" href="https://elinkcat.com/formacio" />
     </Helmet>
     <section className="max-w-3xl text-center mb-10 animate-fade-in">
       <h1 className="flex justify-center items-center gap-4 text-4xl md:text-5xl font-extrabold text-dark mb-3">
@@ -99,7 +100,7 @@ const FormacioPage = () => (
       </div>
       <div className="text-center mt-8">
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium text-md">
-          Tallers a les vostres oficines i també per a col·lectius / associacions. Ens adaptem totalment!
+          Tallers a les vostres oficines a Barcelona, Catalunya i també per a col·lectius / associacions. Ens adaptem totalment!
         </span>
       </div>
     </section>

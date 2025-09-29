@@ -10,6 +10,9 @@ const menu = [{
   to: "/serveis",
   label: "Serveis"
 }, {
+  to: "/consultoria-ia-barcelona",
+  label: "IA Barcelona"
+}, {
   to: "/formacio",
   label: "Formació"
 }, {
@@ -40,7 +43,7 @@ const TopNav = () => {
     }}>
         <a href="https://elink.cat/" target="_blank" rel="noopener noreferrer" className="flex items-center group w-full">
           <img
-            alt="Elink.cat logo"
+            alt="Consultoria tecnològica Barcelona - Elinkcat logo"
             style={{
               background: "#fff",
               objectFit: "contain",

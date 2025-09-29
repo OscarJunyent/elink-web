@@ -104,11 +104,11 @@ const t = {
 
   // Altres títols per compatibilitat
   aboutTitle: "Qui som",
-  aboutMission: "A elink.cat t'ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança.",
+  aboutMission: "A elink.cat t'ajudem a fer créixer el teu negoci aprofitant la tecnologia més adequada per a tu. Som experts apassionats i propers, compromesos amb la innovació pràctica i els resultats tangibles com a partner tecnològic de confiança per empreses de Barcelona i tot Catalunya.",
   casesTitle: "Clients i casos d'èxit",
   casesPlaceholder: "Ben aviat compartirem experiències i resultats d'empreses que ja confien en nosaltres. Contacta'ns per saber més!",
   trainingTitle: "Formació i divulgació",
-  trainingDesc: "Oferim tallers pràctics i recursos oberts per apropar la tecnologia a les empreses catalanes.",
+  trainingDesc: "Oferim tallers pràctics i recursos oberts per apropar la tecnologia a les empreses catalanes de Barcelona i arreu del territori.",
   trainingCTA: "Consulta les properes formacions",
   contactTitle: "Contacta amb nosaltres",
   nom: "Nom i cognoms",
@@ -210,10 +210,10 @@ const ManifestCTA = ({ manifestCTA }: { manifestCTA: any }) => {
 const Index = () => (
   <div className="font-sans bg-background text-dark w-full min-h-screen overflow-x-hidden">
     <Helmet>
-      <title>Elinkcat – Consultoria tecnològica i IA per a pimes catalanes | Automatització i solucions digitals</title>
-      <meta name="description" content="Transformem pimes catalanes amb consultoria tecnològica, automatització intel·ligent i IA aplicada. Solucions digitals pràctiques per millorar eficiència i reduir costos." />
-      <meta property="og:title" content="Elinkcat – Consultoria tecnològica i IA per a pimes catalanes" />
-      <meta property="og:description" content="Tecnologia útil per fer créixer el teu negoci. Consultoria, automatització i IA per empreses catalanes." />
+      <title>Elinkcat – Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya | Automatització i solucions digitals</title>
+      <meta name="description" content="Consultoria tecnològica per pimes de Barcelona i Catalunya. Automatització intel·ligent, IA aplicada i solucions digitals pràctiques per empreses catalanes que volen créixer." />
+      <meta property="og:title" content="Elinkcat – Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya" />
+      <meta property="og:description" content="Tecnologia útil per fer créixer empreses catalanes. Consultoria, automatització i IA per pimes de Barcelona i Catalunya." />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/" />
     </Helmet>
@@ -222,6 +222,25 @@ const Index = () => (
     <ValuesSection values={t.values} />
     <Method t={t} />
     <ManifestCTA manifestCTA={t.manifestCTA} />
+    {/* New SEO CTA */}
+    <section className="container py-16">
+      <div className="max-w-4xl mx-auto text-center">
+        <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-12 shadow-circular">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-dark">
+            Consultoria d'IA especialitzada per empreses de Barcelona
+          </h2>
+          <p className="text-lg text-accent mb-8 max-w-2xl mx-auto">
+            Descobreix com implementar intel·ligència artificial de forma pràctica i escalable a la teva empresa catalana
+          </p>
+          <Link
+            to="/consultoria-ia-barcelona"
+            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
+          >
+            Consultoria IA Barcelona
+          </Link>
+        </div>
+      </div>
+    </section>
     <FinalCTA t={t.finalCTA} />
     {/* REMOVED: Bloc de contacte complet amb footer ve després */}
     {/* Calendly - reservar cita, now moved here */}

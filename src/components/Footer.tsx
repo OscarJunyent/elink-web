@@ -7,7 +7,7 @@ const Footer = ({
   t: any;
 }) => {
   return (
-    <footer className="w-full bg-dark text-gray-100 py-12 mt-16">
+    <footer className="w-full bg-dark text-white py-12 mt-16">
       <div className="container mx-auto px-4">
         {/* Top section with logo and tagline */}
         <div className="mb-8 pb-8 border-b border-gray-700">
@@ -18,7 +18,7 @@ const Footer = ({
                 alt="Elinkcat logo"
                 className="h-12 w-auto"
               />
-              <p className="text-gray-300 text-sm max-w-md">
+              <p className="text-white text-sm max-w-md">
                 Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.
               </p>
             </div>
@@ -52,7 +52,7 @@ const Footer = ({
           {/* Contacte */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Contacte</h3>
-            <ul className="space-y-3 text-gray-300 text-sm">
+            <ul className="space-y-3 text-white text-sm">
               <li>
                 <a 
                   href="mailto:info@elink.cat" 
@@ -76,7 +76,7 @@ const Footer = ({
           {/* Dades de l'empresa */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Empresa</h3>
-            <address className="not-italic text-gray-300 text-sm space-y-1">
+            <address className="not-italic text-white text-sm space-y-1">
               <p className="font-medium text-white">Elinkcat Software SL</p>
               <p>NIF: B66891557</p>
               <p>Roger de Flor, 49 6-3 Esc B</p>
@@ -87,7 +87,7 @@ const Footer = ({
           {/* Legal - Moved from previous position */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Legal</h3>
-            <ul className="space-y-3 text-gray-300 text-sm">
+            <ul className="space-y-3 text-white text-sm">
               <li>
                 <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
                   Política de privacitat
@@ -109,7 +109,7 @@ const Footer = ({
 
         {/* Bottom section - Copyright left, Legal links right */}
         <div className="pt-8 border-t border-gray-700">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white">
             <p>
               © {new Date().getFullYear()} Elinkcat Software S.L. Tots els drets reservats.
             </p>

@@ -15,7 +15,7 @@ type Service = {
 const SERVICES: Service[] = [
   {
     title: "Consultoria tecnològica",
-    desc: "Anàlisi dels teus processos actuals i identificació d'oportunitats de millora tecnològica adaptades a empreses de Barcelona i Catalunya.",
+    desc: "Anàlisi dels teus processos actuals i identificació d'oportunitats de millora tecnològica adaptades a empreses d'aquí.",
     examples: [
       "Auditoria dels sistemes existents",
       "Planificació de la transformació digital",
@@ -65,7 +65,7 @@ const SERVICES: Service[] = [
       "Aplicacions web personalitzades",
       "Portals de clients i proveïdors"
     ],
-    benefits: "Avantatge competitiu amb eines úniques que s'adapten perfectament al model de negoci de pimes catalanes.",
+    benefits: "Avantatge competitiu amb eines úniques que s'adapten perfectament al model de negoci de empreses catalanes.",
     icon: MonitorSmartphone,
   },
 ];
@@ -77,9 +77,9 @@ const ServicesPage = () => (
   <div className="bg-background min-h-screen py-16 px-4 flex flex-col items-center w-full">
     <Helmet>
       <title>Serveis consultoria tecnològica per empreses de Barcelona i Catalunya | IA, automatització i solucions digitals - Elinkcat</title>
-      <meta name="description" content="Consultoria IA Barcelona i automatització per empreses catalanes. Solucions digitals a mida, integracions i consultoria tecnològica especialitzada per pimes de Catalunya." />
+      <meta name="description" content="Consultoria IA Barcelona i automatització per empreses catalanes. Solucions digitals a mida, integracions i consultoria tecnològica especialitzada per empreses de Catalunya." />
       <meta property="og:title" content="Serveis consultoria tecnològica per empreses de Barcelona i Catalunya | Elinkcat" />
-      <meta property="og:description" content="Automatització i IA per empreses catalanes: consultoria tecnològica especialitzada per pimes de Barcelona i Catalunya." />
+      <meta property="og:description" content="Automatització i IA per empreses catalanes: consultoria tecnològica especialitzada per empreses de Barcelona i Catalunya." />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/serveis" />
     </Helmet>
@@ -89,7 +89,7 @@ const ServicesPage = () => (
         <TypewriterText text="Serveis de consultoria tecnològica per empreses catalanes" speed={80} />
       </h1>
       <p className="text-accent md:text-lg max-w-3xl mx-auto">
-        Solucions tecnològiques concretes i pràctiques per impulsar la transformació digital de la teva pime a Barcelona i arreu de Catalunya.
+        Solucions tecnològiques concretes i pràctiques per impulsar la transformació digital de la teva empresa arreu de Catalunya.
       </p>
     </div>
 
@@ -141,7 +141,7 @@ const ServicesPage = () => (
 
               {/* Benefits */}
               <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
-                <h3 className="text-lg font-semibold text-dark mb-2">Benefici per a la teva pime:</h3>
+                <h3 className="text-lg font-semibold text-dark mb-2">Benefici per a la teva empresa:</h3>
                 <p className="text-primary font-medium">{service.benefits}</p>
               </div>
             </div>

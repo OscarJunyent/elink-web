@@ -57,12 +57,12 @@ const FormacioPage = () => (
       <title>Formació en IA i automatització per equips de Barcelona i Catalunya | Elink.cat</title>
       <meta
         name="description"
-        content="Tallers d'IA i automatització per empreses de Barcelona i Catalunya. Formació pràctica en intel·ligència artificial per equips de pimes catalanes."
+        content="Tallers d'IA i automatització per empreses de Barcelona i Catalunya. Formació pràctica en intel·ligència artificial per equips de empreses catalanes."
       />
       <meta property="og:title" content="Formació en IA per empreses catalanes | Elink.cat" />
       <meta
         property="og:description"
-        content="Capacitem equips de pimes catalanes per entendre i aplicar la IA i automatització al seu negoci."
+        content="Capacitem equips de empreses catalanes per entendre i aplicar la IA i automatització al seu negoci."
       />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/formacio" />
@@ -72,10 +72,10 @@ const FormacioPage = () => (
         <TypewriterText text="Formació i divulgació" speed={80} />
       </h1>
       <p className="text-lg md:text-2xl text-accent mt-3 mb-3 font-medium">
-        Ajudem els equips a entendre i aprofitar la IA i l’automatització.
+        Ajudem els equips a entendre i aprofitar la IA i l'automatització del teu negoci.
       </p>
       <p className="text-accent md:text-base mb-1">
-        Facilitem coneixement pràctic i rigorós per impulsar la transformació digital, des de la comprensió bàsica fins a l’aplicació al vostre sector.
+        Facilitem coneixement pràctic i rigorós per impulsar la transformació digital, des de la comprensió bàsica fins a l’aplicació específica al vostre sector.
       </p>
     </section>
 
@@ -101,7 +101,7 @@ const FormacioPage = () => (
       </div>
       <div className="text-center mt-8">
         <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full font-medium text-md">
-          Tallers a les vostres oficines a Barcelona, Catalunya i també per a col·lectius / associacions. Ens adaptem totalment!
+          Tallers a les vostres oficines a Barcelona i tot Catalunya i també per a col·lectius / associacions. Ens adaptem totalment!
         </span>
       </div>
     </section>

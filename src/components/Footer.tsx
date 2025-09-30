@@ -18,9 +18,7 @@ const Footer = ({
                 alt="Elinkcat logo"
                 className="h-12 w-auto"
               />
-              <p className="text-white text-sm max-w-md">
-                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.
-              </p>
+       
             </div>
             
             {/* Social icons */}
@@ -50,6 +48,16 @@ const Footer = ({
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Contacte */}
+
+        <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">Empresa</h3>
+            <address className="not-italic text-white text-sm space-y-1">
+              <p className="text-white text-sm max-w-md">
+                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.
+              </p>
+            </address>
+          </div>
+          
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Contacte</h3>
             <ul className="space-y-3 text-white text-sm">
@@ -67,22 +75,13 @@ const Footer = ({
                   to="/contacte" 
                   className="hover:text-primary transition-colors"
                 >
-                  Contacta amb nosaltres
+                  ??????
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Dades de l'empresa */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Empresa</h3>
-            <address className="not-italic text-white text-sm space-y-1">
-              <p className="font-medium text-white">Elinkcat Software SL</p>
-              <p>NIF: B66891557</p>
-              <p>Roger de Flor, 49 6-3 Esc B</p>
-              <p>08013 Barcelona</p>
-            </address>
-          </div>
+  
 
           {/* Legal - Moved from previous position */}
           <div>

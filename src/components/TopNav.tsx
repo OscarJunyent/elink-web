@@ -10,9 +10,6 @@ const menu = [{
   to: "/serveis",
   label: "Serveis"
 }, {
-  to: "/consultoria-ia-barcelona",
-  label: "IA Barcelona"
-}, {
   to: "/formacio",
   label: "Formació"
 }, {

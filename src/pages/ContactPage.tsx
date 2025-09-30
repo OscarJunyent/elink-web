@@ -38,7 +38,8 @@ const ContactPage = () => (
     {/* Calendly - reservar cita */}
     <div className="w-full flex justify-center px-4 pb-6">
       <div className="max-w-xl w-full bg-accent/20 border border-accent rounded-lg p-5 flex flex-col items-center">
-        <p className="font-medium mb-2">Som a prop teu. Si prefereixes una reunió presencial o videoconferència, reserva una cita directa:</p>
+        <p className="font-medium mb-2">Som a prop teu. 
+          Si prefereixes una reunió presencial o videoconferència, reserva una cita directa:</p>
         <a
           href="https://calendly.com/oscar-junyent-elinkcat"
           className="inline-flex items-center justify-center px-4 py-2 rounded-lg border border-accent text-accent font-medium bg-white hover:bg-accent hover:text-white transition-colors gap-2"

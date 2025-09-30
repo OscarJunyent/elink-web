@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import TypewriterText from "@/components/TypewriterText";
+import LatestBlogPost from "@/components/LatestBlogPost";
 
 const TALLERS = [
   {
@@ -105,6 +106,9 @@ const FormacioPage = () => (
         </span>
       </div>
     </section>
+
+    {/* Latest Blog Post */}
+    <LatestBlogPost />
 
     {/* Recursos */}
     <section className="container max-w-4xl w-full bg-white rounded-2xl shadow-circular p-8 mb-8">

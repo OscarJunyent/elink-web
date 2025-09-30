@@ -18,9 +18,7 @@ const Footer = ({
                 alt="Elinkcat logo"
                 className="h-12 w-auto"
               />
-       
-            </div>
-            
+            </div>   
             {/* Social icons */}
             <div className="flex items-center gap-4">
               <a 
@@ -59,9 +57,9 @@ const Footer = ({
             <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
             <address className="not-italic text-white text-sm space-y-1">
               <p className="text-white text-sm max-w-md">
-                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.</br> Transformem empreses amb tecnologia útil, automatització intel·ligent i solucions a mida.
+                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.Transformem empreses amb tecnologia útil, automatització intel·ligent i solucions a mida.
               </p>
-              </p>
+
             </address>
           </div>
           

@@ -38,48 +38,23 @@ const Footer = ({
                 className="hover:text-primary transition-colors"
               >
                 <Instagram size={24} />
-              </a>     
-              <a 
-                  href="mailto:info@elink.cat" 
-                  className="flex items-center gap-2 hover:text-primary transition-colors"
-                >
-                  <Mail size={16} />
-                  info@elink.cat
-                </a>
+              </a>             
             </div>
           </div>
         </div>
 
         {/* Main footer content */}
-          {/* Contacte */}
-
         <div>
             <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
             <address className="not-italic text-white text-sm space-y-1">
               <p className="text-white text-sm max-w-md">
-                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.Transformem empreses amb tecnologia útil, automatització intel·ligent i solucions a mida.
+                Consultoria tecnològica i IA per a empreses catalanes.
               </p>
 
             </address>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
-            <ul className="space-y-3 text-white text-sm">
-              
-              <li>
-                <Link 
-                  to="/contacte" 
-                  className="hover:text-primary transition-colors"
-                >
-                  ??????
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Legal</h3>
+        </div>       
+        <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">Enllaços d'interés</h3>
             <ul className="space-y-3 text-white text-sm">
               <li>
                 <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
@@ -94,8 +69,7 @@ const Footer = ({
               <li>
                 <Link to="/politica-cookies" className="hover:text-primary transition-colors">
                  La Píndola de TecnologÍA
-                </Link>
-    
+                </Link>    
               </li>
             </ul>
           </div>

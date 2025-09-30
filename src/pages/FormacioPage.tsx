@@ -69,7 +69,7 @@ const FormacioPage = () => (
     </Helmet>
     <section className="max-w-3xl text-center mb-10 animate-fade-in">
       <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">
-        <TypewriterText text="Formació i divulgació" speed={80} />
+        <span className="text-primary">Formació</span> i divulgació
       </h1>
       <p className="text-lg md:text-2xl text-accent mt-3 mb-3 font-medium">
         Ajudem els equips a entendre i aprofitar la IA i l'automatització del teu negoci.

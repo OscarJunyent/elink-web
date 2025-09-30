@@ -40,36 +40,36 @@ const Footer = ({
                 className="hover:text-primary transition-colors"
               >
                 <Instagram size={24} />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Contacte */}
-
-        <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Empresa</h3>
-            <address className="not-italic text-white text-sm space-y-1">
-              <p className="text-white text-sm max-w-md">
-                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.
-              </p>
-            </address>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Contacte</h3>
-            <ul className="space-y-3 text-white text-sm">
-              <li>
-                <a 
+              </a>     
+              <a 
                   href="mailto:info@elink.cat" 
                   className="flex items-center gap-2 hover:text-primary transition-colors"
                 >
                   <Mail size={16} />
                   info@elink.cat
                 </a>
-              </li>
+            </div>
+          </div>
+        </div>
+
+        {/* Main footer content */}
+       <!-- <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"> -->
+          {/* Contacte */}
+
+        <div>
+            <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
+            <address className="not-italic text-white text-sm space-y-1">
+              <p className="text-white text-sm max-w-md">
+                Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.</br> Transformem empreses amb tecnologia útil, automatització intel·ligent i solucions a mida.
+              </p>
+              </p>
+            </address>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
+            <ul className="space-y-3 text-white text-sm">
+              
               <li>
                 <Link 
                   to="/contacte" 
@@ -81,26 +81,24 @@ const Footer = ({
             </ul>
           </div>
 
-  
-
-          {/* Legal - Moved from previous position */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Legal</h3>
             <ul className="space-y-3 text-white text-sm">
               <li>
                 <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
-                  Política de privacitat
+                  Consultoria IA Barcelona
                 </Link>
               </li>
               <li>
                 <Link to="/termes-servei" className="hover:text-primary transition-colors">
-                  Termes de servei
+                  Sobre Nosaltres
                 </Link>
               </li>
               <li>
                 <Link to="/politica-cookies" className="hover:text-primary transition-colors">
-                  Política de cookies
+                 La Píndola de TecnologÍA
                 </Link>
+    
               </li>
             </ul>
           </div>

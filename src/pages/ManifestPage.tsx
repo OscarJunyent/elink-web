@@ -126,11 +126,11 @@ const ManifestPage = () => {
               </div>
               
               <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
-                "Quan la tecnologia s’adapta al teu ritme i a les teves necessitats, tot flueix..
-                Tant, que pot semblar màgia."
+                "Quan la tecnologia s’adapta al teu ritme i a les teves necessitats, tot flueix..<br></br>
+                tant, que pot semblar màgia."
               </blockquote>
               <p className="text-lg text-accent">
-                Aquesta  és la nostre versió de la <a href="https://ca.wikipedia.org/wiki/Lleis_de_Clarke" target="_blank">tercera llei de Clarke</a>
+                Aquesta  és la nostre versió de la <u><a href="https://ca.wikipedia.org/wiki/Lleis_de_Clarke" target="_blank">tercera llei de Clarke</a></u>
               </p>
             </div>
           </div>

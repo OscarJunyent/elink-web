@@ -14,6 +14,9 @@ import FormacioPage from "./pages/FormacioPage";
 import ContactPage from "./pages/ContactPage";
 import ManifestPage from "./pages/ManifestPage";
 import ResultatsPage from "./pages/ResultatsPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
+import CookiesPage from "./pages/CookiesPage";
 import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
@@ -35,6 +38,9 @@ const App = () => (
             <Route path="/contacte" element={<ContactPage />} />
             <Route path="/manifest" element={<ManifestPage />} />
             <Route path="/resultats" element={<ResultatsPage />} />
+            <Route path="/politica-privacitat" element={<PrivacyPage />} />
+            <Route path="/termes-servei" element={<TermsPage />} />
+            <Route path="/politica-cookies" element={<CookiesPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

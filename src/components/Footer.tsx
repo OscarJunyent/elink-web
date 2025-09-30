@@ -14,10 +14,9 @@ const Footer = ({
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="flex flex-col gap-3">
               <img
-                src="/lovable-uploads/0746ee12-55c7-4ced-b3e5-da2c8a0f1495.png"
+                src="/lovable-uploads/elinkcat-dark-logo.png"
                 alt="Elinkcat logo"
                 className="h-12 w-auto"
-                style={{ filter: 'brightness(0) invert(1)' }}
               />
               <p className="text-gray-300 text-sm max-w-md">
                 Consultoria tecnològica i IA per a pimes de Barcelona i Catalunya.
@@ -74,28 +73,6 @@ const Footer = ({
             </ul>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Legal</h3>
-            <ul className="space-y-3 text-gray-300 text-sm">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Política de privacitat
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Termes de servei
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Política de cookies
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Dades de l'empresa */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Empresa</h3>
@@ -106,13 +83,48 @@ const Footer = ({
               <p>08013 Barcelona</p>
             </address>
           </div>
+
+          {/* Legal - Moved from previous position */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4 text-white">Legal</h3>
+            <ul className="space-y-3 text-gray-300 text-sm">
+              <li>
+                <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
+                  Política de privacitat
+                </Link>
+              </li>
+              <li>
+                <Link to="/termes-servei" className="hover:text-primary transition-colors">
+                  Termes de servei
+                </Link>
+              </li>
+              <li>
+                <Link to="/politica-cookies" className="hover:text-primary transition-colors">
+                  Política de cookies
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        {/* Bottom copyright */}
+        {/* Bottom section - Copyright left, Legal links right */}
         <div className="pt-8 border-t border-gray-700">
-          <p className="text-center text-gray-400 text-sm">
-            © {new Date().getFullYear()} Elinkcat Software SL. Tots els drets reservats.
-          </p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+            <p>
+              © {new Date().getFullYear()} Elinkcat Software S.L. Tots els drets reservats.
+            </p>
+            <div className="flex gap-6">
+              <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
+                Política de privacitat
+              </Link>
+              <Link to="/termes-servei" className="hover:text-primary transition-colors">
+                Termes de servei
+              </Link>
+              <Link to="/politica-cookies" className="hover:text-primary transition-colors">
+                Política de cookies
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

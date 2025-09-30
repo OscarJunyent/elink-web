@@ -53,7 +53,6 @@ const Footer = ({
         </div>
 
         {/* Main footer content */}
-       <!-- <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"> -->
           {/* Contacte */}
 
         <div>

@@ -57,17 +57,17 @@ const Footer = ({
             <h3 className="text-lg font-semibold mb-4 text-white">Enllaços d'interés</h3>
             <ul className="space-y-3 text-white text-sm">
               <li>
-                <Link to="/politica-privacitat" className="hover:text-primary transition-colors">
+                <Link to="/consultoria-ia-barcelona" className="hover:text-primary transition-colors">
                   Consultoria IA Barcelona
                 </Link>
               </li>
               <li>
-                <Link to="/termes-servei" className="hover:text-primary transition-colors">
+                <Link to="/manifest" className="hover:text-primary transition-colors">
                   Sobre Nosaltres
                 </Link>
               </li>
               <li>
-                <Link to="/politica-cookies" className="hover:text-primary transition-colors">
+                <Link to="https://oscarjunyent.substack.com/" className="hover:text-primary transition-colors">
                  La Píndola de TecnologÍA
                 </Link>    
               </li>

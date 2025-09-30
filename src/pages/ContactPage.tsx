@@ -10,12 +10,12 @@ const ContactPage = () => (
       <title>Contacte Elinkcat - Consultoria IA Barcelona | Empreses tecnològiques Catalunya</title>
       <meta
         name="description"
-        content="Contacta amb Elinkcat, consultoria IA Barcelona especialitzada en pimes catalanes. Automatització i solucions digitals per empreses de Catalunya."
+        content="Contacta amb Elinkcat, consultoria IA Barcelona especialitzada en empreses catalanes. Automatització i solucions digitals per empreses de Catalunya."
       />
-      <meta property="og:title" content="Contacte Elinkcat - Consultoria IA Barcelona per pimes catalanes" />
+      <meta property="og:title" content="Contacte Elinkcat - Consultoria IA Barcelona per empreses catalanes" />
       <meta
         property="og:description"
-        content="Descobreix com la consultoria tecnològica, IA i automatització poden transformar la teva empresa catalana. Treballem amb pimes de Barcelona i Catalunya."
+        content="Descobreix com la consultoria tecnològica, IA i automatització poden transformar la teva empresa catalana. Treballem amb empreses de Barcelona i Catalunya."
       />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href="https://elinkcat.com/contacte" />
@@ -27,7 +27,7 @@ const ContactPage = () => (
           <h1 className="text-4xl md:text-5xl font-extrabold mb-0">
             <TypewriterText text="Contacta amb nosaltres" speed={80} />
           </h1>
-          <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica. Treballem amb empreses de Barcelona i de tot Catalunya.</p>
+          <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica. Treballem amb empreses de tot Catalunya.</p>
         </div>
         {/* Formulari de contacte */}
         <div className="w-full bg-white/90 border border-gray rounded-lg shadow-circular p-5 md:p-7">

@@ -44,16 +44,14 @@ const Footer = ({
         </div>
 
         {/* Main footer content */}
-        <div>
-            <h3 className="text-lg font-semibold mb-4 text-white"> </h3>
-            <address className="not-italic text-white text-sm space-y-1">
-              <p className="text-white text-sm max-w-md">
-                Consultoria tecnològica i IA per a empreses catalanes.
-              </p>
-
-            </address>
-        </div>       
-        <div>
+        <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+          <div>
+            <p className="text-white text-sm max-w-md">
+              Consultoria tecnològica i IA per a empreses catalanes.
+            </p>
+          </div>
+          
+          <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Enllaços d'interés</h3>
             <ul className="space-y-3 text-white text-sm">
               <li>
@@ -94,6 +92,7 @@ const Footer = ({
             </div>
           </div>
         </div>
+      </div>
     </footer>
   );
 };

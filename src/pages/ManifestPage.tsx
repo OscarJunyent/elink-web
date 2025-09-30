@@ -103,7 +103,7 @@ const ManifestPage = () => {
             </p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-gray-700 leading-relaxed animate-fade-in">
-                Som <strong>Elinkcat</strong>, una consultora tecnològica especialitzada en petites i mitjanes empreses catalanes. 
+                Som <strong>elinkcat</strong>, una consultora tecnològica especialitzada en petites i mitjanes empreses catalanes. 
                 Ens dediquem a transformar negocis mitjançant consultoria tecnològica, automatització intel·ligent, 
                 intel·ligència artificial aplicada i solucions digitals a mida.
               </p>
@@ -111,6 +111,31 @@ const ManifestPage = () => {
           </div>
         </section>
 
+     {/* 5. Tancament inspirador */}
+        <section className="container py-16">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl p-12 shadow-circular">
+              <div className="flex justify-center mb-8">
+                <div className="flex items-center gap-4">
+                  <Heart className="w-8 h-8 text-primary" />
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <Lightbulb className="w-8 h-8 text-accent" />
+                  <div className="w-2 h-2 bg-accent rounded-full"></div>
+                  <Target className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+              
+              <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
+                "Quan la tecnologia és la correcta, no et distreu. Et fa avançar."
+              </blockquote>
+              <p className="text-lg text-accent">
+                Aquest és el nostre compromís amb cada empresa que confia en nosaltres
+              </p>
+            </div>
+          </div>
+        </section>
+
+        
         {/* 2. El nostre propòsit */}
         <section className="container py-16">
           <div className="max-w-4xl mx-auto">
@@ -207,29 +232,7 @@ const ManifestPage = () => {
           </div>
         </section>
 
-        {/* 5. Tancament inspirador */}
-        <section className="container py-16">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl p-12 shadow-circular">
-              <div className="flex justify-center mb-8">
-                <div className="flex items-center gap-4">
-                  <Heart className="w-8 h-8 text-primary" />
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <Lightbulb className="w-8 h-8 text-accent" />
-                  <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <Target className="w-8 h-8 text-primary" />
-                </div>
-              </div>
-              
-              <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
-                "Quan la tecnologia és la correcta, no et distreu. Et fa avançar."
-              </blockquote>
-              <p className="text-lg text-accent">
-                Aquest és el nostre compromís amb cada empresa que confia en nosaltres
-              </p>
-            </div>
-          </div>
-        </section>
+   
 
         {/* Equip fundador */}
         <section className="container py-16">

@@ -35,11 +35,11 @@ const TypewriterText: React.FC<TypewriterTextProps> = ({
     }
   }, [currentIndex, text, speed, pauseDuration]);
 
-  // Split text to highlight "útil", "consultoria tecnològica", "Barcelona", "Manifest", "reals", "tangible", "nosaltres", "Formació", and "Contacta" in red
+  // Split text to highlight "útil", "consultoria tecnològica", "Barcelona", "Manifest", "reals", "tangible", "nosaltres", and "Formació" in red
   const renderTextWithHighlight = (text: string) => {
-    const parts = text.split(/(útil|consultoria tecnològica|Barcelona|Manifest|reals|tangible|nosaltres|Formació|Contacta)/gi);
+    const parts = text.split(/(útil|consultoria tecnològica|Barcelona|Manifest|reals|tangible|nosaltres|Formació)/gi);
     return parts.map((part, index) => {
-      if (part.toLowerCase() === 'útil' || part.toLowerCase() === 'consultoria tecnològica' || part.toLowerCase() === 'barcelona' || part.toLowerCase() === 'manifest' || part.toLowerCase() === 'reals' || part.toLowerCase() === 'tangible' || part.toLowerCase() === 'nosaltres' || part.toLowerCase() === 'formació' || part.toLowerCase() === 'contacta') {
+      if (part.toLowerCase() === 'útil' || part.toLowerCase() === 'consultoria tecnològica' || part.toLowerCase() === 'barcelona' || part.toLowerCase() === 'manifest' || part.toLowerCase() === 'reals' || part.toLowerCase() === 'tangible' || part.toLowerCase() === 'nosaltres' || part.toLowerCase() === 'formació') {
         return <span key={index} className="text-red-500">{part}</span>;
       }
       return part;

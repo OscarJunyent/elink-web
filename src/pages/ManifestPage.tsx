@@ -54,7 +54,7 @@ const ManifestPage = () => {
 
       <main className="min-h-screen bg-background">
         {/* 1. Introducció breu */}
-        <section className="container py-16 lg:py-24">
+        <section className="container py-12 lg:py-16">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
               <TypewriterText text="El nostre Manifest" speed={80} />
@@ -66,7 +66,7 @@ const ManifestPage = () => {
           </div>
         </section>
      {/* 5. Tancament inspirador */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-3xl p-12 shadow-circular">
               <div className="flex justify-center mb-8">
@@ -90,7 +90,7 @@ const ManifestPage = () => {
         </section>
         
         {/* 2. El nostre propòsit */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-12 shadow-circular text-center">
               <div className="flex justify-center mb-8">
@@ -114,7 +114,7 @@ const ManifestPage = () => {
         </section>
 
         {/* 3. Els nostres valors - Nou disseny narratiu */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="max-w-4xl mx-auto">
             {/* Títol principal */}
             <div className="text-center mb-12">
@@ -217,7 +217,7 @@ const ManifestPage = () => {
         </section>
 
         {/* 4. Com treballem */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Com treballem</h2>
             <p className="text-lg text-accent max-w-3xl mx-auto">
@@ -252,7 +252,7 @@ const ManifestPage = () => {
    
 
         {/* Equip fundador */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Equip fundador</h2>
@@ -278,7 +278,7 @@ const ManifestPage = () => {
         </section>
 
         {/* 6. Crida final a l'acció */}
-        <section className="container py-16">
+        <section className="container py-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-gradient-to-br from-primary to-accent rounded-3xl p-12 text-white shadow-circular">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">

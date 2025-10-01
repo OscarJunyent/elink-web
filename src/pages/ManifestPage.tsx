@@ -3,58 +3,46 @@ import { Link } from "react-router-dom";
 import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp, Linkedin, Rocket, Bot, Compass, Key } from "lucide-react";
 import Footer from "@/components/Footer";
 import TypewriterText from "@/components/TypewriterText";
-
 const ManifestPage = () => {
-  const metodologia = [
-    {
-      //step: "01",
-      title: "1. Diagnosi personalitzada",
-      description: "Analitzem la teva empresa per detectar necessitats i oportunitats de millora tecnològica.",
-      icon: Search,
-      color: "text-primary"
-    },
-    {
-      //step: "02", 
-      title: "2. Proposta estratègica",
-      description: "Presentem una estratègia adaptada als teus objectius i recursos.",
-      icon: Presentation,
-      color: "text-accent"
-    },
-    {
-      //step: "03",
-      title: "3. Implementació a mida",
-      description: "Executem el pla seleccionant i integrant les solucions idònies.",
-      icon: Cog,
-      color: "text-primary"
-    },
-    {
-      //step: "04",
-      title: "4. Seguiment i suport continu",
-      description: "Avaluem resultats, ajustem i t'acompanyem per garantir l'èxit.",
-      icon: TrendingUp,
-      color: "text-accent"
-    }
-  ];
-
-  const founders = [
-    {
-      name: "Òscar Junyent",
-      role: "Consultor",
-      bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
-      image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
-      linkedin: "https://www.linkedin.com/in/ojunyent/",
-    },
-    {
-      name: "Wojtek Szczupak",
-      role: "Data Science",
-      bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
-      image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
-      linkedin: "https://www.linkedin.com/in/wojciech-szczupak/",
-    },
-  ];
-
-  return (
-    <>
+  const metodologia = [{
+    //step: "01",
+    title: "1. Diagnosi personalitzada",
+    description: "Analitzem la teva empresa per detectar necessitats i oportunitats de millora tecnològica.",
+    icon: Search,
+    color: "text-primary"
+  }, {
+    //step: "02", 
+    title: "2. Proposta estratègica",
+    description: "Presentem una estratègia adaptada als teus objectius i recursos.",
+    icon: Presentation,
+    color: "text-accent"
+  }, {
+    //step: "03",
+    title: "3. Implementació a mida",
+    description: "Executem el pla seleccionant i integrant les solucions idònies.",
+    icon: Cog,
+    color: "text-primary"
+  }, {
+    //step: "04",
+    title: "4. Seguiment i suport continu",
+    description: "Avaluem resultats, ajustem i t'acompanyem per garantir l'èxit.",
+    icon: TrendingUp,
+    color: "text-accent"
+  }];
+  const founders = [{
+    name: "Òscar Junyent",
+    role: "Consultor",
+    bio: "Enginyer apassionat per la tecnologia i la innovació amb experiència liderant projectes digitals enfocats en aportar solucions pràctiques a empreses.",
+    image: "/lovable-uploads/4def6625-87ed-4823-885f-baca8e9a7360.png",
+    linkedin: "https://www.linkedin.com/in/ojunyent/"
+  }, {
+    name: "Wojtek Szczupak",
+    role: "Data Science",
+    bio: "Expert en ciència de dades amb àmplia experiència en analítica avançada, gestió de dades i aplicació d'insights orientats als resultats de negoci.",
+    image: "/lovable-uploads/7ea4dcdf-22de-4659-8e1c-0a49704e01a8.png",
+    linkedin: "https://www.linkedin.com/in/wojciech-szczupak/"
+  }];
+  return <>
       <Helmet>
       <title>Manifest Elinkcat - Consultoria IA Barcelona | Empresa tecnològica per pimes catalanes</title>
       <meta name="description" content="Manifest d'Elinkcat: consultoria IA Barcelona propera per empreses catalanes. Valors, metodologia i propòsit per transformar pimes de Catalunya amb IA i automatització." />
@@ -148,12 +136,7 @@ const ManifestPage = () => {
                   La transformació digital no hauria de ser una promesa buida ni una moda passatgera. 
                   Ha de ser una eina real, concreta i al servei de les persones i dels negocis.
                 </p>
-                <p>
-                  A <strong>Elinkcat</strong>, som consultors tecnològics que parlem clar. Acompanyem{" "}
-                  <strong>petites i mitjanes empreses catalanes</strong> a fer el salt digital amb sentit:{" "}
-                  <strong>automatitzem processos, connectem sistemes i implantem solucions d'intel·ligència artificial</strong>{" "}
-                  que milloren la seva eficiència i productivitat des del primer dia.
-                </p>
+                
               </div>
             </div>
 
@@ -179,7 +162,9 @@ const ManifestPage = () => {
             </div>
 
             {/* Secció 2: L'automatització */}
-            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '150ms' }}>
+            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{
+            animationDelay: '150ms'
+          }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0">
                   <Bot className="w-6 h-6 text-white" />
@@ -198,7 +183,9 @@ const ManifestPage = () => {
             </div>
 
             {/* Secció 3: Som d'aquí */}
-            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{
+            animationDelay: '300ms'
+          }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
                   <Compass className="w-6 h-6 text-white" />
@@ -218,7 +205,9 @@ const ManifestPage = () => {
             </div>
 
             {/* Secció 4: En resum */}
-            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '450ms' }}>
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 shadow-circular animate-fade-in" style={{
+            animationDelay: '450ms'
+          }}>
               <div className="flex items-start gap-4 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0">
                   <Key className="w-6 h-6 text-white" />
@@ -249,12 +238,9 @@ const ManifestPage = () => {
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            {metodologia.map((fase, index) => (
-              <div
-                key={index}
-                className="bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in"
-                style={{ animationDelay: `${index * 200}ms` }}
-              >
+            {metodologia.map((fase, index) => <div key={index} className="bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{
+            animationDelay: `${index * 200}ms`
+          }}>
                 <div className="flex items-start gap-6">
                    <div className="flex flex-col items-center">
                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center border-2 border-primary/20 mb-3">
@@ -270,8 +256,7 @@ const ManifestPage = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </section>
 
@@ -288,32 +273,17 @@ const ManifestPage = () => {
             </div>
             
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
-              {founders.map((founder) => (
-                <div
-                  key={founder.name}
-                  className="bg-white/80 rounded-2xl p-8 shadow-circular flex flex-col items-center text-center flex-1 max-w-xs md:max-w-sm"
-                >
+              {founders.map(founder => <div key={founder.name} className="bg-white/80 rounded-2xl p-8 shadow-circular flex flex-col items-center text-center flex-1 max-w-xs md:max-w-sm">
                   <div className="mb-4">
-                    <img
-                      src={founder.image}
-                      alt={`${founder.name}, ${founder.role} - Consultoria IA Barcelona`}
-                      className="rounded-full w-32 h-32 object-cover shadow-md"
-                    />
+                    <img src={founder.image} alt={`${founder.name}, ${founder.role} - Consultoria IA Barcelona`} className="rounded-full w-32 h-32 object-cover shadow-md" />
                   </div>
                   <h3 className="text-xl font-bold text-dark mb-1">{founder.name}</h3>
                   <p className="text-sm text-primary font-semibold mb-3">{founder.role}</p>
                   <p className="text-accent text-base mb-4 leading-relaxed">{founder.bio}</p>
-                  <a
-                    href={founder.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent text-white hover:scale-110 transition-transform"
-                    aria-label={`LinkedIn de ${founder.name}`}
-                  >
+                  <a href={founder.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent text-white hover:scale-110 transition-transform" aria-label={`LinkedIn de ${founder.name}`}>
                     <Linkedin size={20} />
                   </a>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </section>
@@ -329,10 +299,7 @@ const ManifestPage = () => {
                 Descobreix com podem aplicar aquests valors i metodologia al teu negoci. 
                 Parlem sense compromís de les teves necessitats tecnològiques.
               </p>
-              <Link
-                to="/contacte"
-                className="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
-              >
+              <Link to="/contacte" className="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-circular hover:scale-105 transition-transform duration-200">
                 Parlem-ne
               </Link>
             </div>
@@ -341,8 +308,6 @@ const ManifestPage = () => {
       </main>
 
       <Footer t={{}} />
-    </>
-  );
+    </>;
 };
-
 export default ManifestPage;

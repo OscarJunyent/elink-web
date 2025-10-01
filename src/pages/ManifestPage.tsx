@@ -205,13 +205,12 @@ const ManifestPage = () => {
                 <h3 className="text-2xl font-bold text-dark">En resum:</h3>
               </div>
               <ul className="space-y-3 text-gray-700 leading-relaxed ml-16 list-disc list-inside">
-                <li><strong>Fem fàcil el que sembla complicat.</strong></li>
                 <li><strong>Treballem amb tu, no per tu.</strong></li>
                 <li><strong>Creiem en la tecnologia pràctica, assequible i transformadora.</strong></li>
                 <li><strong>I, sobretot, volem que notis el canvi.</strong></li>
               </ul>
               <p className="text-xl font-bold text-dark mt-8 text-center">
-                Elinkcat — Tecnologia útil per fer créixer la teva empresa.
+                Elinkcat — Tecnologia útil per fer créixer el teu negoci.
               </p>
             </div>
           </div>

@@ -1,37 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp, Linkedin } from "lucide-react";
+import { Users, Lightbulb, Target, Heart, Search, Presentation, Cog, TrendingUp, Linkedin, Rocket, Bot, Compass, Key } from "lucide-react";
 import Footer from "@/components/Footer";
 import TypewriterText from "@/components/TypewriterText";
 
 const ManifestPage = () => {
-  const valors = [
-    {
-      title: "Proximitat",
-      description: "Som el teu partner tecnològic proper, parlem el teu idioma i entenem la teva realitat empresarial.",
-      icon: Users,
-      gradient: "from-primary/10 to-accent/10"
-    },
-    {
-      title: "Claredat", 
-      description: "Expliquem la tecnologia de manera senzilla i transparent, sense tecnicismes innecessaris.",
-      icon: Lightbulb,
-      gradient: "from-accent/10 to-primary/10"
-    },
-    {
-      title: "Eficiència",
-      description: "Cada solució que proposem té un objectiu clar: aportar valor real i resultats mesurables.",
-      icon: Target,
-      gradient: "from-primary/10 to-accent/10"
-    },
-    {
-      title: "Innovació responsable",
-      description: "Utilitzem tecnologies punteres però sempre amb un enfocament pràctic i orientat a resultats.",
-      icon: Heart,
-      gradient: "from-accent/10 to-primary/10"
-    }
-  ];
-
   const metodologia = [
     {
       //step: "01",
@@ -162,37 +135,106 @@ const ManifestPage = () => {
           </div>
         </section>
 
-        {/* 3. Els nostres valors */}
+        {/* 3. Els nostres valors - Nou disseny narratiu */}
         <section className="container py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Els nostres valors</h2>
-            <p className="text-lg text-accent max-w-2xl mx-auto">
-              Principis que guien cada projecte i cada decisió que prenem
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {valors.map((valor, index) => (
-              <div
-                key={index}
-                className={`p-8 rounded-2xl shadow-circular bg-gradient-to-br ${valor.gradient} animate-fade-in`}
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-                    <valor.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-3 text-dark">
-                      {valor.title}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      {valor.description}
-                    </p>
-                  </div>
-                </div>
+          <div className="max-w-4xl mx-auto">
+            {/* Títol principal */}
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-dark">
+                Creiem en la tecnologia que serveix, no que complica.
+              </h2>
+              <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                  La transformació digital no hauria de ser una promesa buida ni una moda passatgera. 
+                  Ha de ser una eina real, concreta i al servei de les persones i dels negocis.
+                </p>
+                <p>
+                  A <strong>Elinkcat</strong>, som consultors tecnològics que parlem clar. Acompanyem{" "}
+                  <strong>petites i mitjanes empreses catalanes</strong> a fer el salt digital amb sentit:{" "}
+                  <strong>automatitzem processos, connectem sistemes i implantem solucions d'intel·ligència artificial</strong>{" "}
+                  que milloren la seva eficiència i productivitat des del primer dia.
+                </p>
               </div>
-            ))}
+            </div>
+
+            {/* Secció 1: No venem fum */}
+            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+                  <Rocket className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-dark">No venem fum, venem impacte.</h3>
+              </div>
+              <div className="space-y-3 text-gray-700 leading-relaxed ml-16">
+                <p>
+                  Sabem que la tecnologia pot intimidar. Per això, <strong>ens asseiem al teu costat</strong>, 
+                  entenem com treballes, quins problemes tens i què pots millorar.
+                </p>
+                <p>Només et recomanem allò que sabem que funcionarà. Ni més ni menys.</p>
+                <p>
+                  El nostre objectiu no és fer-te dependre de nosaltres. És donar-te les eines perquè 
+                  siguis <strong>més autònom, més àgil i més competitiu</strong>.
+                </p>
+              </div>
+            </div>
+
+            {/* Secció 2: L'automatització */}
+            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '150ms' }}>
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0">
+                  <Bot className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-dark">L'automatització no és el futur. És el present.</h3>
+              </div>
+              <div className="space-y-3 text-gray-700 leading-relaxed ml-16">
+                <p>Cada dia que mantens un procés manual és un dia que perds oportunitats.</p>
+                <p>Cada vegada que fas una tasca repetitiva, hi ha una màquina que la podria fer per tu.</p>
+                <p>I cada dada que no aprofites, és un coneixement que no et fa créixer.</p>
+                <p className="mt-4">
+                  Nosaltres <strong>posem la IA i l'automatització a treballar per tu</strong>, no a reemplaçar-te. 
+                  Fem que el teu equip faci menys feina mecànica i més feina de valor.
+                </p>
+              </div>
+            </div>
+
+            {/* Secció 3: Som d'aquí */}
+            <div className="mb-10 bg-white/80 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '300ms' }}>
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+                  <Compass className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-dark">Som d'aquí i treballem per a les empreses d'aquí.</h3>
+              </div>
+              <div className="space-y-3 text-gray-700 leading-relaxed ml-16">
+                <p>
+                  Coneixem el territori, parlem el teu idioma i entenem les dificultats que viuen moltes pimes 
+                  per incorporar tecnologia.
+                </p>
+                <p>
+                  Per això, <strong>ens adaptem al teu pressupost, al teu ritme i a la teva realitat</strong>. 
+                  Sense presses ni promeses impossibles.
+                </p>
+              </div>
+            </div>
+
+            {/* Secció 4: En resum */}
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 shadow-circular animate-fade-in" style={{ animationDelay: '450ms' }}>
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0">
+                  <Key className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-dark">En resum:</h3>
+              </div>
+              <ul className="space-y-3 text-gray-700 leading-relaxed ml-16 list-disc list-inside">
+                <li><strong>Fem fàcil el que sembla complicat.</strong></li>
+                <li><strong>Treballem amb tu, no per tu.</strong></li>
+                <li><strong>Creiem en la tecnologia pràctica, assequible i transformadora.</strong></li>
+                <li><strong>I, sobretot, volem que notis el canvi.</strong></li>
+              </ul>
+              <p className="text-xl font-bold text-dark mt-8 text-center">
+                Elinkcat — Tecnologia útil per fer créixer la teva empresa.
+              </p>
+            </div>
           </div>
         </section>
 

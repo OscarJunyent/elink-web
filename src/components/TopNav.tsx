@@ -31,7 +31,10 @@ const TopNav = () => {
   const [open, setOpen] = useState(false);
 
   // Fer focus al menú i tancar-lo després de navegar en mòbil
-  const handleLinkClick = () => setOpen(false);
+  const handleLinkClick = () => {
+    setOpen(false);
+    window.scrollTo(0, 0);
+  };
   return <nav className="w-full flex items-center justify-between py-2 px-3 bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-40 shadow-circular">
       {/* Logo */}
       <div className="flex items-center flex-shrink-0" style={{
@@ -95,7 +98,7 @@ const TopNav = () => {
         {menu.map(item => {
         const active = location.pathname === item.to;
         return <li key={item.to}>
-              <Link to={item.to} className={`text-base md:text-lg px-3 py-1 rounded-full font-medium transition-all duration-150 ${active ? "bg-[#c92637] text-white shadow" : "text-[#222c38] hover:bg-[#f7d7db] hover:text-[#c92637]"}`} style={{
+              <Link to={item.to} onClick={() => window.scrollTo(0, 0)} className={`text-base md:text-lg px-3 py-1 rounded-full font-medium transition-all duration-150 ${active ? "bg-[#c92637] text-white shadow" : "text-[#222c38] hover:bg-[#f7d7db] hover:text-[#c92637]"}`} style={{
             fontFamily: "Montserrat, Inter, sans-serif"
           }}>
                 {item.label}

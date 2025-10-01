@@ -114,6 +114,11 @@ const ManifestPage = () => {
                 Millorar l'eficiència i la productivitat de les empreses catalanes 
                 amb tecnologia útil, pràctica i accessible
               </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                A Elinkcat, som consultors tecnològics que parlem clar. Acompanyem petites i mitjanes empreses 
+                catalanes a fer el salt digital amb sentit: automatitzem processos, connectem sistemes i implantem 
+                solucions d'intel·ligència artificial que milloren la seva eficiència i productivitat des del primer dia.
+              </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Creiem que la tecnologia ha de ser un accelerador del creixement empresarial, 
                 no una complicació. Per això, cada solució que implementem està pensada per 

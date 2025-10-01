@@ -62,16 +62,9 @@ const ManifestPage = () => {
             <p className="text-xl md:text-2xl text-accent mb-8 animate-fade-in">
               Qui som i què fem per les empreses catalanes
             </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-gray-700 leading-relaxed animate-fade-in">
-                Som <strong>elinkcat</strong>, una consultora tecnològica especialitzada en petites i mitjanes empreses catalanes. 
-                Ens dediquem a transformar negocis mitjançant consultoria tecnològica, automatització intel·ligent, 
-                intel·ligència artificial aplicada i solucions digitals a mida.
-              </p>
-            </div>
+    
           </div>
         </section>
-
      {/* 5. Tancament inspirador */}
         <section className="container py-16">
           <div className="max-w-4xl mx-auto text-center">
@@ -84,8 +77,7 @@ const ManifestPage = () => {
                   <div className="w-2 h-2 bg-accent rounded-full"></div>
                   <Target className="w-8 h-8 text-primary" />
                 </div>
-              </div>
-              
+              </div>            
               <blockquote className="text-2xl md:text-3xl font-bold mb-6 text-dark italic">
                 "Quan la tecnologia s’adapta al teu ritme i a les teves necessitats, tot flueix..<br></br>
                 tant, que pot semblar màgia."
@@ -96,7 +88,6 @@ const ManifestPage = () => {
             </div>
           </div>
         </section>
-
         
         {/* 2. El nostre propòsit */}
         <section className="container py-16">
@@ -115,14 +106,8 @@ const ManifestPage = () => {
                 amb tecnologia útil, pràctica i accessible
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                A Elinkcat, som consultors tecnològics que parlem clar. Acompanyem petites i mitjanes empreses 
-                catalanes a fer el salt digital amb sentit: automatitzem processos, connectem sistemes i implantem 
-                solucions d'intel·ligència artificial que milloren la seva eficiència i productivitat des del primer dia.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Creiem que la tecnologia ha de ser un accelerador del creixement empresarial, 
-                no una complicació. Per això, cada solució que implementem està pensada per 
-                simplificar processos, reduir costos i augmentar la competitivitat de les empreses catalanes.
+                Som <strong>elinkcat</strong>, una consultora tecnològica que parla clar i actua amb sentit. 
+                Ajudem petites i mitjanes empreses catalanes a fer el salt digital amb solucions d’automatització, intel·ligència artificial i desenvolupament a mida que simplifiquen processos, redueixen costos i impulsen la seva competitivitat des del primer dia.
               </p>
             </div>
           </div>

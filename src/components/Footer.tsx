@@ -65,9 +65,9 @@ const Footer = ({
                 </Link>
               </li>
               <li>
-                <Link to="https://oscarjunyent.substack.com/" className="hover:text-primary transition-colors">
+                <a href="https://oscarjunyent.substack.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
                  La Píndola de TecnologÍA
-                </Link>    
+                </a>    
               </li>
             </ul>
           </div>

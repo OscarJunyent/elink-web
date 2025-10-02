@@ -39,7 +39,7 @@ const t = {
     title: "Els nostres valors",
     subtitle: "Treballem amb principis clars que guien cada projecte",
     proximitat: "Proximitat",
-    proximitatDesc: "Som el teu partner tecnològic proper, parlem el teu idioma i entenem la teva realitat empresarial.",
+    proximitatDesc: "Treballem colze a colze amb tu, parlant el teu idioma i adaptant-nos al teu ritme i realitat empresarial.",
     claredat: "Claredat",
     claredatDesc: "Expliquem la tecnologia de manera senzilla i transparent, sense tecnicismes innecessaris.",
     eficacia: "Eficàcia",

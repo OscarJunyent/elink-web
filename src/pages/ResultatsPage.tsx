@@ -1,203 +1,91 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Quote, ArrowRight, CheckCircle, TrendingUp, Clock, DollarSign } from "lucide-react";
+import { ArrowRight, TrendingUp, Clock, Database } from "lucide-react";
 import Footer from "@/components/Footer";
 import TypewriterText from "@/components/TypewriterText";
 
 const ResultatsPage = () => {
-  const testimonis = [
+  const casos = [
     {
-      frase: "Amb Elinkcat he tingut molt més que una consultoria tècnica: he tingut un partner de confiança des del primer dia. M’han ajudat a prendre les decisions tecnològiques clau per fer créixer l’empresa amb criteri i solidesa",
-      autor: "Rafael Jimenez",
-      carrec: "CEO",
-      empresa: "Adinton"
-    },
-    {
-      frase: "“Elinkcat ens ha ajudat a definir i construir eines digitals que han automatitzat processos crítics del nostre negoci. Hem guanyat temps, eficiència i capacitat de control. És una tranquil·litat tenir-los al costat.",
-      autor: "Marc Nieto", 
-      carrec: "CEO",
-      empresa: "MPServices"
-    },
-    {
-      frase: "Estem desplegant un pla d’implementació d’intel·ligència artificial a la nostra empresa, i comptar amb el suport d’Elinkcat ha estat clau. Ens aporten claredat, coneixement i una visió pragmàtica que ens ajuda a avançar amb seguretat.",
-      autor: "Alex Rodriguez",
-      carrec: "IT Director",
-      empresa: "Volotea"
-    },
-
-  ];
-
-  const casosExit = [
-    {
+      id: "adinton",
       empresa: "Adinton",
       sector: "Data Assurance Analytics",
-      repte: "Dubtes tècnics en les primeres fases del projecte i necessitat d’assessorament per definir una arquitectura tecnològica sòlida des del principi.",
-      solucio: "Acompanyament tècnic des del primer dia, amb assessorament en la presa de decisions clau, definició de l’arquitectura i validació de proveïdors i eines.",
-      resultat: [
-        "Base tecnològica escalable i alineada amb el negoci",
-        "Reducció de riscos en el desenvolupament",
-        "Decisions tècniques més àgils i segures"
-      
-      ],
+      descripcio: "Arquitectura tecnològica sòlida des del primer dia",
       icon: Clock,
-      bgColor: "from-primary/5 to-accent/5"
+      image: "/lovable-uploads/0746ee12-55c7-4ced-b3e5-da2c8a0f1495.png"
     },
     {
-      empresa: "MPServices", 
+      id: "mpservices",
+      empresa: "MPServices",
       sector: "Gestió Frau Electrònic",
-      repte: "Processos manuals i repetitius que limitaven el creixement i provocaven errors en la gestió del negoci.",
-      solucio: "Sistema de anàlisis i automatització mitjançant IA per generar scoring de Frau sobre transaccions de comerç electrònic.",
-      resultat: [
-        "Estalvi de temps i reducció d’errors",
-        "Augment de la productivitat de l’equip",
-        "Millor control dels processos del negoci",
-        "Decisions més ràpides i informades"
-      ],
+      descripcio: "Automatització amb IA per scoring de frau en e-commerce",
       icon: TrendingUp,
-      bgColor: "from-accent/5 to-primary/5"
+      image: "/lovable-uploads/155e1c26-2a3d-480a-ab0a-f99ac5f08f6c.png"
     },
     {
-      empresa: "Volotea", 
-      sector: "Aerolínea",
-      repte: "Voluntat per incorporar intel·ligència artificial al negoci sense disposar de una planificació clara ni coneixement tècnic intern.",
-      solucio: "Definir un pla d'implementació d`IA adaptat al context de l`empresa, amb identificació d`oportunitats, roadmap i suport tècnic.",
-      resultat: [
-        "Pla d’acció clar i aplicable",
-        "Millora de processos amb IA (anàlisi, predicció, automatització)",
-        "Coneixement intern generat i visió a llarg termini"
-      ],
-      icon: TrendingUp,
-      bgColor: "from-accent/5 to-primary/5"
+      id: "volotea",
+      empresa: "Volotea",
+      sector: "Aerolínia",
+      descripcio: "Pla d'implementació d'IA adaptat al context empresarial",
+      icon: Database,
+      image: "/lovable-uploads/19cf59bc-ceff-4cf1-b3d9-3f18003efd35.png"
     }
   ];
 
   return (
     <>
       <Helmet>
-      <title>Resultats reals i casos d'èxit - Consultoria IA Barcelona | Empreses tecnològiques Catalunya</title>
-      <meta name="description" content="Casos d'èxit d'Elinkcat a Barcelona i Catalunya: com la consultoria IA, automatització i solucions digitals han transformat pimes catalanes amb resultats mesurables." />
-      <meta property="og:title" content="Resultats reals i casos d'èxit - Consultoria IA Barcelona" />
-      <meta property="og:description" content="Testimonis i casos d'èxit de pimes de Barcelona i Catalunya que han millorat amb consultoria tecnològica, automatització i IA aplicada." />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://elinkcat.com/resultats" />
+        <title>Casos d'èxit reals - Consultoria IA Barcelona | Transformació digital empreses Catalunya</title>
+        <meta name="description" content="Casos d'èxit corporatius d'Elinkcat: solucions implementades, reptes superats i impacte tangible en empreses de Barcelona i Catalunya amb IA i automatització." />
+        <meta property="og:title" content="Casos d'èxit reals - Consultoria IA Barcelona" />
+        <meta property="og:description" content="Descobreix com empreses de Barcelona han transformat els seus processos amb consultoria tecnològica i IA aplicada." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://elinkcat.com/resultats" />
       </Helmet>
 
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="container py-16 lg:py-24">
+        <section className="container py-16 lg:py-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-dark animate-fade-in">
-              <TypewriterText text="Resultats reals, impacte tangible" speed={80} />
+              <TypewriterText text="Casos d'èxit reals" speed={80} />
             </h1>
             <p className="text-xl md:text-2xl text-accent leading-relaxed animate-fade-in max-w-3xl mx-auto">
-              Cada projecte és una oportunitat per millorar. Aquí tens exemples reals de com 
-              la tecnologia útil transforma empreses catalanes com la teva, amb especial focus a Barcelona i arreu de Catalunya.
+              Solucions implementades, reptes superats i impacte tangible
             </p>
           </div>
         </section>
 
-        {/* Secció de Testimonis */}
-        <section className="container py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Què diuen els nostres clients</h2>
-            <p className="text-lg text-accent max-w-2xl mx-auto">
-              La satisfacció dels nostres clients és la millor mesura del nostre èxit
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            {testimonis.map((testimoni, index) => (
-              <div
-                key={index}
-                className="bg-white/90 rounded-2xl p-8 shadow-circular border border-gray/10 animate-fade-in relative"
-                style={{ animationDelay: `${index * 200}ms` }}
+        {/* Grid de casos */}
+        <section className="container py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {casos.map((cas, index) => (
+              <Link
+                key={cas.id}
+                to={`/resultats/${cas.id}`}
+                className="group bg-white/90 rounded-2xl shadow-circular border border-gray/10 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-fade-in"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="absolute -top-4 left-8">
-                  <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                    <Quote className="w-4 h-4 text-white" />
-                  </div>
-                </div>
-                
-                <blockquote className="text-lg text-gray-700 mb-6 italic leading-relaxed pt-4">
-                  "{testimoni.frase}"
-                </blockquote>
-                
-                <div className="border-t border-gray/20 pt-4">
-                  <p className="font-bold text-dark">{testimoni.autor}</p>
-                  <p className="text-primary font-semibold">{testimoni.carrec}</p>
-                  <p className="text-accent">{testimoni.empresa}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Secció de Casos d'èxit */}
-        <section className="container py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-dark">Casos d'èxit detallats</h2>
-            <p className="text-lg text-accent max-w-2xl mx-auto">
-              Projectes reals amb resultats mesurables i impacte tangible
-            </p>
-          </div>
-
-          <div className="max-w-5xl mx-auto space-y-16">
-            {casosExit.map((cas, index) => (
-              <div
-                key={index}
-                className={`bg-gradient-to-br ${cas.bgColor} rounded-3xl p-8 md:p-12 shadow-circular animate-fade-in`}
-                style={{ animationDelay: `${index * 300}ms` }}
-              >
-                <div className="flex items-start gap-6 mb-8">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <cas.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-2xl md:text-3xl font-bold text-dark mb-2">{cas.empresa}</h3>
-                    <p className="text-primary font-semibold">{cas.sector}</p>
-                  </div>
+                {/* Imatge o icona */}
+                <div className="relative h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 group-hover:scale-110 transition-transform duration-500"></div>
+                  <cas.icon className="w-20 h-20 text-primary/40 relative z-10" />
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                  {/* El repte */}
-                  <div className="bg-white/80 rounded-2xl p-6">
-                    <h4 className="text-lg font-bold text-dark mb-3 flex items-center gap-2">
-                      <div className="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center">
-                        <span className="text-red-600 text-sm font-bold">!</span>
-                      </div>
-                      El repte
-                    </h4>
-                    <p className="text-gray-700 leading-relaxed">{cas.repte}</p>
-                  </div>
-
-                  {/* La solució */}
-                  <div className="bg-white/80 rounded-2xl p-6">
-                    <h4 className="text-lg font-bold text-dark mb-3 flex items-center gap-2">
-                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                        <span className="text-blue-600 text-sm font-bold">→</span>
-                      </div>
-                      La solució
-                    </h4>
-                    <p className="text-gray-700 leading-relaxed">{cas.solucio}</p>
-                  </div>
-
-                  {/* Els resultats */}
-                  <div className="bg-white/80 rounded-2xl p-6">
-                    <h4 className="text-lg font-bold text-dark mb-3 flex items-center gap-2">
-                      <CheckCircle className="w-6 h-6 text-green-600" />
-                      Els resultats
-                    </h4>
-                    <ul className="space-y-2">
-                      {cas.resultat.map((resultat, i) => (
-                        <li key={i} className="flex items-start gap-2 text-gray-700">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                          <span className="text-sm leading-relaxed">{resultat}</span>
-                        </li>
-                      ))}
-                    </ul>
+                {/* Contingut */}
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-dark mb-2 group-hover:text-primary transition-colors">
+                    {cas.empresa}
+                  </h3>
+                  <p className="text-sm font-semibold text-primary mb-3">{cas.sector}</p>
+                  <p className="text-accent leading-relaxed mb-4">{cas.descripcio}</p>
+                  
+                  <div className="flex items-center text-primary font-semibold group-hover:gap-3 transition-all">
+                    Veure cas
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </section>
@@ -207,7 +95,7 @@ const ResultatsPage = () => {
           <div className="max-w-3xl mx-auto text-center">
             <div className="bg-gradient-to-br from-primary to-accent rounded-3xl p-12 text-white shadow-circular">
               <h2 className="text-2xl md:text-3xl font-bold mb-6">
-                Tens un repte similar al teu negoci?
+                Vols convertir-te en el pròxim cas d'èxit?
               </h2>
               <p className="text-lg mb-8 opacity-90">
                 Cada empresa és única, però els resultats poden ser igual d'impressionants. 
@@ -217,7 +105,7 @@ const ResultatsPage = () => {
                 to="/contacte"
                 className="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-circular hover:scale-105 transition-transform duration-200"
               >
-                Explica'ns el teu repte
+                Parlem del teu projecte
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

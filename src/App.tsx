@@ -14,6 +14,9 @@ import FormacioPage from "./pages/FormacioPage";
 import ContactPage from "./pages/ContactPage";
 import ManifestPage from "./pages/ManifestPage";
 import ResultatsPage from "./pages/ResultatsPage";
+import CasAdintonPage from "./pages/CasAdintonPage";
+import CasMPServicesPage from "./pages/CasMPServicesPage";
+import CasVoloteaPage from "./pages/CasVoloteaPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import CookiesPage from "./pages/CookiesPage";
@@ -38,6 +41,9 @@ const App = () => (
             <Route path="/contacte" element={<ContactPage />} />
             <Route path="/manifest" element={<ManifestPage />} />
             <Route path="/resultats" element={<ResultatsPage />} />
+            <Route path="/resultats/adinton" element={<CasAdintonPage />} />
+            <Route path="/resultats/mpservices" element={<CasMPServicesPage />} />
+            <Route path="/resultats/volotea" element={<CasVoloteaPage />} />
             <Route path="/politica-privacitat" element={<PrivacyPage />} />
             <Route path="/termes-servei" element={<TermsPage />} />
             <Route path="/politica-cookies" element={<CookiesPage />} />

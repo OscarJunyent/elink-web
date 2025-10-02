@@ -10,7 +10,7 @@ const Footer = ({
     <footer className="w-full bg-dark text-white py-12 mt-16">
       <div className="container mx-auto px-4">
         {/* Top section with logo and tagline */}
-        <div className="mb-8 pb-8 border-b border-gray-700">
+        <div className="mb-8 pb-8">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="flex flex-col gap-3">
               <img
@@ -74,7 +74,7 @@ const Footer = ({
         </div>
 
         {/* Bottom section - Copyright left, Legal links right */}
-        <div className="pt-8 border-t border-gray-700">
+        <div className="pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white">
             <p>
               © {new Date().getFullYear()} Elinkcat Software S.L. Tots els drets reservats.

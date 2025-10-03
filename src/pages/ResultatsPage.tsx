@@ -12,7 +12,7 @@ const ResultatsPage = () => {
       sector: "Data Assurance Analytics",
       descripcio: "Arquitectura tecnològica sòlida des del primer dia",
       icon: Clock,
-      image: "/lovable-uploads/0746ee12-55c7-4ced-b3e5-da2c8a0f1495.png"
+      image: "/logos/adinton.jpg"
     },
     {
       id: "mpservices",
@@ -20,7 +20,7 @@ const ResultatsPage = () => {
       sector: "Gestió Frau Electrònic",
       descripcio: "Automatització amb IA per scoring de frau en e-commerce",
       icon: TrendingUp,
-      image: "/lovable-uploads/155e1c26-2a3d-480a-ab0a-f99ac5f08f6c.png"
+      image: "/logos/mpservices.png"
     },
     {
       id: "volotea",
@@ -28,7 +28,7 @@ const ResultatsPage = () => {
       sector: "Aerolínia",
       descripcio: "Pla d'implementació d'IA adaptat al context empresarial",
       icon: Database,
-      image: "/lovable-uploads/19cf59bc-ceff-4cf1-b3d9-3f18003efd35.png"
+      image: "/logos/volotea.webp"
     }
   ];
 
@@ -67,9 +67,12 @@ const ResultatsPage = () => {
                 style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Imatge o icona */}
-                <div className="relative h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 group-hover:scale-110 transition-transform duration-500"></div>
-                  <cas.icon className="w-20 h-20 text-primary/40 relative z-10" />
+                <div className="relative h-48 bg-white flex items-center justify-center overflow-hidden p-8">
+                  <img 
+                    src={cas.image} 
+                    alt={`Logo ${cas.empresa}`}
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
 
                 {/* Contingut */}

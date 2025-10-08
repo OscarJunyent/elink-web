@@ -52,7 +52,7 @@ const Footer = ({
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Enllaços d'interés</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Enllaços d'interès</h3>
             <ul className="space-y-3 text-white text-sm">
               <li>
                 <Link to="/consultoria-ia-barcelona" className="hover:text-primary transition-colors">
@@ -66,7 +66,7 @@ const Footer = ({
               </li>
               <li>
                 <a href="https://oscarjunyent.substack.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-                 La Píndola de TecnologÍA
+                 La Píndola de TecnologIA
                 </a>    
               </li>
             </ul>

@@ -27,7 +27,7 @@ const t = {
     automatitzacio: "Automatització",
     automatitzacioDesc: "Implementem processos automàtics que estalvien temps, eliminen errors i optimitzen recursos.",
     integracions: "Integracions",
-    integracionsDesc: "Connectem les teves eines i sistemes per crear un ecosistema tecnològic cohesionat i eficient.",
+    integracionsDesc: "Connectem les teves eines i sistemes per crear un ecosistema tecnològic, cohesionat i eficient.",
     ia: "IA aplicada",
     iaDesc: "Utilitzem intel·ligència artificial per optimitzar decisions i millorar processos.",
     solucions: "Solucions digitals a mida",

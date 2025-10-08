@@ -17,7 +17,7 @@ const PrivacyPage = () => {
             <section>
               <h2 className="text-2xl font-semibold text-dark mt-8 mb-4">1. Informació General</h2>
               <p>
-                A Elinkcat Software SL, amb NIF B66891557 i domicili social a Roger de Flor, 49 6-3 Esc B, 08013 Barcelona,
+                A Elinkcat Software SL, amb NIF B66891557 i domicili social a Roger de Flor, 49, 08013 Barcelona,
                 ens prenem seriosament la privacitat de les vostres dades personals.
               </p>
             </section>

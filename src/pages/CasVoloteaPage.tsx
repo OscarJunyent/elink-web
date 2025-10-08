@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle, Database } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const CasVoloteaPage = () => {
@@ -31,8 +31,12 @@ const CasVoloteaPage = () => {
         <section className="container py-12">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
-                <Database className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center p-3">
+                <img 
+                  src="/logos/volotea-icon.png" 
+                  alt="Volotea icon" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-dark">Volotea</h1>

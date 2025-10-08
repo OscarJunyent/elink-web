@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { ArrowLeft, CheckCircle, TrendingUp } from "lucide-react";
+import { ArrowLeft, CheckCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const CasMPServicesPage = () => {
@@ -31,8 +31,12 @@ const CasMPServicesPage = () => {
         <section className="container py-12">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
-                <TrendingUp className="w-8 h-8 text-white" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center p-3">
+                <img 
+                  src="/logos/mpservices-icon.png" 
+                  alt="MPServices icon" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold text-dark">MPServices</h1>

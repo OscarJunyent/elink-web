@@ -141,7 +141,7 @@ const CasVoloteaPage = () => {
 
             {/* Conclusió */}
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-dark mb-4">Lliçó apresa</h2>
+              <h2 className="text-2xl font-bold text-dark mb-4">Aprenentatge</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Incorporar intel·ligència artificial amb èxit requereix una planificació estratègica 
                 que identifiqui oportunitats reals, prioritzi iniciatives i generi coneixement intern. 

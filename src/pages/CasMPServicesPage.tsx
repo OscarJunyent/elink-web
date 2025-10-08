@@ -138,7 +138,7 @@ const CasMPServicesPage = () => {
 
             {/* Conclusió */}
             <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8">
-              <h2 className="text-2xl font-bold text-dark mb-4">Lliçó apresa</h2>
+              <h2 className="text-2xl font-bold text-dark mb-4">Aprenentatge</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 L'automatització amb intel·ligència artificial no només estalvia temps i redueix 
                 errors, sinó que permet a les empreses escalar les seves operacions sense necessitat 

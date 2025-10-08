@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 import ConsultoriaIABarcelonaPage from "./pages/ConsultoriaIABarcelonaPage";
+import ConsultoriaIACatalunyaPage from "./pages/ConsultoriaIACatalunyaPage";
 import ServicesPage from "./pages/ServicesPage";
 import TopNav from "@/components/TopNav";
 import FormacioPage from "./pages/FormacioPage";
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             
             <Route path="/consultoria-ia-barcelona" element={<ConsultoriaIABarcelonaPage />} />
+            <Route path="/consultoria-ia-catalunya" element={<ConsultoriaIACatalunyaPage />} />
             <Route path="/serveis" element={<ServicesPage />} />
             <Route path="/formacio" element={<FormacioPage />} />
             <Route path="/contacte" element={<ContactPage />} />

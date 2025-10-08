@@ -28,7 +28,7 @@ const Hero = ({ t }: { t: any }) => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h1 className="text-4xl md:text-6xl font-extrabold text-dark mb-5 leading-tight max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-dark mb-5 leading-tight max-w-3xl mx-auto min-h-[120px] md:min-h-[160px]">
           <TypewriterText text={t.heroTitle} speed={80} />
         </h1>
         <p className="text-lg md:text-2xl text-accent mb-7 max-w-2xl mx-auto">{t.heroSubtitle}</p>

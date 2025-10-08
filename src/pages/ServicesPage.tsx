@@ -85,7 +85,7 @@ const ServicesPage = () => (
     </Helmet>
     
     <div className="max-w-4xl text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-6">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-6 min-h-[140px] md:min-h-[180px]">
         <TypewriterText text="Serveis de consultoria tecnològica per empreses catalanes" speed={80} />
       </h1>
       <p className="text-accent md:text-lg max-w-3xl mx-auto">

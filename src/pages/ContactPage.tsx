@@ -24,7 +24,7 @@ const ContactPage = () => (
       <div className="max-w-xl w-full flex flex-col gap-8 items-center">
         {/* Missatge de benvinguda */}
         <div className="w-full text-center space-y-4 mb-8">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-0">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-0 min-h-[90px] md:min-h-[120px]">
             <TypewriterText text="Contacta amb nosaltres" />
           </h1>
           <p className="text-lg text-muted-foreground">Explica'ns què necessites i t'ajudem a trobar la millor solució tecnològica. Treballem amb empreses de tot Catalunya.</p>

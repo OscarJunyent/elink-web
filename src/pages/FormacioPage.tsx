@@ -69,7 +69,7 @@ const FormacioPage = () => (
       <link rel="canonical" href="https://elinkcat.com/formacio" />
     </Helmet>
     <section className="max-w-3xl text-center mb-10 animate-fade-in">
-      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-dark mb-3 min-h-[90px] md:min-h-[120px]">
         <TypewriterText text="Formació i divulgació" />
       </h1>
       <p className="text-lg md:text-2xl text-accent mt-3 mb-3 font-medium">

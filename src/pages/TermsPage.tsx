@@ -81,8 +81,6 @@ const TermsPage = () => {
                 Per a qualsevol qüestió sobre aquests termes de servei:
                 <br />
                 Email: info@elink.cat
-                <br />
-                Adreça: Roger de Flor, 49 6-3 Esc B, 08013 Barcelona
               </p>
             </section>
           </div>

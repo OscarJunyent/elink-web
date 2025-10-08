@@ -88,8 +88,6 @@ const CookiesPage = () => {
                 Política de Privacitat o contacteu-nos a:
                 <br />
                 Email: info@elink.cat
-                <br />
-                Adreça: Roger de Flor, 49 6-3 Esc B, 08013 Barcelona
               </p>
             </section>
           </div>
